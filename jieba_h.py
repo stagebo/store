@@ -13,7 +13,6 @@ class JiebaHandler(pyrestful.rest.RestHandler):
 
     @get(_path="/jieba")
     def getpage(self):
-        print(self.get_query_argument("t"))
         self.render("templates/jieba/index.html")
 
 
