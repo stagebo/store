@@ -10,16 +10,20 @@ class Application():
     def create(self):
         settings={}
         app = pyrestful.rest.RestService([
-            JiebaHandler
+            MainHadler
+           ,JiebaHandler
            ,StaticHandler
         ])
-
         return app
 class StaticHandler(pyrestful.rest.RestHandler):
-
     @get(_path="/static/plugins/{plugin}/{file}")
     def getresource(self, plugin, file):
         self.render("static/plugins/%s/%s"%(plugin, file))
+
+class MainHadler(pyrestful.rest.RestHandler):
+    @get(_path="/")
+    def index(self):
+        self.render("index.html")
 
 if __name__ == '__main__':
     try:
