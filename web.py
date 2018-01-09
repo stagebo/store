@@ -7,7 +7,7 @@ import tornado.web
 
 from tornado.options import define, options
 
-from jieba_h import JiebaHandler
+from handler_jieba import JiebaHandler
 
 define("port", default=8888, help="run on the given port", type=int)
 

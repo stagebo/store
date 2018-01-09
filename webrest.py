@@ -4,8 +4,9 @@ import pyrestful.rest
 
 from pyrestful import mediatypes
 from pyrestful.rest import get, post, put, delete
-from jieba_h import JiebaHandler
-from ybs import DoctorHandler
+from handler_jieba import JiebaHandler
+from handler_ybs import DoctorHandler
+
 class Application():
     def create(self):
         settings={}
@@ -16,6 +17,7 @@ class Application():
            ,StaticHandler
         ])
         return app
+
 class StaticHandler(pyrestful.rest.RestHandler):
     @get(_path="/static/plugins/{plugin}/{file}")
     def getresource(self, plugin, file):
