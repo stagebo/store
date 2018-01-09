@@ -5,13 +5,14 @@ import pyrestful.rest
 from pyrestful import mediatypes
 from pyrestful.rest import get, post, put, delete
 from jieba_h import JiebaHandler
-
+from ybs import DoctorHandler
 class Application():
     def create(self):
         settings={}
         app = pyrestful.rest.RestService([
             MainHadler
            ,JiebaHandler
+           ,DoctorHandler
            ,StaticHandler
         ])
         return app
