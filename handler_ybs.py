@@ -13,6 +13,6 @@ class DoctorHandler(pyrestful.rest.RestHandler):
 
     @get(_path="/doctor")
     def getpage(self):
-        self.render("templates/doctor/index.html")
+        self.render("doctor/index.html")
 
 
