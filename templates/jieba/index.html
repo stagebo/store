@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>结巴分词测试页面</title>
-    <script src="/templates/plugins/jquery/jquery-1.12.2.js"></script>
+    <script src="/static/plugins/jquery/jquery-1.12.2.js"></script>
     <script>
+        function decode(str){
+              str = str.replace(/\\/g, "%");
+              return unescape(str);
+        }
         $(function(){
             $("#sub").click(function(){
-                var cont = $("content").val();
+                var cont = $("#content").val();
+
                 if("" === cont){
                     alert("please input text to split.");
                 }
-                $.ajax({
-                    type:'post',
-                    url:'',
-                    data:{'cont':cont},
-                    success:function(jsonData){
+                $.get("/jieba/split?cont="+cont,function(jsonData){
+                     if(jsonData["ret"] == "0"){
+                            $("#result").append(jsonData["msg"]);
+                            return;
+                     };
+                     $("#result").append(decode(jsonData["data"])).append("<br>");
+                },"json")
 
-                    },
-                    error:function(){
-                        alert("request failed!");
-                    }
-                });
             })
         });
 
