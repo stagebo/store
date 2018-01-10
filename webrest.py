@@ -11,11 +11,6 @@ from handler_ybs import DoctorHandler
 from tornado.log import access_log, app_log, gen_log
 from tornado.options import define,options
 
-define("port", default=8888, help="run on the given port", type=int)
-define("mysql_host", default="39.106.157.61:3306", help="blog database host")
-define("mysql_database", default="blog", help="blog database name")
-define("mysql_user", default="root", help="blog database user")
-define("mysql_password", default="stagebo", help="blog database password")
 
 class Application(pyrestful.rest.RestService):
     def __init__(self):
