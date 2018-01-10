@@ -3,7 +3,7 @@ import tornado.ioloop
 import pyrestful.rest
 
 import pymysql
-import tornado.database
+
 from pyrestful import mediatypes
 from pyrestful.rest import get, post, put, delete
 from handler_jieba import JiebaHandler
@@ -43,14 +43,7 @@ class Application(pyrestful.rest.RestService):
         #     charset='utf8mb4',
         #     cursorclass=pymysql.cursors.DictCursor
         # )
-        self.db=tornado.database.Connection(
-            host=options.mysql_host,
-            user=options.mysql_user,
-            password=options.mysql_password,
-            db=options.mysql_database,
-            charset='utf8mb4',
-            cursorclass=pymysql.cursors.DictCursor
-        )
+
 
 
 
