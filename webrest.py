@@ -43,8 +43,6 @@ class Application(pyrestful.rest.RestService):
 
 
     def mylog(self,handler):
-        if handler.__class__.__name__ == "GetServerInfo" or handler.__class__.__name__ == "GetServerMonitor":
-            return
         if handler.get_status() < 400:
             log_method = access_log.info
         elif handler.get_status() < 500:
