@@ -1,7 +1,7 @@
 import os
 import tornado.ioloop
 import pyrestful.rest
-
+import logging
 import pymysql
 
 from pyrestful import mediatypes
@@ -11,9 +11,15 @@ from handler_ybs import DoctorHandler
 from tornado.log import access_log, app_log, gen_log
 from tornado.options import define,options
 
+logging.basicConfig(level=logging.DEBUG,
+                format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
+                datefmt='%a, %d %b %Y %H:%M:%S',
+                filename='log/mylog.log',
+                filemode='w')
 
 class Application(pyrestful.rest.RestService):
     def __init__(self):
+        logging.info("tornado is tring to init...")
         settings= dict(
             #cookie_secret="SBwKSjz3SCWo04t68f/FOY7fPKZI20JYje1IYPBrxaM=",
             template_path=os.path.join(os.path.dirname(__file__), "templates"),
@@ -38,7 +44,7 @@ class Application(pyrestful.rest.RestService):
         #     charset='utf8mb4',
         #     cursorclass=pymysql.cursors.DictCursor
         # )
-
+        logging.info("tornado is inited.")
 
 
 
@@ -66,10 +72,11 @@ class MainHadler(pyrestful.rest.RestHandler):
         self.render("index.html")
 
 if __name__ == '__main__':
+
     try:
         print("Start the service")
         app = Application()
-        app.listen(8888)
+        app.listen(8886)
         tornado.ioloop.IOLoop.instance().start()
     except KeyboardInterrupt:
         print("\nStop the service")
