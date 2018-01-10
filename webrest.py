@@ -2,16 +2,25 @@ import os
 import tornado.ioloop
 import pyrestful.rest
 
+import pymysql
+import tornado.database
 from pyrestful import mediatypes
 from pyrestful.rest import get, post, put, delete
 from handler_jieba import JiebaHandler
 from handler_ybs import DoctorHandler
 from tornado.log import access_log, app_log, gen_log
+from tornado.options import define,options
+
+define("port", default=8888, help="run on the given port", type=int)
+define("mysql_host", default="39.106.157.61:3306", help="blog database host")
+define("mysql_database", default="blog", help="blog database name")
+define("mysql_user", default="root", help="blog database user")
+define("mysql_password", default="stagebo", help="blog database password")
 
 class Application(pyrestful.rest.RestService):
     def __init__(self):
         settings= dict(
-            cookie_secret="SBwKSjz3SCWo04t68f/FOY7fPKZI20JYje1IYPBrxaM=",
+            #cookie_secret="SBwKSjz3SCWo04t68f/FOY7fPKZI20JYje1IYPBrxaM=",
             template_path=os.path.join(os.path.dirname(__file__), "templates"),
             static_path=os.path.join(os.path.dirname(__file__), "static"),
             xsrf_cookies=False,
@@ -26,6 +35,25 @@ class Application(pyrestful.rest.RestService):
            # ,StaticHandler
         ]
         super(Application, self).__init__(handlers, **settings)
+        # self.db = pymysql.connect(
+        #     host=options.mysql_host,
+        #     user=options.mysql_user,
+        #     password=options.mysql_password,
+        #     db=options.mysql_database,
+        #     charset='utf8mb4',
+        #     cursorclass=pymysql.cursors.DictCursor
+        # )
+        self.db=tornado.database.Connection(
+            host=options.mysql_host,
+            user=options.mysql_user,
+            password=options.mysql_password,
+            db=options.mysql_database,
+            charset='utf8mb4',
+            cursorclass=pymysql.cursors.DictCursor
+        )
+
+
+
     def mylog(self,handler):
         if handler.__class__.__name__ == "GetServerInfo" or handler.__class__.__name__ == "GetServerMonitor":
             return
@@ -55,7 +83,7 @@ if __name__ == '__main__':
     try:
         print("Start the service")
         app = Application()
-        app.listen(8889)
+        app.listen(8888)
         tornado.ioloop.IOLoop.instance().start()
     except KeyboardInterrupt:
         print("\nStop the service")

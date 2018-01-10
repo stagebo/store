@@ -2,45 +2,68 @@ import pymysql
 import sys
 import traceback
 
-class DbHelper():
-    def __init__(self):
-        self.conn=None
-        self.cursor=None
 
-    def open(self,dbhost,dbuid,dbpwd,dbport,dbname):
+from tornado.options import define,options
+
+define("port", default=8888, help="run on the given port", type=int)
+define("mysql_host", default="www.stagebo.xyz", help="blog database host")
+define("mysql_port", default="3306", help="blog database port",type=int)
+define("mysql_database", default="pyweb", help="blog database name")
+define("mysql_user", default="root", help="blog database user")
+define("mysql_password", default="123", help="blog database password")
+
+
+class DbHelper():
+    def __init__(self,dbhost,dbuid,dbpwd,dbport,dbname):
+        dbconfig = {
+            'host': dbhost,
+            'port': dbport,
+            'user': dbuid,
+            'password': dbpwd,
+            'db': dbname,
+            'charset': 'utf8mb4',
+            'cursorclass': pymysql.cursors.DictCursor,
+        }
         try:
-            self.conn = pymysql.connect(
-                host=dbhost,
-                port=dbport,
-                user=dbuid,
-                password=dbpwd,
-                db=dbname,
-                charset="utf8mb4",
-                cursorclass=pymysql.cursors.DictCursor
-            )
+            self.conn = pymysql.connect(**dbconfig)
             self.cursor = self.conn.cursor()
-            return True
+            print("connect success")
         except:
+            print("connect error")
             traceback.print_exc()
-            return False
+
 
     def execute_sql(self,sql):
         if not sql and sql=="":
-            return False
+            return None
         try:
             self.cursor.execute(sql)
-            return True
+            return None
         except:
             traceback.print_exc()
-            return False
+            return None
 
     def fetch_one(self,sql):
         if not sql and sql=="":
             return None
         try:
             self.cursor.execute(sql)
-            data = self.conn.fetchone()
+            data = self.cursor.fetchone()
             return data
         except:
             traceback.print_exc()
             return None
+
+db=DbHelper(
+    dbhost=options.mysql_host,
+    dbport=3306,
+    dbuid=options.mysql_user,
+    dbname=options.mysql_database,
+    dbpwd=options.mysql_password
+)
+
+
+
+data = db.fetch_one("select * from t_test")
+print(data)
+
