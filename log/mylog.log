@@ -1,15 +1,12 @@
-Wed, 10 Jan 2018 15:50:46 webrest.py[line:27] INFO tornado is tring to init...
-Wed, 10 Jan 2018 15:50:46 webrest.py[line:55] INFO tornado is inited.
-Wed, 10 Jan 2018 15:50:49 __init__.py[line:111] DEBUG Building prefix dict from the default dictionary ...
-Wed, 10 Jan 2018 15:50:49 __init__.py[line:131] DEBUG Loading model from cache C:\Users\WYB\AppData\Local\Temp\jieba.cache
-Wed, 10 Jan 2018 15:50:50 __init__.py[line:163] DEBUG Loading model cost 0.906 seconds.
-Wed, 10 Jan 2018 15:50:50 __init__.py[line:164] DEBUG Prefix dict has been built succesfully.
-Wed, 10 Jan 2018 15:50:50 webrest.py[line:81] INFO 200 GET /jieba/split?cont=%E5%A4%9A%E5%8F%91%E7%82%B9 (127.0.0.1) 1177.07ms
-Wed, 10 Jan 2018 15:50:56 webrest.py[line:81] INFO 304 GET /jieba/split?cont=%E5%A4%9A%E5%8F%91%E7%82%B9 (127.0.0.1) 332.02ms
-Wed, 10 Jan 2018 15:50:57 webrest.py[line:81] INFO 304 GET /jieba/split?cont=%E5%A4%9A%E5%8F%91%E7%82%B9 (127.0.0.1) 437.02ms
-Wed, 10 Jan 2018 15:50:57 webrest.py[line:81] INFO 304 GET /jieba/split?cont=%E5%A4%9A%E5%8F%91%E7%82%B9 (127.0.0.1) 63.00ms
-Wed, 10 Jan 2018 15:50:57 webrest.py[line:81] INFO 304 GET /jieba/split?cont=%E5%A4%9A%E5%8F%91%E7%82%B9 (127.0.0.1) 18.00ms
-Wed, 10 Jan 2018 15:50:57 webrest.py[line:81] INFO 304 GET /jieba/split?cont=%E5%A4%9A%E5%8F%91%E7%82%B9 (127.0.0.1) 38.00ms
-Wed, 10 Jan 2018 15:50:57 webrest.py[line:81] INFO 304 GET /jieba/split?cont=%E5%A4%9A%E5%8F%91%E7%82%B9 (127.0.0.1) 15.00ms
-Wed, 10 Jan 2018 15:50:57 webrest.py[line:81] INFO 304 GET /jieba/split?cont=%E5%A4%9A%E5%8F%91%E7%82%B9 (127.0.0.1) 35.00ms
-Wed, 10 Jan 2018 15:50:57 webrest.py[line:81] INFO 304 GET /jieba/split?cont=%E5%A4%9A%E5%8F%91%E7%82%B9 (127.0.0.1) 65.00ms
+Wed, 10 Jan 2018 16:41:28 webrest.py[line:27] INFO tornado is tring to init...
+Wed, 10 Jan 2018 16:41:28 webrest.py[line:55] INFO tornado is inited.
+Wed, 10 Jan 2018 16:41:29 webrest.py[line:81] INFO 200 GET /jieba (::1) 5.00ms
+Wed, 10 Jan 2018 16:41:29 webrest.py[line:81] INFO 304 GET /jieba/gethistory (::1) 5.00ms
+Wed, 10 Jan 2018 16:41:42 webrest.py[line:81] INFO 304 GET /jieba (::1) 2.00ms
+Wed, 10 Jan 2018 16:41:42 webrest.py[line:81] INFO 304 GET /jieba/gethistory (::1) 5.00ms
+Wed, 10 Jan 2018 16:41:42 webrest.py[line:81] INFO 304 GET /jieba (::1) 2.00ms
+Wed, 10 Jan 2018 16:41:42 webrest.py[line:81] INFO 304 GET /jieba/gethistory (::1) 7.00ms
+Wed, 10 Jan 2018 16:41:44 webrest.py[line:81] INFO 304 GET /jieba (::1) 1.00ms
+Wed, 10 Jan 2018 16:41:44 webrest.py[line:81] INFO 304 GET /jieba/gethistory (::1) 4.00ms
+Wed, 10 Jan 2018 16:42:55 webrest.py[line:81] INFO 304 GET /jieba (::1) 0.00ms
+Wed, 10 Jan 2018 16:42:55 webrest.py[line:81] INFO 304 GET /jieba/gethistory (::1) 0.00ms

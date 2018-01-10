@@ -25,15 +25,43 @@
                 },"json")
 
             })
+            searchHistory();
         });
+        function searchHistory(){
+             $.get("/jieba/gethistory",function(jsonData){
+                     if(jsonData["ret"] == "0"){
+                            $("#result").append(jsonData["msg"]);
+                            return;
+                     };
+                     hisData =  JSON.parse(jsonData["data"]);
+                   //  $("#history").append(hisData)
+                    for(var i=0;i<hisData.length;i++){
+                        v = hisData[i];
+                        time = v["time"];
 
+                        content = decode(v["cont"]);
+                         $("#history").append("<div>时间"+time+"</div>");
+                          $("#history").append("<div>内容："+content+"</div>");
+                     }
+
+                },"json")
+        }
     </script>
 </head>
 <body>
-    <center>
-        输入一句话：<input id="content" type="text"/>
-        <input id="sub" type="button" value="提交"/>
-        <div id="result" style="width:500px;height:500px;border:1px solid;"></div>
-    </center>
+    <div style="width:50%;height:100%;position:absolute;float:left;">
+       <div style="width:80%;margin-left:10%;">
+            <h3>输入一句话：</h3>
+        <input id="content" type="text"/>
+        <input id="sub" type="button" value="提交"/><br><br>
+        <div id="result" style="width:500px;height:600px;border:1px solid;"></div>
+       </div>
+    </div>
+    <div style="width:50%;height:100%;positon:absolute;float:right;">
+        <h1>全部提交历史记录</h1><br><br>
+        <div id="history" style="width:80%;margin-left:10%;border:solid 1px;height:600px;">
+
+        </div>
+    </div>
 </body>
 </html>

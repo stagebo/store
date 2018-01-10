@@ -50,3 +50,22 @@ class JiebaHandler(pyrestful.rest.RestHandler):
             "msg": "",
             "data": data
             }))
+
+    @get(_path="/jieba/gethistory")
+    def get_history(self):
+        data = dbHelper.database.fetch_all("select * from t_jieba")
+        json_data = []
+
+        for item in data:
+            json_data.append({
+                "time":str(item["f_time"]),
+                "cont":item['f_content']
+            })
+
+        result = json.dumps({
+            "ret": "1",
+            "msg": "",
+            "data": json.dumps(json_data)
+            })
+
+        self.write(result)
