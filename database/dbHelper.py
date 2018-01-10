@@ -2,16 +2,7 @@ import pymysql
 import sys
 import traceback
 
-
-from tornado.options import define,options
-
-define("port", default=8888, help="run on the given port", type=int)
-define("mysql_host", default="39.106.157.61", help="blog database host")
-define("mysql_port", default="3306", help="blog database port",type=int)
-define("mysql_database", default="stagebo", help="blog database name")
-define("mysql_user", default="root", help="blog database user")
-define("mysql_password", default="", help="blog database password")
-
+database = None
 
 class DbHelper():
     def __init__(self,dbhost,dbuid,dbpwd,dbport,dbname):
@@ -35,13 +26,15 @@ class DbHelper():
 
     def execute_sql(self,sql):
         if not sql and sql=="":
-            return None
+            return False
         try:
             self.cursor.execute(sql)
-            return None
+            self.conn.commit()
+            return True
         except:
+            self.conn.rollback()
             traceback.print_exc()
-            return None
+            return False
 
     def fetch_one(self,sql):
         if not sql and sql=="":
@@ -51,6 +44,7 @@ class DbHelper():
             data = self.cursor.fetchone()
             return data
         except:
+            self.conn.rollback()
             traceback.print_exc()
             return None
 
@@ -62,19 +56,12 @@ class DbHelper():
             data = self.cursor.fetchall()
             return data
         except:
+            self.conn.rollback()
             traceback.print_exc()
             return None
 if __name__ == "__main__":
-    db=DbHelper(
-        dbhost=options.mysql_host,
-        dbport=3306,
-        dbuid=options.mysql_user,
-        dbname=options.mysql_database,
-        dbpwd=options.mysql_password
-    )
+    pass
 
 
 
-    data = db.fetch_all("select * from t_test")
-    print(data)
 

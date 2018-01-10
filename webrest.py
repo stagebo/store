@@ -3,6 +3,8 @@ import tornado.ioloop
 import pyrestful.rest
 import logging
 import pymysql
+import configparser
+import sys
 
 from pyrestful import mediatypes
 from pyrestful.rest import get, post, put, delete
@@ -10,7 +12,8 @@ from handler_jieba import JiebaHandler
 from handler_ybs import DoctorHandler
 from tornado.log import access_log, app_log, gen_log
 from tornado.options import define,options
-
+sys.path.append("..")
+from database import dbHelper
 logging.basicConfig(level=logging.DEBUG,
                 format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
                 datefmt='%a, %d %b %Y %H:%M:%S',
@@ -19,6 +22,8 @@ logging.basicConfig(level=logging.DEBUG,
 
 class Application(pyrestful.rest.RestService):
     def __init__(self):
+        self.cf = configparser.ConfigParser()
+        self.read_config()
         logging.info("tornado is tring to init...")
         settings= dict(
             #cookie_secret="SBwKSjz3SCWo04t68f/FOY7fPKZI20JYje1IYPBrxaM=",
@@ -37,16 +42,31 @@ class Application(pyrestful.rest.RestService):
         ]
         super(Application, self).__init__(handlers, **settings)
         # self.db = pymysql.connect(
-        #     host=options.mysql_host,
-        #     user=options.mysql_user,
-        #     password=options.mysql_password,
-        #     db=options.mysql_database,
+        #     host=self.mysql_host,
+        #     user=self.mysql_uid,
+        #     password=self.mysql_pwd,
+        #     db=self.mysql_db,
+        #     port=self.mysql_port,
         #     charset='utf8mb4',
         #     cursorclass=pymysql.cursors.DictCursor
         # )
+        dbHelper.database=dbHelper.DbHelper(self.mysql_host,self.mysql_uid,self.mysql_pwd,self.mysql_port,self.mysql_db)
+
         logging.info("tornado is inited.")
 
+    def read_config(self):
 
+        try:
+            self.cf.read("webrest.conf")
+        except:
+            logging.error("not find a config file named webrest.conf")
+            sys.exit(1)
+        self.mysql_host = self.cf.get("mysql", "host")
+        self.mysql_uid = self.cf.get("mysql", "uid")
+        self.mysql_pwd = self.cf.get("mysql", "pwd")
+        self.mysql_db = self.cf.get("mysql", "db")
+        self.mysql_port = self.cf.getint("mysql", "port")
+        self.web_port = self.cf.getint("web", "port")
 
     def mylog(self,handler):
         if handler.get_status() < 400:
@@ -76,7 +96,7 @@ if __name__ == '__main__':
     try:
         print("Start the service")
         app = Application()
-        app.listen(8886)
+        app.listen(app.web_port)
         tornado.ioloop.IOLoop.instance().start()
     except KeyboardInterrupt:
         print("\nStop the service")
