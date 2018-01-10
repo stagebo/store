@@ -53,7 +53,7 @@ class JiebaHandler(pyrestful.rest.RestHandler):
 
     @get(_path="/jieba/gethistory")
     def get_history(self):
-        data = dbHelper.database.fetch_all("select * from t_jieba")
+        data = dbHelper.database.fetch_all("select * from t_jieba order by f_time desc")
         json_data = []
 
         for item in data:

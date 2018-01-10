@@ -1,12 +1,6 @@
-Wed, 10 Jan 2018 16:41:28 webrest.py[line:27] INFO tornado is tring to init...
-Wed, 10 Jan 2018 16:41:28 webrest.py[line:55] INFO tornado is inited.
-Wed, 10 Jan 2018 16:41:29 webrest.py[line:81] INFO 200 GET /jieba (::1) 5.00ms
-Wed, 10 Jan 2018 16:41:29 webrest.py[line:81] INFO 304 GET /jieba/gethistory (::1) 5.00ms
-Wed, 10 Jan 2018 16:41:42 webrest.py[line:81] INFO 304 GET /jieba (::1) 2.00ms
-Wed, 10 Jan 2018 16:41:42 webrest.py[line:81] INFO 304 GET /jieba/gethistory (::1) 5.00ms
-Wed, 10 Jan 2018 16:41:42 webrest.py[line:81] INFO 304 GET /jieba (::1) 2.00ms
-Wed, 10 Jan 2018 16:41:42 webrest.py[line:81] INFO 304 GET /jieba/gethistory (::1) 7.00ms
-Wed, 10 Jan 2018 16:41:44 webrest.py[line:81] INFO 304 GET /jieba (::1) 1.00ms
-Wed, 10 Jan 2018 16:41:44 webrest.py[line:81] INFO 304 GET /jieba/gethistory (::1) 4.00ms
-Wed, 10 Jan 2018 16:42:55 webrest.py[line:81] INFO 304 GET /jieba (::1) 0.00ms
-Wed, 10 Jan 2018 16:42:55 webrest.py[line:81] INFO 304 GET /jieba/gethistory (::1) 0.00ms
+Wed, 10 Jan 2018 16:48:35 webrest.py[line:27] INFO tornado is tring to init...
+Wed, 10 Jan 2018 16:48:35 webrest.py[line:55] INFO tornado is inited.
+Wed, 10 Jan 2018 16:48:35 webrest.py[line:81] INFO 200 GET /jieba (::1) 6.00ms
+Wed, 10 Jan 2018 16:48:35 webrest.py[line:81] INFO 200 GET /jieba/gethistory (::1) 262.20ms
+Wed, 10 Jan 2018 16:48:36 webrest.py[line:81] INFO 304 GET /jieba (::1) 2.00ms
+Wed, 10 Jan 2018 16:48:36 webrest.py[line:81] INFO 304 GET /jieba/gethistory (::1) 5.00ms
