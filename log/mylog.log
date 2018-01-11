@@ -1,10 +1,9 @@
-Thu, 11 Jan 2018 14:11:56 webrest.py[line:27] INFO tornado is tring to init...
-Thu, 11 Jan 2018 14:11:56 webrest.py[line:45] INFO tornado is inited.
-Thu, 11 Jan 2018 14:11:56 webrest.py[line:71] INFO 200 GET / (127.0.0.1) 0.00ms
-Thu, 11 Jan 2018 14:11:56 webrest.py[line:71] INFO 304 GET /main (127.0.0.1) 3.00ms
-Thu, 11 Jan 2018 14:11:57 webrest.py[line:71] INFO 304 GET /jieba (127.0.0.1) 3.00ms
-Thu, 11 Jan 2018 14:11:57 webrest.py[line:71] INFO 304 GET /jieba/gethistory (127.0.0.1) 3.00ms
-Thu, 11 Jan 2018 14:11:59 webrest.py[line:71] INFO 304 GET /main (127.0.0.1) 0.00ms
-Thu, 11 Jan 2018 14:12:00 webrest.py[line:71] INFO 304 GET /jieba (127.0.0.1) 0.00ms
-Thu, 11 Jan 2018 14:12:00 webrest.py[line:71] INFO 304 GET /jieba/gethistory (127.0.0.1) 4.00ms
-Thu, 11 Jan 2018 14:12:33 webrest.py[line:71] INFO 304 GET /about (127.0.0.1) 0.00ms
+Thu, 11 Jan 2018 14:24:35 webrest.py[line:27] INFO tornado is tring to init...
+Thu, 11 Jan 2018 14:24:35 webrest.py[line:45] INFO tornado is inited.
+Thu, 11 Jan 2018 14:24:36 webrest.py[line:71] INFO 200 GET /jieba (::1) 15.60ms
+Thu, 11 Jan 2018 14:24:36 webrest.py[line:71] INFO 304 GET /jieba/gethistory (::1) 19.00ms
+Thu, 11 Jan 2018 14:24:40 __init__.py[line:111] DEBUG Building prefix dict from the default dictionary ...
+Thu, 11 Jan 2018 14:24:40 __init__.py[line:131] DEBUG Loading model from cache C:\Users\WYB\AppData\Local\Temp\jieba.cache
+Thu, 11 Jan 2018 14:24:41 __init__.py[line:163] DEBUG Loading model cost 0.999 seconds.
+Thu, 11 Jan 2018 14:24:41 __init__.py[line:164] DEBUG Prefix dict has been built succesfully.
+Thu, 11 Jan 2018 14:24:41 webrest.py[line:71] INFO 200 GET /jieba/split?cont=%E7%9A%84%E9%98%B2%E5%AE%88%E6%89%93%E6%B3%95 (::1) 1619.41ms
