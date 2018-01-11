@@ -36,8 +36,10 @@
                     time = v["time"];
 
                     content = decode(v["cont"]);
-                     $("#jieba_history").append("<div><b>时间-"+time+":</b></div>");
-                      $("#jieba_history").append("<div><b>内容：</b>"+content+"</div><br>");
+                    var html = '<div class="alert alert-success" role="alert"><strong>'+time+'</strong> <br>'+content+'</div>'
+                    //("#jieba_history").append("<div><b>时间-"+time+":</b></div>");
+                    //$("#jieba_history").append("<div><b>内容：</b>"+content+"</div><br>");
+                    $("#jieba_history").append(html);
                  }
 
             },"json")
@@ -46,14 +48,24 @@
 
 <div style="width:100%;">
    <div style="width:80%;margin-left:10%;">
-        <h3>输入一句话：</h3>
-        <input id="jieba_content" type="text"  style="width:400px;"/>
-        <input id="jieba_sub" type="button" value="提交"/><br><br>
+        <div class="alert alert-success" role="alert">
+            <strong>结巴分词，是一个python开源中文分词项目</strong>
+            <li>精确模式，试图将句子最精确地切开，适合文本分析；</li>
+            <li>全模式，把句子中所有的可以成词的词语都扫描出来, 速度非常快，但是不能解决歧义；</li>
+            <li>搜索引擎模式，在精确模式的基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。</li>
+            <li>在下面输入框中输入一句话点击提交即可得到分词结果！</li>
+            <li><a href="https://github.com/fxsjy/jieba" target="_blank">项目地址</a></li>
+        </div>
+       <input type="text" class="form-control" id="jieba_content" placeholder="请输入一句话" >
+       <br>
+        <button type="button" class="btn btn-primary" id="jieba_sub">提交</button>
+
+        <br><br>
         <div id="jieba_result" style="width:100%;height:300px;border:1px solid;"></div>
         <br><br>
         <h1>全部提交历史记录</h1>
         <div  style="border:solid 1px;">
-            <div id="jieba_history" style="margin-left:10px;margin-top:10px;"></div>
+            <div id="jieba_history" style="margin:10px 10px 10px 10px;"></div>
         </div>
    </div>
 
