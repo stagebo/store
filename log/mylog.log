@@ -1,0 +1,20 @@
+Thu, 11 Jan 2018 15:45:45 webrest.py[line:27] INFO tornado is tring to init...
+Thu, 11 Jan 2018 15:45:46 webrest.py[line:45] INFO tornado is inited.
+Thu, 11 Jan 2018 15:45:57 webrest.py[line:71] INFO 304 GET / (::1) 3.00ms
+Thu, 11 Jan 2018 15:45:57 webrest.py[line:71] INFO 304 GET /static/plugins/Bootstrap/css/bootstrap.css (::1) 296.02ms
+Thu, 11 Jan 2018 15:45:57 webrest.py[line:71] INFO 304 GET /static/plugins/Bootstrap/css/bootstrap-theme.css (::1) 3.00ms
+Thu, 11 Jan 2018 15:45:57 webrest.py[line:71] INFO 304 GET /static/plugins/Bootstrap/js/bootstrap.js (::1) 21.00ms
+Thu, 11 Jan 2018 15:45:57 webrest.py[line:71] INFO 304 GET /static/plugins/jquery/jquery-1.12.2.js (::1) 22.00ms
+Thu, 11 Jan 2018 15:45:57 webrest.py[line:71] INFO 304 GET /static/image/bgimg.jpg (::1) 2.00ms
+Thu, 11 Jan 2018 15:45:57 webrest.py[line:71] INFO 304 GET /main (::1) 1.00ms
+Thu, 11 Jan 2018 15:45:59 webrest.py[line:71] INFO 304 GET /jieba (::1) 3.00ms
+Thu, 11 Jan 2018 15:45:59 webrest.py[line:71] INFO 304 GET /jieba/gethistory (::1) 3.00ms
+Thu, 11 Jan 2018 15:46:03 __init__.py[line:111] DEBUG Building prefix dict from the default dictionary ...
+Thu, 11 Jan 2018 15:46:03 __init__.py[line:131] DEBUG Loading model from cache C:\Users\WYB\AppData\Local\Temp\jieba.cache
+Thu, 11 Jan 2018 15:46:04 __init__.py[line:163] DEBUG Loading model cost 0.994 seconds.
+Thu, 11 Jan 2018 15:46:04 __init__.py[line:164] DEBUG Prefix dict has been built succesfully.
+Thu, 11 Jan 2018 15:46:04 webrest.py[line:71] INFO 200 GET /jieba/split?cont=%E5%9C%A8%E4%B8%8B%E9%9D%A2%E8%BE%93%E5%85%A5%E6%A1%86%E4%B8%AD%E8%BE%93%E5%85%A5%E4%B8%80%E5%8F%A5%E8%AF%9D%E7%82%B9%E5%87%BB%E6%8F%90%E4%BA%A4%E5%8D%B3%E5%8F%AF%E5%BE%97%E5%88%B0%E5%88%86%E8%AF%8D%E7%BB%93%E6%9E%9C%EF%BC%81 (::1) 1048.06ms
+Thu, 11 Jan 2018 15:46:07 webrest.py[line:71] INFO 304 GET / (::1) 3.00ms
+Thu, 11 Jan 2018 15:46:07 webrest.py[line:71] INFO 304 GET /main (::1) 1.00ms
+Thu, 11 Jan 2018 15:46:10 webrest.py[line:71] INFO 304 GET /jieba (::1) 1.00ms
+Thu, 11 Jan 2018 15:46:10 webrest.py[line:71] INFO 200 GET /jieba/gethistory (::1) 2.00ms

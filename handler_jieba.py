@@ -34,7 +34,7 @@ class JiebaHandler(pyrestful.rest.RestHandler):
 
 
         sql = "insert into t_jieba values('%s','%s')"%(
-                    datetime.datetime.now(),
+                    datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                     cont
                 )
 
