@@ -17,3 +17,7 @@ Thu, 11 Jan 2018 09:50:29 webrest.py[line:81] INFO 304 GET /main (127.0.0.1) 0.0
 Thu, 11 Jan 2018 09:50:30 webrest.py[line:81] INFO 304 GET /jieba (127.0.0.1) 0.00ms
 Thu, 11 Jan 2018 09:50:30 webrest.py[line:81] INFO 304 GET /jieba/gethistory (127.0.0.1) 3.00ms
 Thu, 11 Jan 2018 09:50:31 webrest.py[line:81] INFO 304 GET /main (127.0.0.1) 0.00ms
+Thu, 11 Jan 2018 11:19:47 webrest.py[line:81] INFO 304 GET / (::1) 1922.11ms
+Thu, 11 Jan 2018 11:19:51 webrest.py[line:81] WARNING 404 GET /test/Query_device_type (::1) 538.40ms
+Thu, 11 Jan 2018 11:20:05 webrest.py[line:81] WARNING 404 GET /test/Query_device_type (::1) 0.00ms
+Thu, 11 Jan 2018 11:21:14 webrest.py[line:81] WARNING 404 GET /test/Query_device_type (::1) 0.00ms
