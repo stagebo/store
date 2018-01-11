@@ -41,17 +41,7 @@ class Application(pyrestful.rest.RestService):
            # ,StaticHandler
         ]
         super(Application, self).__init__(handlers, **settings)
-        # self.db = pymysql.connect(
-        #     host=self.mysql_host,
-        #     user=self.mysql_uid,
-        #     password=self.mysql_pwd,
-        #     db=self.mysql_db,
-        #     port=self.mysql_port,
-        #     charset='utf8mb4',
-        #     cursorclass=pymysql.cursors.DictCursor
-        # )
         dbHelper.database=dbHelper.DbHelper(self.mysql_host,self.mysql_uid,self.mysql_pwd,self.mysql_port,self.mysql_db)
-
         logging.info("tornado is inited.")
 
     def read_config(self):
@@ -81,18 +71,14 @@ class Application(pyrestful.rest.RestService):
                    handler._request_summary(), request_time)
 
 
-# class StaticHandler(pyrestful.rest.RestHandler):
-#     @get(_path="/static/plugins/{plugin}/{file}")
-#     def getresource(self, plugin, file):
-#         self.render("static/plugins/%s/%s"%(plugin, file))
-
+#
 class MainHadler(pyrestful.rest.RestHandler):
     @get(_path="/")
     def index(self):
-        self.render("index.html")
+        self.render("base.html")
     @get(_path="/main")
     def main_page(self):
-        self.write("this is main page.")
+        self.render("main.html")
 
     @get(_path="/about")
     def about_page(self):
@@ -104,6 +90,7 @@ if __name__ == '__main__':
         print("Start the service")
         app = Application()
         app.listen(app.web_port)
+        print("access port %s"%app.web_port)
         tornado.ioloop.IOLoop.instance().start()
     except KeyboardInterrupt:
         print("\nStop the service")

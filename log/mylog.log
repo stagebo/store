@@ -1,23 +1,10 @@
-Thu, 11 Jan 2018 09:50:19 webrest.py[line:27] INFO tornado is tring to init...
-Thu, 11 Jan 2018 09:50:19 webrest.py[line:55] INFO tornado is inited.
-Thu, 11 Jan 2018 09:50:19 webrest.py[line:81] INFO 200 GET / (127.0.0.1) 1.00ms
-Thu, 11 Jan 2018 09:50:19 webrest.py[line:81] INFO 304 GET /main (127.0.0.1) 2.00ms
-Thu, 11 Jan 2018 09:50:20 webrest.py[line:81] INFO 304 GET / (127.0.0.1) 1.00ms
-Thu, 11 Jan 2018 09:50:20 webrest.py[line:81] INFO 304 GET /main (127.0.0.1) 1.00ms
-Thu, 11 Jan 2018 09:50:20 webrest.py[line:81] INFO 304 GET / (127.0.0.1) 2.00ms
-Thu, 11 Jan 2018 09:50:20 webrest.py[line:81] INFO 304 GET /main (127.0.0.1) 1.00ms
-Thu, 11 Jan 2018 09:50:21 webrest.py[line:81] INFO 304 GET /jieba (127.0.0.1) 0.00ms
-Thu, 11 Jan 2018 09:50:21 webrest.py[line:81] INFO 304 GET /jieba/gethistory (127.0.0.1) 4.00ms
-Thu, 11 Jan 2018 09:50:22 webrest.py[line:81] INFO 304 GET /about (127.0.0.1) 0.00ms
-Thu, 11 Jan 2018 09:50:23 webrest.py[line:81] INFO 304 GET /jieba (127.0.0.1) 15.60ms
-Thu, 11 Jan 2018 09:50:23 webrest.py[line:81] INFO 304 GET /jieba/gethistory (127.0.0.1) 4.00ms
-Thu, 11 Jan 2018 09:50:24 webrest.py[line:81] INFO 304 GET /main (127.0.0.1) 0.00ms
-Thu, 11 Jan 2018 09:50:28 webrest.py[line:81] INFO 304 GET /about (127.0.0.1) 0.00ms
-Thu, 11 Jan 2018 09:50:29 webrest.py[line:81] INFO 304 GET /main (127.0.0.1) 0.00ms
-Thu, 11 Jan 2018 09:50:30 webrest.py[line:81] INFO 304 GET /jieba (127.0.0.1) 0.00ms
-Thu, 11 Jan 2018 09:50:30 webrest.py[line:81] INFO 304 GET /jieba/gethistory (127.0.0.1) 3.00ms
-Thu, 11 Jan 2018 09:50:31 webrest.py[line:81] INFO 304 GET /main (127.0.0.1) 0.00ms
-Thu, 11 Jan 2018 11:19:47 webrest.py[line:81] INFO 304 GET / (::1) 1922.11ms
-Thu, 11 Jan 2018 11:19:51 webrest.py[line:81] WARNING 404 GET /test/Query_device_type (::1) 538.40ms
-Thu, 11 Jan 2018 11:20:05 webrest.py[line:81] WARNING 404 GET /test/Query_device_type (::1) 0.00ms
-Thu, 11 Jan 2018 11:21:14 webrest.py[line:81] WARNING 404 GET /test/Query_device_type (::1) 0.00ms
+Thu, 11 Jan 2018 14:11:56 webrest.py[line:27] INFO tornado is tring to init...
+Thu, 11 Jan 2018 14:11:56 webrest.py[line:45] INFO tornado is inited.
+Thu, 11 Jan 2018 14:11:56 webrest.py[line:71] INFO 200 GET / (127.0.0.1) 0.00ms
+Thu, 11 Jan 2018 14:11:56 webrest.py[line:71] INFO 304 GET /main (127.0.0.1) 3.00ms
+Thu, 11 Jan 2018 14:11:57 webrest.py[line:71] INFO 304 GET /jieba (127.0.0.1) 3.00ms
+Thu, 11 Jan 2018 14:11:57 webrest.py[line:71] INFO 304 GET /jieba/gethistory (127.0.0.1) 3.00ms
+Thu, 11 Jan 2018 14:11:59 webrest.py[line:71] INFO 304 GET /main (127.0.0.1) 0.00ms
+Thu, 11 Jan 2018 14:12:00 webrest.py[line:71] INFO 304 GET /jieba (127.0.0.1) 0.00ms
+Thu, 11 Jan 2018 14:12:00 webrest.py[line:71] INFO 304 GET /jieba/gethistory (127.0.0.1) 4.00ms
+Thu, 11 Jan 2018 14:12:33 webrest.py[line:71] INFO 304 GET /about (127.0.0.1) 0.00ms

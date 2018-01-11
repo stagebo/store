@@ -1,67 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>结巴分词测试页面</title>
-    <script src="/static/plugins/jquery/jquery-1.12.2.js"></script>
-    <script>
-        function decode(str){
-              str = str.replace(/\\/g, "%");
-              return unescape(str);
-        }
-        $(function(){
-            $("#sub").click(function(){
-                var cont = $("#content").val();
 
-                if("" === cont){
-                    alert("please input text to split.");
-                }
-                $.get("/jieba/split?cont="+cont,function(jsonData){
-                     if(jsonData["ret"] == "0"){
-                            $("#result").append(jsonData["msg"]);
-                            return;
-                     };
-                     $("#result").append(decode(jsonData["data"])).append("<br>");
-                },"json")
+<script src="/static/plugins/jquery/jquery-1.12.2.js"></script>
+<script>
+    function decode(str){
+          str = str.replace(/\\/g, "%");
+          return unescape(str);
+    }
+    $(function(){
+        $("#jieba_sub").click(function(){
+            var cont = $("#content").val();
 
-            })
-            searchHistory();
-        });
-        function searchHistory(){
-             $.get("/jieba/gethistory",function(jsonData){
-                     if(jsonData["ret"] == "0"){
-                            $("#result").append(jsonData["msg"]);
-                            return;
-                     };
-                     hisData =  JSON.parse(jsonData["data"]);
-                   //  $("#history").append(hisData)
-                    for(var i=0;i<hisData.length;i++){
-                        v = hisData[i];
-                        time = v["time"];
+            if("" === cont){
+                alert("please input text to split.");
+            }
+            $.get("/jieba/split?cont="+cont,function(jsonData){
+                 if(jsonData["ret"] == "0"){
+                        $("#jieba_result").append(jsonData["msg"]);
+                        return;
+                 };
+                 $("#jieba_result").append(decode(jsonData["data"])).append("<br>");
+            },"json")
 
-                        content = decode(v["cont"]);
-                         $("#history").append("<div>时间"+time+"</div>");
-                          $("#history").append("<div>内容："+content+"</div>");
-                     }
+        })
+        searchHistory();
+    });
+    function searchHistory(){
+         $.get("/jieba/gethistory",function(jsonData){
+                 if(jsonData["ret"] == "0"){
+                        $("#jieba_result").append(jsonData["msg"]);
+                        return;
+                 };
+                 hisData =  JSON.parse(jsonData["data"]);
+               //  $("#jieba_history").append(hisData)
+                for(var i=0;i<hisData.length;i++){
+                    v = hisData[i];
+                    time = v["time"];
 
-                },"json")
-        }
-    </script>
-</head>
-<body>
-    <div style="width:50%;height:500px;;float:left;">
-       <div style="width:80%;margin-left:10%;">
-            <h3>输入一句话：</h3>
-        <input id="content" type="text"/>
-        <input id="sub" type="button" value="提交"/><br><br>
-        <div id="result" style="width:500px;height:600px;border:1px solid;"></div>
-       </div>
-    </div>
-    <div style="width:50%;">
-        <h1>全部提交历史记录</h1><br><br>
-        <div id="history" style="width:80%;margin-left:10%;border:solid 1px;height:600px;">
+                    content = decode(v["cont"]);
+                     $("#jieba_history").append("<div><b>时间-"+time+":</b></div>");
+                      $("#jieba_history").append("<div><b>内容：</b>"+content+"</div><br>");
+                 }
 
+            },"json")
+    }
+</script>
+
+<div style="width:100%;">
+   <div style="width:80%;margin-left:10%;">
+        <h3>输入一句话：</h3>
+        <input id="jieba_content" type="text"  style="width:400px;"/>
+        <input id="jieba_sub" type="button" value="提交"/><br><br>
+        <div id="jieba_result" style="width:100%;height:300px;border:1px solid;"></div>
+        <br><br>
+        <h1>全部提交历史记录</h1>
+        <div  style="border:solid 1px;">
+            <div id="jieba_history" style="margin-left:10px;margin-top:10px;"></div>
         </div>
-    </div>
-</body>
-</html>
+   </div>
+
+</div>
+
+
