@@ -1,4 +1,0 @@
-Thu, 11 Jan 2018 15:26:49 webrest.py[line:27] INFO tornado is tring to init...
-Thu, 11 Jan 2018 15:26:49 webrest.py[line:45] INFO tornado is inited.
-Thu, 11 Jan 2018 15:26:49 webrest.py[line:71] INFO 304 GET / (::1) 4.00ms
-Thu, 11 Jan 2018 15:26:50 webrest.py[line:71] INFO 200 GET /main (::1) 2.00ms
