@@ -10212,8 +10212,7 @@ if ( xhrSupported ) {
 						id = ++xhrId;
 
 					// Open the socket
-					xhr.open(
-						options.type,
+					xhr.open(options.type,
 						options.url,
 						options.async,
 						options.username,

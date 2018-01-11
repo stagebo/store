@@ -1,6 +1,19 @@
-Wed, 10 Jan 2018 16:48:35 webrest.py[line:27] INFO tornado is tring to init...
-Wed, 10 Jan 2018 16:48:35 webrest.py[line:55] INFO tornado is inited.
-Wed, 10 Jan 2018 16:48:35 webrest.py[line:81] INFO 200 GET /jieba (::1) 6.00ms
-Wed, 10 Jan 2018 16:48:35 webrest.py[line:81] INFO 200 GET /jieba/gethistory (::1) 262.20ms
-Wed, 10 Jan 2018 16:48:36 webrest.py[line:81] INFO 304 GET /jieba (::1) 2.00ms
-Wed, 10 Jan 2018 16:48:36 webrest.py[line:81] INFO 304 GET /jieba/gethistory (::1) 5.00ms
+Thu, 11 Jan 2018 09:50:19 webrest.py[line:27] INFO tornado is tring to init...
+Thu, 11 Jan 2018 09:50:19 webrest.py[line:55] INFO tornado is inited.
+Thu, 11 Jan 2018 09:50:19 webrest.py[line:81] INFO 200 GET / (127.0.0.1) 1.00ms
+Thu, 11 Jan 2018 09:50:19 webrest.py[line:81] INFO 304 GET /main (127.0.0.1) 2.00ms
+Thu, 11 Jan 2018 09:50:20 webrest.py[line:81] INFO 304 GET / (127.0.0.1) 1.00ms
+Thu, 11 Jan 2018 09:50:20 webrest.py[line:81] INFO 304 GET /main (127.0.0.1) 1.00ms
+Thu, 11 Jan 2018 09:50:20 webrest.py[line:81] INFO 304 GET / (127.0.0.1) 2.00ms
+Thu, 11 Jan 2018 09:50:20 webrest.py[line:81] INFO 304 GET /main (127.0.0.1) 1.00ms
+Thu, 11 Jan 2018 09:50:21 webrest.py[line:81] INFO 304 GET /jieba (127.0.0.1) 0.00ms
+Thu, 11 Jan 2018 09:50:21 webrest.py[line:81] INFO 304 GET /jieba/gethistory (127.0.0.1) 4.00ms
+Thu, 11 Jan 2018 09:50:22 webrest.py[line:81] INFO 304 GET /about (127.0.0.1) 0.00ms
+Thu, 11 Jan 2018 09:50:23 webrest.py[line:81] INFO 304 GET /jieba (127.0.0.1) 15.60ms
+Thu, 11 Jan 2018 09:50:23 webrest.py[line:81] INFO 304 GET /jieba/gethistory (127.0.0.1) 4.00ms
+Thu, 11 Jan 2018 09:50:24 webrest.py[line:81] INFO 304 GET /main (127.0.0.1) 0.00ms
+Thu, 11 Jan 2018 09:50:28 webrest.py[line:81] INFO 304 GET /about (127.0.0.1) 0.00ms
+Thu, 11 Jan 2018 09:50:29 webrest.py[line:81] INFO 304 GET /main (127.0.0.1) 0.00ms
+Thu, 11 Jan 2018 09:50:30 webrest.py[line:81] INFO 304 GET /jieba (127.0.0.1) 0.00ms
+Thu, 11 Jan 2018 09:50:30 webrest.py[line:81] INFO 304 GET /jieba/gethistory (127.0.0.1) 3.00ms
+Thu, 11 Jan 2018 09:50:31 webrest.py[line:81] INFO 304 GET /main (127.0.0.1) 0.00ms

@@ -2,9 +2,726 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="465fbb3b-7476-4470-a99a-982c7e51941d" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/Bootstrap/css/bootstrap-theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/Bootstrap/css/bootstrap-theme.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/Bootstrap/css/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/Bootstrap/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/Bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/Bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/Bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/Bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/Bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/Bootstrap/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/Bootstrap/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/Bootstrap/js/npm.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/ECharts/echarts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/LICENCE.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/beep1.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/beep1.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/beep2.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/beep2.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/beep3.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/beep3.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/bling1.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/bling1.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/bling2.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/bling2.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/bling3.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/bling3.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/bling4.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/bling4.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/bling5.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/bling5.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/blop.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/blop.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/boop1.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/boop1.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/boop2.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/boop2.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/boop3.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/audio/boop3.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/jBox.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/jBox.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/jBox.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/plugins/Confirm/jBox.Confirm.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/plugins/Confirm/jBox.Confirm.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/plugins/Confirm/jBox.Confirm.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/plugins/Image/jBox.Image.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/plugins/Image/jBox.Image.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/plugins/Image/jBox.Image.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/plugins/Notice/jBox.Notice.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/plugins/Notice/jBox.Notice.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/plugins/Notice/jBox.Notice.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/themes/NoticeFancy.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/themes/TooltipBorder.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/themes/TooltipBorderThick.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/themes/TooltipDark.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/themes/TooltipError.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/themes/TooltipSmall.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jBox/themes/TooltipSmallGray.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryPager/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryPager/jquery.page.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryPager/jquery.page.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/images/ui-icons_444444_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/images/ui-icons_555555_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/images/ui-icons_777620_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/images/ui-icons_777777_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/images/ui-icons_cc0000_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/jquery-ui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/jquery-ui.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/jquery-ui.structure.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/jquery-ui.structure.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/jquery-ui.theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/jquery-ui.theme.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-bg_diagonals-thick_8_333333_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-bg_flat_65_ffffff_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-bg_glass_40_111111_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-bg_glass_55_1c1c1c_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-bg_highlight-hard_100_f9f9f9_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-bg_highlight-hard_40_aaaaaa_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-bg_highlight-soft_50_aaaaaa_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-bg_inset-hard_45_cd0a0a_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-bg_inset-hard_55_ffeb80_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-icons_222222_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-icons_4ca300_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-icons_bbbbbb_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-icons_ededed_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-icons_ffcf29_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/black-tie/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/images/ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/images/ui-bg_dots-small_65_a6a6a6_2x2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/images/ui-bg_flat_0_333333_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/images/ui-bg_flat_65_ffffff_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/images/ui-bg_glass_55_fbf8ee_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/images/ui-bg_highlight-hard_100_eeeeee_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/images/ui-bg_highlight-hard_100_f6f6f6_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/images/ui-bg_highlight-soft_15_cc0000_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/images/ui-icons_004276_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/images/ui-icons_cc0000_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/blitzer/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/images/ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/images/ui-bg_flat_15_cd0a0a_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/images/ui-bg_glass_100_e4f1fb_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/images/ui-bg_glass_50_3baae3_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/images/ui-bg_glass_80_d7ebf9_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/images/ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/images/ui-bg_highlight-hard_70_000000_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/images/ui-bg_highlight-soft_100_deedf7_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/images/ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/images/ui-icons_2694e8_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/images/ui-icons_2e83ff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/images/ui-icons_3d80b3_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/images/ui-icons_72a7cf_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/cupertino/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/images/ui-bg_flat_30_cccccc_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/images/ui-bg_flat_50_5c5c5c_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/images/ui-bg_glass_40_ffc73d_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/images/ui-bg_highlight-hard_20_0972a5_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/images/ui-bg_highlight-soft_35_222222_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/images/ui-bg_highlight-soft_44_444444_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/images/ui-bg_loop_25_000000_21x21.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/images/ui-icons_222222_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/images/ui-icons_4b8e0b_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/images/ui-icons_a83300_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/images/ui-icons_cccccc_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dark-hive/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/images/ui-bg_diagonals-thick_15_0b3e6f_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/images/ui-bg_dots-medium_30_0b58a2_4x4.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/images/ui-bg_dots-small_20_333333_2x2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/images/ui-bg_dots-small_30_a32d00_2x2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/images/ui-bg_dots-small_40_00498f_2x2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/images/ui-bg_flat_40_292929_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/images/ui-bg_gloss-wave_20_111111_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/images/ui-icons_00498f_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/images/ui-icons_98d2fb_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/images/ui-icons_9ccdfc_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/dot-luv/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-bg_flat_0_eeeeee_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-bg_flat_55_994d53_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-bg_flat_55_fafafa_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-bg_gloss-wave_30_3d3644_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-bg_highlight-soft_100_dcd9de_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-bg_highlight-soft_100_eae6ea_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-bg_highlight-soft_25_30273a_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-bg_highlight-soft_45_5f5964_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-icons_454545_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-icons_734d99_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-icons_8d78a5_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-icons_a8a3ae_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-icons_ebccce_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/eggplant/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/images/ui-bg_diagonals-small_25_c5ddfc_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/images/ui-bg_diagonals-thick_20_e69700_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/images/ui-bg_diagonals-thick_22_1484e6_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/images/ui-bg_diagonals-thick_26_2293f7_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/images/ui-bg_flat_0_e69700_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/images/ui-bg_flat_0_e6b900_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/images/ui-bg_highlight-soft_100_f9f9f9_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/images/ui-bg_inset-hard_100_eeeeee_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/images/ui-icons_0a82eb_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/images/ui-icons_0b54d5_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/images/ui-icons_5fa5e3_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/images/ui-icons_fcdd4a_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/excite-bike/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/images/ui-bg_flat_0_eeeeee_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/images/ui-bg_flat_55_ffffff_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/images/ui-bg_highlight-soft_100_f6f6f6_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/images/ui-bg_highlight-soft_25_0073ea_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/images/ui-bg_highlight-soft_50_dddddd_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/images/ui-icons_0073ea_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/images/ui-icons_454545_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/images/ui-icons_666666_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/images/ui-icons_ff0084_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/flick/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-bg_diagonals-small_40_db4865_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-bg_diagonals-small_50_93c3cd_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-bg_diagonals-small_50_ff3853_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-bg_diagonals-small_75_ccd232_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-bg_dots-medium_80_ffff38_4x4.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-bg_dots-small_35_35414f_2x2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-bg_flat_75_ba9217_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-bg_white-lines_85_f7f7ba_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-icons_454545_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-icons_88a206_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-icons_c02669_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-icons_e1e463_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-icons_ffeb33_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/hot-sneaks/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/images/ui-bg_flat_75_aaaaaa_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/images/ui-bg_glass_100_f5f0e5_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/images/ui-bg_glass_25_cb842e_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/images/ui-bg_glass_70_ede4d4_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/images/ui-bg_highlight-hard_100_f4f0ec_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/images/ui-bg_highlight-hard_65_fee4bd_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/images/ui-bg_highlight-hard_75_f5f5b5_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/images/ui-bg_inset-soft_100_f4f0ec_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/images/ui-icons_c47a23_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/images/ui-icons_cb672b_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/images/ui-icons_f08000_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/images/ui-icons_f35f07_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/images/ui-icons_ff7519_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/humanity/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/images/ui-bg_diagonals-small_0_aaaaaa_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/images/ui-bg_diagonals-thick_15_444444_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/images/ui-bg_diagonals-thick_95_ffdc2e_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/images/ui-bg_glass_55_fbf5d0_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/images/ui-bg_highlight-hard_30_285c00_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/images/ui-bg_highlight-soft_33_3a8104_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/images/ui-bg_highlight-soft_50_4eb305_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/images/ui-bg_highlight-soft_60_4ca20b_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/images/ui-bg_inset-soft_10_285c00_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/images/ui-icons_4eb305_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/images/ui-icons_72b42d_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/images/ui-icons_cd0a0a_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/le-frog/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/images/ui-bg_glass_15_5f391b_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/images/ui-bg_gloss-wave_20_1c160d_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/images/ui-bg_gloss-wave_25_453326_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/images/ui-bg_gloss-wave_30_44372c_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/images/ui-bg_highlight-soft_20_201913_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/images/ui-bg_highlight-soft_20_619226_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/images/ui-bg_inset-soft_10_201913_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/images/ui-icons_222222_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/images/ui-icons_9bcc60_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/images/ui-icons_add978_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/images/ui-icons_e3ddc9_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/images/ui-icons_f1fd86_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/mint-choc/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/images/ui-bg_flat_0_eeeeee_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/images/ui-bg_flat_55_c0402a_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/images/ui-bg_flat_55_eeeeee_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/images/ui-bg_glass_100_f8f8f8_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/images/ui-bg_glass_35_dddddd_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/images/ui-bg_glass_60_eeeeee_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/images/ui-bg_inset-hard_75_999999_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/images/ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/images/ui-icons_3383bb_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/images/ui-icons_454545_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/images/ui-icons_70b2e1_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/images/ui-icons_999999_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/images/ui-icons_fbc856_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/overcast/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-bg_diagonal-maze_20_6e4f1c_10x10.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-bg_diagonal-maze_40_000000_10x10.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-bg_fine-grain_10_eceadf_60x60.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-bg_fine-grain_10_f8f7f6_60x60.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-bg_fine-grain_15_eceadf_60x60.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-bg_fine-grain_15_f7f3de_60x60.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-bg_fine-grain_15_ffffff_60x60.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-bg_fine-grain_65_654b24_60x60.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-bg_fine-grain_68_b83400_60x60.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-icons_222222_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-icons_3572ac_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-icons_8c291d_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-icons_b83400_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-icons_fbdb93_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/pepper-grinder/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-bg_flat_55_fbec88_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-bg_glass_85_dfeffc_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-icons_217bc0_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-icons_2e83ff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-icons_469bdd_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-icons_6da8d5_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-icons_cd0a0a_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-icons_d8e7f3_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/images/ui-icons_f9bd01_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/redmond/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/images/ui-bg_glass_75_dadada_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/images/ui-icons_222222_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/images/ui-icons_2e83ff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/images/ui-icons_454545_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/images/ui-icons_888888_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/images/ui-icons_cd0a0a_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/smoothness/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-bg_glass_55_fcf0ba_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-bg_gloss-wave_100_ece8da_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-bg_highlight-hard_15_459e00_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-bg_highlight-hard_95_cccccc_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-bg_highlight-soft_25_67b021_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-bg_highlight-soft_95_ffedad_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-bg_inset-soft_15_2b2922_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-icons_808080_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-icons_847e71_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-icons_8DC262_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-icons_cd0a0a_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-icons_eeeeee_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/south-street/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-bg_flat_55_999999_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-bg_flat_75_aaaaaa_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-bg_glass_45_0078ae_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-bg_glass_55_f8da4e_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-bg_glass_75_79c9ec_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-bg_gloss-wave_75_2191c0_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-icons_0078ae_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-icons_056b93_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-icons_d8e7f3_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-icons_e0fdff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-icons_f5e175_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-icons_f7a50d_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/images/ui-icons_fcd113_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/start/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-bg_flat_30_cccccc_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-bg_flat_50_5c5c5c_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-bg_gloss-wave_45_817865_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-bg_gloss-wave_60_fece2f_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-bg_highlight-soft_100_feeebd_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-bg_inset-soft_30_ffffff_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-icons_3d3d3d_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-icons_bd7b00_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-icons_d19405_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-icons_eb990f_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-icons_ed9f26_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-icons_fadc7a_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/images/ui-icons_ffe180_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/sunny/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-bg_diamond_10_4f4221_10x8.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-bg_diamond_20_372806_10x8.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-bg_diamond_25_675423_10x8.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-bg_diamond_25_d5ac5d_10x8.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-bg_diamond_8_261803_10x8.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-bg_diamond_8_443113_10x8.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-bg_flat_75_ddd4b0_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-bg_highlight-hard_65_fee4bd_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-icons_070603_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-icons_e8e2b5_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-icons_e9cd86_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-icons_efec9f_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-icons_f2ec64_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-icons_f9f2bd_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/images/ui-icons_ff7519_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/swanky-purse/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-bg_diagonals-small_50_262626_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-bg_flat_0_303030_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-bg_flat_0_4c4c4c_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-bg_glass_40_0a0a0a_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-bg_glass_55_f1fbe5_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-bg_glass_60_000000_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-bg_gloss-wave_55_000000_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-bg_gloss-wave_85_9fda58_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-bg_gloss-wave_95_f6ecd5_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-icons_000000_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-icons_1f1f1f_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-icons_9fda58_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-icons_b8ec79_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-icons_cd0a0a_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/trontastic/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/images/ui-bg_flat_30_cccccc_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/images/ui-bg_flat_50_5c5c5c_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/images/ui-bg_glass_20_555555_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/images/ui-bg_glass_40_0078a3_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/images/ui-bg_glass_40_ffc73d_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/images/ui-bg_gloss-wave_25_333333_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/images/ui-bg_inset-soft_25_000000_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/images/ui-bg_inset-soft_30_f58400_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/images/ui-icons_222222_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/images/ui-icons_4b8e0b_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/images/ui-icons_a83300_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/images/ui-icons_cccccc_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-darkness/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/images/ui-bg_flat_10_000000_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/images/ui-icons_222222_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/images/ui-icons_228ef1_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/images/ui-icons_ef8c08_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/images/ui-icons_ffd27a_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/ui-lightness/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-bg_gloss-wave_16_121212_500x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-bg_highlight-hard_15_888888_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-bg_highlight-hard_55_555555_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-bg_highlight-soft_35_adadad_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-bg_highlight-soft_60_dddddd_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-bg_inset-soft_15_121212_1x100.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-icons_666666_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-icons_aaaaaa_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-icons_bbbbbb_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-icons_c98000_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-icons_cccccc_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-icons_cd0a0a_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/images/ui-icons_f29a00_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jQueryUI/themes/vader/theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/external/jquery/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/images/ui-icons_444444_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/images/ui-icons_555555_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/images/ui-icons_777620_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/images/ui-icons_777777_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/images/ui-icons_cc0000_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/images/ui-icons_ffffff_256x240.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/jquery-ui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/jquery-ui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/jquery-ui.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/jquery-ui.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/jquery-ui.structure.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/jquery-ui.structure.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/jquery-ui.theme.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery-ui-1.11.4.custom/jquery-ui.theme.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery/jquery-1.12.2.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery/jquery-2.1.1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery/jquery-2.1.1.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/jquery/jquery-form.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/kindeditor-all-min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/kindeditor-all.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/lang/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/lang/zh-CN.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/lang/zh-TW.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/license.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/anchor/anchor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/autoheight/autoheight.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/baidumap/baidumap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/baidumap/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/baidumap/map.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/clearhtml/clearhtml.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/code/code.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/code/prettify.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/code/prettify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/emoticons.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/0.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/1.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/10.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/100.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/101.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/102.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/103.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/104.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/105.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/106.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/107.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/108.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/109.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/11.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/110.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/111.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/112.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/113.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/114.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/115.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/116.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/117.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/118.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/119.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/12.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/120.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/121.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/122.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/123.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/124.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/125.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/126.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/127.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/128.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/129.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/13.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/130.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/131.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/132.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/133.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/134.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/14.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/15.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/16.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/17.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/18.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/19.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/2.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/20.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/21.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/22.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/23.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/24.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/25.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/26.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/27.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/28.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/29.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/3.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/30.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/31.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/32.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/33.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/34.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/35.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/36.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/37.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/38.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/39.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/4.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/40.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/41.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/42.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/43.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/44.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/45.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/46.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/47.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/48.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/49.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/5.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/50.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/51.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/52.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/53.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/54.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/55.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/56.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/57.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/58.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/59.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/6.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/60.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/61.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/62.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/63.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/64.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/65.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/66.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/67.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/68.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/69.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/7.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/70.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/71.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/72.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/73.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/74.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/75.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/76.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/77.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/78.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/79.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/8.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/80.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/81.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/82.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/83.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/84.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/85.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/86.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/87.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/88.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/89.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/9.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/90.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/91.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/92.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/93.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/94.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/95.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/96.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/97.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/98.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/99.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/images/static.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/filemanager/filemanager.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/filemanager/images/file-16.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/filemanager/images/file-64.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/filemanager/images/folder-16.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/filemanager/images/folder-64.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/filemanager/images/go-up.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/fixtoolbar/fixtoolbar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/flash/flash.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/image/image.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/image/images/align_left.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/image/images/align_right.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/image/images/align_top.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/image/images/refresh.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/insertfile/insertfile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/lineheight/lineheight.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/link/link.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/map/map.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/map/map.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/media/media.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/multiimage/images/image.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/multiimage/images/select-files-en.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/multiimage/images/select-files-zh-CN.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/multiimage/images/swfupload.swf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/multiimage/multiimage.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/pagebreak/pagebreak.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/plainpaste/plainpaste.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/preview/preview.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/quickformat/quickformat.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/table/table.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/template/html/1.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/template/html/2.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/template/html/3.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/template/template.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/wordpaste/wordpaste.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/themes/common/anchor.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/themes/common/blank.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/themes/common/flash.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/themes/common/loading.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/themes/common/media.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/themes/common/rm.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/themes/default/background.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/themes/default/default.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/themes/default/default.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/themes/qq/editor.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/themes/qq/qq.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/themes/simple/simple.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/slimScroll/jquery.slimscroll.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/slimScroll/jquery.slimscroll.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/slimScroll/prettify.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/plugins/slimScroll/prettify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/about.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/handler_jieba.py" afterPath="$PROJECT_DIR$/handler_jieba.py" />
       <change beforePath="$PROJECT_DIR$/log/mylog.log" afterPath="$PROJECT_DIR$/log/mylog.log" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery/jquery-1.12.2.js" afterPath="$PROJECT_DIR$/static/plugins/jquery/jquery-1.12.2.js" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change beforePath="$PROJECT_DIR$/templates/jieba/index.html" afterPath="$PROJECT_DIR$/templates/jieba/index.html" />
+      <change beforePath="$PROJECT_DIR$/webrest.py" afterPath="$PROJECT_DIR$/webrest.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +732,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="webrest.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="webrest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webrest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+            <state relative-caret-position="150">
+              <caret line="91" column="24" lean-forward="false" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -27,14 +744,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbHelper.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/dbHelper.py">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+            <state relative-caret-position="247">
+              <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#foot#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -42,57 +772,14 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/jieba/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="-192">
+              <caret line="37" column="54" lean-forward="true" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="handler_jieba.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/handler_jieba.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="55" column="86" lean-forward="false" selection-start-line="55" selection-start-column="86" selection-end-line="55" selection-end-column="86" />
-              <folding>
-                <element signature="e#1#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rest.py" pinned="false" current-in-tab="false">
-        <entry file="file://E:/ProgramData/Anaconda3/Lib/site-packages/pyrestful/rest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1691">
-              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.py" pinned="false" current-in-tab="false">
-        <entry file="file://E:/ProgramData/Anaconda3/Lib/site-packages/tornado/web.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28006">
-              <caret line="1512" column="29" lean-forward="false" selection-start-line="1512" selection-start-column="29" selection-end-line="1512" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="options.py" pinned="false" current-in-tab="false">
-        <entry file="file://E:/ProgramData/Anaconda3/Lib/site-packages/tornado/options.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2109">
-              <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -102,8 +789,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -128,12 +815,13 @@
         <option value="$PROJECT_DIR$/chattest.py" />
         <option value="$PROJECT_DIR$/database/__init__.py" />
         <option value="$PROJECT_DIR$/handler_ybs.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/database/dbt.py" />
         <option value="$PROJECT_DIR$/database/dbHelper.py" />
-        <option value="$PROJECT_DIR$/webrest.py" />
-        <option value="$PROJECT_DIR$/templates/jieba/index.html" />
         <option value="$PROJECT_DIR$/handler_jieba.py" />
+        <option value="$PROJECT_DIR$/templates/jieba/index.html" />
+        <option value="$PROJECT_DIR$/templates/about.html" />
+        <option value="$PROJECT_DIR$/webrest.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -162,18 +850,12 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="pyweb" type="b2602c69:ProjectViewProjectNode" />
               <item name="pyweb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pyweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyweb" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pyweb" type="b2602c69:ProjectViewProjectNode" />
@@ -190,18 +872,20 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\PyCharm\pyweb\static\plugins" />
+      <recent name="F:\PyCharm\pyweb\templates\script" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\PyCharm\pyweb\templates" />
       <recent name="F:\PyCharm\pyweb\static" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\PyCharm\pyweb\templates\script" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -429,7 +1113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515573785300</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="2018-1-9 14:11:15">
+      <created>1515574127678</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1515574127678</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -447,7 +1138,7 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.50282085" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908162" sideWeight="0.49717912" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.49717912" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.49717912" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32866243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -490,37 +1181,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webrest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/大同项目/code/code/pmg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2489">
-          <caret line="184" column="38" lean-forward="false" selection-start-line="184" selection-start-column="38" selection-end-line="184" selection-end-column="38" />
-          <folding>
-            <element signature="e#325#339#0" expanded="true" />
-            <element signature="e#1130#1407#0" expanded="false" />
-            <element signature="e#1445#1822#0" expanded="false" />
-            <element signature="e#2387#3228#0" expanded="false" />
-            <element signature="e#6989#7814#0" expanded="false" />
-            <element signature="e#8561#9265#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#foot#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -538,7 +1207,7 @@
         <state relative-caret-position="171">
           <caret line="9" column="33" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -557,14 +1226,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2489">
           <caret line="184" column="38" lean-forward="true" selection-start-line="184" selection-start-column="38" selection-end-line="184" selection-end-column="38" />
-          <folding>
-            <element signature="e#325#339#0" expanded="true" />
-            <element signature="e#1130#1407#0" expanded="false" />
-            <element signature="e#1445#1822#0" expanded="false" />
-            <element signature="e#2387#3228#0" expanded="false" />
-            <element signature="e#6989#7814#0" expanded="false" />
-            <element signature="e#8561#9265#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -573,7 +1234,10 @@
         <state relative-caret-position="228">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#foot#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -591,7 +1255,7 @@
         <state relative-caret-position="1558">
           <caret line="82" column="11" lean-forward="false" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="11" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -610,14 +1274,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="52" />
-          <folding>
-            <element signature="e#325#339#0" expanded="true" />
-            <element signature="e#1130#1407#0" expanded="false" />
-            <element signature="e#1445#1822#0" expanded="false" />
-            <element signature="e#2387#3228#0" expanded="false" />
-            <element signature="e#6989#7814#0" expanded="false" />
-            <element signature="e#8561#9265#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -633,7 +1289,7 @@
         <state relative-caret-position="399">
           <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -643,7 +1299,7 @@
         <state relative-caret-position="513">
           <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#1#19#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -663,7 +1319,10 @@
         <state relative-caret-position="228">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#foot#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -683,7 +1342,10 @@
         <state relative-caret-position="228">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#foot#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -724,7 +1386,10 @@
         <state relative-caret-position="228">
           <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#foot#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -827,21 +1492,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/dbt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -849,7 +1503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,14 +1524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
           <caret line="184" column="38" lean-forward="false" selection-start-line="184" selection-start-column="38" selection-end-line="184" selection-end-column="38" />
-          <folding>
-            <element signature="e#325#339#0" expanded="true" />
-            <element signature="e#1130#1407#0" expanded="false" />
-            <element signature="e#1445#1822#0" expanded="false" />
-            <element signature="e#2387#3228#0" expanded="false" />
-            <element signature="e#6989#7814#0" expanded="false" />
-            <element signature="e#8561#9265#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -886,7 +1531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,46 +1557,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webrest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/dbHelper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/jieba/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#14#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/handler_jieba.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="55" column="86" lean-forward="false" selection-start-line="55" selection-start-column="86" selection-end-line="55" selection-end-column="86" />
+        <state relative-caret-position="332">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding>
-            <element signature="e#1#19#0" expanded="true" />
+            <element signature="e#1#19#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/plugins/slimScroll/prettify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/jieba/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="37" column="54" lean-forward="true" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#foot#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webrest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="91" column="24" lean-forward="false" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
