@@ -28,21 +28,23 @@ class JiebaHandler(pyrestful.rest.RestHandler):
                 "msg": "数据结构错误",
             })
         cont = self.get_query_argument("cont")
+        ip = self.request.remote_ip
         if not cont or cont == "":
             self.render("jieba/index.html")
             self.write(err)
 
 
-        sql = "insert into t_jieba values('%s','%s')"%(
+        sql = "insert into t_jieba values('%s','%s','%s')"%(
                     datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                    cont
+                    cont,
+                    ip
                 )
 
         if not dbHelper.database.execute_sql(sql):
             print("err")
             logging.warning("insert failed,sql:%s"%sql)
 
-        seg_list = jieba.cut(cont, cut_all=True)
+        seg_list = jieba.cut(cont, cut_all=False)
         data = "/".join(seg_list)
 
         self.write(json.dumps({
@@ -59,7 +61,8 @@ class JiebaHandler(pyrestful.rest.RestHandler):
         for item in data:
             json_data.append({
                 "time":str(item["f_time"]),
-                "cont":item['f_content']
+                "cont":item['f_content'],
+                "ip":item["f_ip"]
             })
 
         result = json.dumps({

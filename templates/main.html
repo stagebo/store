@@ -1,6 +1,27 @@
+<style>
+  path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash 5s linear infinite;
+    animation: dash 5s linear infinite;
+  }
+
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+</style>
+<img src="static/image/man.svg" style="width:30%;margin-left:35%;margin-top:20px;margin-bottom:50px;"/>
+
+
 <div class="card card-inverse card-success text-center">
   <div class="card-block">
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <blockquote class="card-blockquote">
       <p>做或不做，二者必居其一，要么全力以赴，要么全力退出。</p>
       <footer>post by@ <cite title="Source Title">尼古拉斯·波波</cite></footer>

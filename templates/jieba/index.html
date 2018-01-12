@@ -34,10 +34,11 @@
                 for(var i=0;i<hisData.length;i++){
                     v = hisData[i];
                     time = v["time"];
-
                     content = decode(v["cont"]);
-                    var html = '<div class="alert alert-success" role="alert"><strong>'+time+'</strong> <br>'+content+'</div>'
-                    //("#jieba_history").append("<div><b>时间-"+time+":</b></div>");
+                    ip = v["ip"];
+                    console.log(ip);
+                    var html = '<div class="alert alert-success" role="alert"><strong>'+time+'---IP://'+ip+'</addr><br></strong> <addr>'+content+'</div>'
+                    //("#jieba_history").append("<div><b>时间-"+time+":</b>---<addr>"+ip+"</addr></div>");
                     //$("#jieba_history").append("<div><b>内容：</b>"+content+"</div><br>");
                     $("#jieba_history").append(html);
                  }
