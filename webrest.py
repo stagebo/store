@@ -5,7 +5,8 @@ import logging
 import pymysql
 import configparser
 import sys
-
+import datetime
+import json
 from pyrestful import mediatypes
 from pyrestful.rest import get, post, put, delete
 from handler_jieba import JiebaHandler
@@ -83,6 +84,14 @@ class MainHadler(pyrestful.rest.RestHandler):
     @get(_path="/about")
     def about_page(self):
         self.render("about.html")
+
+    @get(_path="/time")
+    def get_time(self):
+        now = datetime.datetime.now()
+        tar = datetime.datetime(2018, 2, 12, 15, 30, 0)
+        d = tar - now
+        self.write(json.dumps({"days":d.days,"seconds":d.seconds}))
+
 
 if __name__ == '__main__':
 

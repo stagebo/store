@@ -1,10 +1,3 @@
-Fri, 12 Jan 2018 15:49:29 webrest.py[line:27] INFO tornado is tring to init...
-Fri, 12 Jan 2018 15:49:29 webrest.py[line:45] INFO tornado is inited.
-Fri, 12 Jan 2018 15:49:33 webrest.py[line:71] INFO 200 GET /jieba/gethistory (::1) 30.00ms
-Fri, 12 Jan 2018 15:49:34 webrest.py[line:71] INFO 304 GET /jieba/gethistory (::1) 29.00ms
-Fri, 12 Jan 2018 15:49:41 __init__.py[line:111] DEBUG Building prefix dict from the default dictionary ...
-Fri, 12 Jan 2018 15:49:41 __init__.py[line:131] DEBUG Loading model from cache C:\Users\WYB\AppData\Local\Temp\jieba.cache
-Fri, 12 Jan 2018 15:49:42 __init__.py[line:163] DEBUG Loading model cost 0.964 seconds.
-Fri, 12 Jan 2018 15:49:42 __init__.py[line:164] DEBUG Prefix dict has been built succesfully.
-Fri, 12 Jan 2018 15:49:42 webrest.py[line:71] INFO 200 GET /jieba/split?cont=%E5%85%A5%E4%B8%80%E5%8F%A5%E8%AF%9D%E7%82%B9%E5%87%BB%E6%8F%90%E4%BA%A4%E5%8D%B3 (::1) 1024.06ms
-Fri, 12 Jan 2018 15:49:44 webrest.py[line:71] INFO 200 GET /jieba/gethistory (::1) 31.00ms
+Fri, 12 Jan 2018 16:49:55 webrest.py[line:28] INFO tornado is tring to init...
+Fri, 12 Jan 2018 16:49:55 webrest.py[line:46] INFO tornado is inited.
+Fri, 12 Jan 2018 16:49:55 webrest.py[line:72] INFO 200 GET /time (::1) 0.00ms
