@@ -64,7 +64,7 @@ class JiebaHandler(pyrestful.rest.RestHandler):
                 "cont":item['f_content'],
                 "ip":item["f_ip"]
             })
-
+        print(data)
         result = json.dumps({
             "ret": "1",
             "msg": "",
