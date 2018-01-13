@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="465fbb3b-7476-4470-a99a-982c7e51941d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/20180113124820.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/mylog.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/mylog.log" afterPath="$PROJECT_DIR$/log/mylog.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webrest.py" afterPath="$PROJECT_DIR$/webrest.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,12 +33,11 @@
       <file leaf-file-name="webrest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webrest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-475">
-              <caret line="91" column="25" lean-forward="true" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+            <state relative-caret-position="486">
+              <caret line="109" column="26" lean-forward="true" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#1729#2209#0" expanded="false" />
-                <element signature="e#2248#2642#0" expanded="false" />
+                <element signature="e#1474#1954#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -457,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515574127678</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="2018-1-9 14:11:15">
+      <created>1515825419589</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1515825419589</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -821,12 +828,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webrest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-475">
-          <caret line="91" column="25" lean-forward="true" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+        <state relative-caret-position="486">
+          <caret line="109" column="26" lean-forward="true" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#1729#2209#0" expanded="false" />
-            <element signature="e#2248#2642#0" expanded="false" />
+            <element signature="e#1474#1954#0" expanded="false" />
           </folding>
         </state>
       </provider>

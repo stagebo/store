@@ -17,11 +17,7 @@ from tornado.log import access_log, app_log, gen_log
 from tornado.options import define,options
 sys.path.append("..")
 from database import dbHelper
-logging.basicConfig(level=logging.DEBUG,
-                format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
-                datefmt='%a, %d %b %Y %H:%M:%S',
-                filename='log/mylog.log',
-                filemode='w')
+
 
 class Application(pyrestful.rest.RestService):
     def __init__(self):
@@ -103,13 +99,18 @@ class MainHadler(pyrestful.rest.RestHandler):
 
 
 def copy_log():
-    logfile = "log/mylog.log"
+    logfile = "..\log\pyweb.log"
+    logpath = "..\log"
     cmd = ""
-    if not os.path.exists("log/mylog.log"):
+    print("init log file.")
+    print( os.path.exists(logfile))
+    if not os.path.exists(logfile):
+        print("create log files.")
+        os.makedirs(logpath)
         open(logfile, "w")
     elif "Win" in platform.architecture()[1]:
         try:
-            cmd = "copy log\mylog.log log\%s.log" % datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+            cmd = "copy %s %s\%s.log" % (logfile,logpath,datetime.datetime.now().strftime("%Y%m%d%H%M%S"))
         except:
             traceback.print_exc()
     elif "Lin" in platform.architecture()[1]:
@@ -118,9 +119,13 @@ def copy_log():
         print(cmd)
         p = os.popen(cmd)
         print(p.read())
+    logging.basicConfig(level=logging.DEBUG,
+                        format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
+                        datefmt='%a, %d %b %Y %H:%M:%S',
+                        filename=logfile,
+                        filemode='w')
 
 if __name__ == '__main__':
-
     copy_log()
     try:
         print("Start the service")
