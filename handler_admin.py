@@ -57,8 +57,5 @@ class AdminHandler(pyrestful.rest.RestHandler):
         else:
             self.redirect("login")
 
-    @get(_path="/admin/restart")
-    def restart_server(self):
-        os.system("python3 restart.py")
-        sys.exit(0)
+
 
