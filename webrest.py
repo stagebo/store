@@ -13,6 +13,7 @@ from pyrestful import mediatypes
 from pyrestful.rest import get, post, put, delete
 from handler_jieba import JiebaHandler
 from handler_ybs import DoctorHandler
+from handler_admin import AdminHandler
 from tornado.log import access_log, app_log, gen_log
 from tornado.options import define,options
 sys.path.append("..")
@@ -37,6 +38,7 @@ class Application(pyrestful.rest.RestService):
             MainHadler
            ,JiebaHandler
            ,DoctorHandler
+           ,AdminHandler
            # ,StaticHandler
         ]
         super(Application, self).__init__(handlers, **settings)

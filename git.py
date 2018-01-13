@@ -7,5 +7,5 @@ def win_push(cmd):
 
 if __name__ == "__main__":
     win_push("git add .")
-    win_push('git commit -m "script auto push, time %s"'%datetime.datetime.now().strftime("%Y%m%d%H%M%S"))
+    win_push('git commit -m "script auto push, time %s"'%datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     win_push('git push -u origin')
