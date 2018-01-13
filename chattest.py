@@ -6,7 +6,7 @@ chatbot = ChatBot(
 )
 
 # Train based on the english corpus
-#chatbot.train("chatterbot.corpus.english")
+# chatbot.train("chatterbot.corpus.english")
 
 # Get a response to an input statement
 print("start")

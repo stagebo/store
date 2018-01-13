@@ -24,8 +24,17 @@
 		//注册主页头部页面点击事件
 		$("a[itype='item-link']").click(function() {
 			var target = $(this).attr("target");
-			$.get( target, function(data) {
-				$("#cont").html(data);
+			$.ajax({
+			  url: target,
+			  type:'get',
+			  data: {},
+			  dataType:'html',
+			  success: function(data){
+			  	$("#cont").html(data);
+			  },
+			  error: function(){
+			  	alert("can not find this page.");
+			  }
 			});
 		});
 		//进站先浏览主页
@@ -77,6 +86,8 @@ body{
 						target="/main">主页</a></li>
 					<li class="nav-item"><a class="nav-link" itype="item-link"
 						href="javascript:void('');" target="/jieba">结巴分词测试</a></li>
+					<li class="nav-item"><a class="nav-link" itype="item-link"
+						href="javascript:void('');" target="/chatbot">聊天机器人</a></li>
 					<li class="nav-item"><a class="nav-link" itype="item-links"
 						href="http://www.stagebo.xyz:9000" target="/Message/getMessagePage">我的博客</a></li>
 					<li class="nav-item"><a class="nav-link" itype="item-link"

@@ -14,6 +14,7 @@ from pyrestful.rest import get, post, put, delete
 from handler_jieba import JiebaHandler
 from handler_ybs import DoctorHandler
 from handler_admin import AdminHandler
+from handler_chatbot import ChatbotHandler
 from tornado.log import access_log, app_log, gen_log
 from tornado.options import define,options
 sys.path.append("..")
@@ -39,6 +40,7 @@ class Application(pyrestful.rest.RestService):
            ,JiebaHandler
            ,DoctorHandler
            ,AdminHandler
+           ,ChatbotHandler
            # ,StaticHandler
         ]
         super(Application, self).__init__(handlers, **settings)

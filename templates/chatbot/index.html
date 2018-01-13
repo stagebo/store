@@ -1,0 +1,39 @@
+<div style="height:100%;width:100%">
+    <div class="alert alert-info" role="alert">
+    <strong>Hello</strong> welcome to chatbot,type some word to chat with the bot!
+</div>
+  <div id="chatbot_big_cont"  style="border:solid 1px;height:340px;overflow-y:scroll;">
+     <div id="chatbot_content" style="margin:10px 10px 10px 10px;">
+
+     </div>
+  </div>
+  <br>
+  <div class="input-group">
+    <div></div>
+    <input type="text" id="chatbot_question" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="请输入一句话" >
+    <span class="input-group-addon btn btn-primary" id="chatbot_send">发送</span>
+  </div>
+</div>
+<script>
+  $(function(){
+    $("#chatbot_send").click(function(){
+      $("#chatbot_big_cont").scrollTop(100000);
+      var question = $("#chatbot_question").val()
+      if(question === ''){
+        alert("please type some word!");
+        return;
+      }
+       var html = '<div class="alert alert-success" role="alert"><strong>me:</strong> <addr>'+question+'</div>'
+       $("#chatbot_content").append(html);
+      $.get("/chatbot/getresponse",{question:question},function(data){
+        replay = data["data"];
+        var html = '<div class="alert alert-success" role="alert"><strong>ChatBot:</strong> <addr>'+replay+'</div>'
+        $("#chatbot_content").append(html);
+        $("#chatbot_question").val("");
+
+        $("#chatbot_big_cont").scrollTop(100000);
+      });
+    });
+  });
+
+</script>
