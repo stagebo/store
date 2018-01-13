@@ -99,8 +99,9 @@ class MainHadler(pyrestful.rest.RestHandler):
 
 
 def copy_log():
-    logfile = "..\log\pyweb.log"
-    logpath = "..\log"
+    logpath = os.path.join("..", "log")
+    logfile =os.path.join(logpath,"pyweb.log") # "..\log\pyweb.log"
+    logbak = os.path.join(logpath,"%s.log"%datetime.datetime.now().strftime("%Y%m%d%H%M%S"))
     cmd = ""
     print("init log file.")
     print( os.path.exists(logfile))
@@ -110,11 +111,11 @@ def copy_log():
         open(logfile, "w")
     elif "Win" in platform.architecture()[1]:
         try:
-            cmd = "copy %s %s\%s.log" % (logfile,logpath,datetime.datetime.now().strftime("%Y%m%d%H%M%S"))
+            cmd = "copy %s %s" % (logfile,logbak)
         except:
             traceback.print_exc()
     elif "Lin" in platform.architecture()[1]:
-        sh = "cp log\mylog.log log\%s.log" % datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+        sh = "cp %s %s" % (logfile,logbak)
     if cmd != "":
         print(cmd)
         p = os.popen(cmd)
