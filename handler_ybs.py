@@ -8,7 +8,6 @@ from pyrestful.rest import get, post, put, delete
 from pyrestful import mediatypes
 
 
-
 class DoctorHandler(pyrestful.rest.RestHandler):
 
     @get(_path="/doctor")

@@ -16,6 +16,7 @@ import gl
 import hashlib  # 导入md5加密模块
 import time  # 导入时间模块
 import sys
+
 class AdminHandler(pyrestful.rest.RestHandler):
     @get(_path="/admin")
     def get_index(self):

@@ -14,7 +14,6 @@ import traceback
 
 
 class JiebaHandler(pyrestful.rest.RestHandler):
-
     @get(_path="/jieba")
     def getpage(self):
         self.render("jieba/index.html")
@@ -53,7 +52,7 @@ class JiebaHandler(pyrestful.rest.RestHandler):
             "data": data
             }))
 
-    @get(_path="/jieba/gethistory")
+    @get(_path="/jieba/gethistory",_produces=mediatypes.APPLICATION_JSON)
     def get_history(self):
         try:
             data = dbHelper.database.fetch_all("select * from t_jieba order by f_time desc")
@@ -66,17 +65,15 @@ class JiebaHandler(pyrestful.rest.RestHandler):
                     "ip":item["f_ip"]
                 })
             print(data)
-            result = json.dumps({
+            return {
                 "ret": "1",
                 "msg": "",
                 "data": json.dumps(json_data)
-                })
-
-            self.write(result)
+                }
         except :
             traceback.print_exc()
             logging.error("some err occur in search jiebahistory.")
-            self.write(json.dumps({
+            return {
                 "ret":0,
                 "msg":"some error occur in search jieba history."
-            }))
+            }

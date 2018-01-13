@@ -85,19 +85,20 @@ class MainHadler(pyrestful.rest.RestHandler):
     def about_page(self):
         self.render("about.html")
 
-    @get(_path="/love/nexttime")
+    @get(_path="/love/nexttime",_produces=mediatypes.APPLICATION_JSON)
     def get_time(self):
         now = datetime.datetime.now()
         tar = datetime.datetime(2018, 2, 12, 15, 30, 0)
         d = tar - now
-        self.write(json.dumps({"days":d.days,"seconds":d.seconds}))
+        return {"days":d.days,"seconds":d.seconds}
 
-    @get(_path="/love/hastime")
+    @get(_path="/love/hastime" ,_produces=mediatypes.APPLICATION_JSON)
     def get_sum_time(self):
         now = datetime.datetime.now()
         tar = datetime.datetime(2017,6,6,21,0,0)
         d = now - tar
-        self.write(json.dumps({"days": d.days, "seconds": d.seconds}))
+        return {"days": d.days, "seconds": d.seconds}
+
 
 
 def copy_log():
