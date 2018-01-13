@@ -110,13 +110,13 @@ def copy_log():
         print("create log files.")
         os.makedirs(logpath)
         open(logfile, "w")
-    elif "Win" in platform.platform():
+    elif "Windows" in platform.platform():
 
         try:
             cmd = "copy %s %s" % (logfile,logbak)
         except:
             traceback.print_exc()
-    elif "Lin" in platform.platform():
+    elif "Linux" in platform.platform():
         cmd = "cp %s %s" % (logfile,logbak)
     if cmd != "":
         print(cmd)
