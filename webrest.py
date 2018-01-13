@@ -117,7 +117,7 @@ def copy_log():
         except:
             traceback.print_exc()
     elif "Lin" in platform.platform():
-        sh = "cp %s %s" % (logfile,logbak)
+        cmd = "cp %s %s" % (logfile,logbak)
     if cmd != "":
         print(cmd)
         p = os.popen(cmd)
