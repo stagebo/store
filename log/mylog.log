@@ -1,2 +1,22 @@
-Sat, 13 Jan 2018 12:48:20 webrest.py[line:30] INFO tornado is tring to init...
-Sat, 13 Jan 2018 12:48:20 webrest.py[line:48] INFO tornado is inited.
+Sat, 13 Jan 2018 14:35:06 webrest.py[line:30] INFO tornado is tring to init...
+Sat, 13 Jan 2018 14:35:06 webrest.py[line:48] INFO tornado is inited.
+Sat, 13 Jan 2018 14:35:15 webrest.py[line:74] INFO 304 GET / (::1) 18.66ms
+Sat, 13 Jan 2018 14:35:16 webrest.py[line:74] INFO 304 GET /static/plugins/Bootstrap/css/bootstrap.css (::1) 534.43ms
+Sat, 13 Jan 2018 14:35:16 webrest.py[line:74] INFO 304 GET /static/plugins/jquery/jquery-1.12.2.js (::1) 33.08ms
+Sat, 13 Jan 2018 14:35:16 webrest.py[line:74] INFO 304 GET /static/plugins/Bootstrap/js/bootstrap.js (::1) 42.03ms
+Sat, 13 Jan 2018 14:35:16 webrest.py[line:74] INFO 304 GET /static/plugins/Bootstrap/css/bootstrap-theme.css (::1) 88.11ms
+Sat, 13 Jan 2018 14:35:16 webrest.py[line:74] INFO 304 GET /static/image/bgimg.jpg (::1) 23.01ms
+Sat, 13 Jan 2018 14:35:16 webrest.py[line:74] INFO 304 GET /main (::1) 43.53ms
+Sat, 13 Jan 2018 14:35:16 webrest.py[line:74] INFO 304 GET /static/image/man.svg (::1) 8.01ms
+Sat, 13 Jan 2018 14:35:16 webrest.py[line:74] WARNING 404 GET /stagic/image/favicon.ico (::1) 1.00ms
+Sat, 13 Jan 2018 14:35:25 webrest.py[line:74] INFO 200 GET /love/hastime (::1) 1.00ms
+Sat, 13 Jan 2018 14:35:25 webrest.py[line:74] WARNING 404 GET /favicon.ico (::1) 1.00ms
+Sat, 13 Jan 2018 14:35:34 webrest.py[line:74] INFO 200 GET /love/hastime (::1) 1.82ms
+Sat, 13 Jan 2018 14:35:35 webrest.py[line:74] INFO 200 GET /love/hastime (::1) 1.01ms
+Sat, 13 Jan 2018 14:35:35 webrest.py[line:74] INFO 304 GET /love/hastime (::1) 1.99ms
+Sat, 13 Jan 2018 14:35:36 webrest.py[line:74] INFO 200 GET /love/hastime (::1) 2.00ms
+Sat, 13 Jan 2018 14:35:36 webrest.py[line:74] INFO 304 GET /love/hastime (::1) 2.00ms
+Sat, 13 Jan 2018 14:35:37 webrest.py[line:74] INFO 200 GET /love/hastime (::1) 1.01ms
+Sat, 13 Jan 2018 14:35:37 webrest.py[line:74] INFO 304 GET /love/hastime (::1) 1.00ms
+Sat, 13 Jan 2018 14:35:41 webrest.py[line:74] INFO 200 GET /love/nexttime (::1) 1.00ms
+Sat, 13 Jan 2018 14:35:43 webrest.py[line:74] INFO 200 GET /love/nexttime (::1) 1.01ms
