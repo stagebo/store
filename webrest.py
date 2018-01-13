@@ -7,6 +7,8 @@ import configparser
 import sys
 import datetime
 import json
+import platform
+import traceback
 from pyrestful import mediatypes
 from pyrestful.rest import get, post, put, delete
 from handler_jieba import JiebaHandler
@@ -93,8 +95,26 @@ class MainHadler(pyrestful.rest.RestHandler):
         self.write(json.dumps({"days":d.days,"seconds":d.seconds}))
 
 
+def copy_log():
+    logfile = "log/mylog.log"
+    cmd = ""
+    if not os.path.exists("log/mylog.log"):
+        open(logfile, "w")
+    elif "Win" in platform.architecture()[1]:
+        try:
+            cmd = "copy log\mylog.log log\%s.log" % datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+        except:
+            traceback.print_exc()
+    elif "Lin" in platform.architecture()[1]:
+        sh = "cp log\mylog.log log\%s.log" % datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+    if cmd != "":
+        print(cmd)
+        p = os.popen(cmd)
+        print(p.read())
+
 if __name__ == '__main__':
 
+    copy_log()
     try:
         print("Start the service")
         app = Application()

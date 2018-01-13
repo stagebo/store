@@ -10,7 +10,7 @@ from database import dbHelper
 import logging
 from pyrestful.rest import get, post, put, delete
 from pyrestful import mediatypes
-
+import traceback
 
 
 class JiebaHandler(pyrestful.rest.RestHandler):
@@ -55,20 +55,28 @@ class JiebaHandler(pyrestful.rest.RestHandler):
 
     @get(_path="/jieba/gethistory")
     def get_history(self):
-        data = dbHelper.database.fetch_all("select * from t_jieba order by f_time desc")
-        json_data = []
+        try:
+            data = dbHelper.database.fetch_all("select * from t_jieba order by f_time desc")
+            json_data = []
 
-        for item in data:
-            json_data.append({
-                "time":str(item["f_time"]),
-                "cont":item['f_content'],
-                "ip":item["f_ip"]
-            })
-        print(data)
-        result = json.dumps({
-            "ret": "1",
-            "msg": "",
-            "data": json.dumps(json_data)
-            })
+            for item in data:
+                json_data.append({
+                    "time":str(item["f_time"]),
+                    "cont":item['f_content'],
+                    "ip":item["f_ip"]
+                })
+            print(data)
+            result = json.dumps({
+                "ret": "1",
+                "msg": "",
+                "data": json.dumps(json_data)
+                })
 
-        self.write(result)
+            self.write(result)
+        except :
+            traceback.print_exc()
+            logging.error("some err occur in search jiebahistory.")
+            self.write(json.dumps({
+                "ret":0,
+                "msg":"some error occur in search jieba history."
+            }))
