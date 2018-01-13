@@ -104,19 +104,19 @@ def copy_log():
     logbak = os.path.join(logpath,"%s.log"%datetime.datetime.now().strftime("%Y%m%d%H%M%S"))
     cmd = ""
     print("init log file.")
-    print("platform info:%s, %s" % (platform.architecture()[1],platform.architecture()[0]))
+    print("platform info:%s" % platform.platform())
     print( os.path.exists(logfile))
     if not os.path.exists(logfile):
         print("create log files.")
         os.makedirs(logpath)
         open(logfile, "w")
-    elif "Win" in platform.architecture()[1]:
+    elif "Win" in platform.platform():
 
         try:
             cmd = "copy %s %s" % (logfile,logbak)
         except:
             traceback.print_exc()
-    elif "Lin" in platform.architecture()[1]:
+    elif "Lin" in platform.platform():
         sh = "cp %s %s" % (logfile,logbak)
     if cmd != "":
         print(cmd)
