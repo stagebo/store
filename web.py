@@ -99,7 +99,10 @@ class MainHadler(pyrestful.rest.RestHandler):
         now = datetime.datetime.now()
         tar = datetime.datetime(2017,6,6,21,0,0)
         d = now - tar
-        return {"days": d.days, "seconds": d.seconds}
+        return {
+            "days": d.days,
+            "seconds": d.seconds
+        }
 
 
 
@@ -116,7 +119,6 @@ def copy_log():
         os.makedirs(logpath)
         open(logfile, "w")
     elif "Windows" in platform.platform():
-
         try:
             cmd = "copy %s %s" % (logfile,logbak)
         except:
