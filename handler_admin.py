@@ -40,7 +40,7 @@ class AdminHandler(pyrestful.rest.RestHandler):
     def get_login(self):
         self.render("admin/login.html")
 
-    @post(_path="/admin/login")
+    @post(_path="/admin/login",_produces=mediatypes.APPLICATION_JSON)
     def post_login(self):
         user = self.get_argument('user')  # 接收用户输入的登录账号
         pwd = self.get_argument('pwd')  # 接收用户输入的登录密码
@@ -56,7 +56,10 @@ class AdminHandler(pyrestful.rest.RestHandler):
             self.set_cookie('xr_cookie', key, expires_days=1)  # 将密串作为cookie值写入浏览器
             self.redirect("index")  # 跳转到查看页面
         else:
-            self.redirect("login")
+            return {
+                "rel":0,
+                "msg":"用户名或密码错误！"
+            }
 
 
 

@@ -1,2 +1,2 @@
 echo web is starting...
-nohup python webrest.py &
+python web.py

@@ -21,19 +21,29 @@
 
 <script type="text/javascript">
 	$(function() {
-
+		$("#login_submit").click(function(){
+			var username = $("#username").val();
+			var password = $("#password").val();
+			console.log(username);
+			$.post("",{"user":username,"pwd":password},function(jsonData){
+				if(jsonData["rel"] == "0"){
+					alert(jsonData["msg"]);
+				}
+			});
+		});
 	});
 </script>
 <style>
 
-.base-footer {
+.login-footer {
 	position: fixed;
 	bottom: 0px;
 	width: 100%;
 	height: 20px;
+	z-index:999;
 }
 
-.base-bg-img{
+.login-bg-img{
 	 background-image:url("../static/image/bgimg.jpg");
 	 position:fixed;
 	 top:0;
@@ -44,14 +54,35 @@
 	 background-repeat:no-repeat;
 	 z-index:-10;
 }
+.login-form{
+	width:500px;
+	height:300px;
+	margin-left:40%;
+	margin-top:10%;
+}
 
 </style>
 </head>
 
 <body>
-	<div class="base-bg-img"></div>
+	<div class="login-bg-img"></div>
+	<div class="login-form">
+		<div class="input-group input-group-lg">
+		  <span class="input-group-addon" id="username">username:</span>
+		  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+		</div>
+		<br>
+		<div class="input-group input-group-lg">
+		  <span class="input-group-addon" id="password">password:</span>
+		  <input type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
+		</div>
+		<br>
+		<button type="button" id="login_submit" class="btn btn-primary" style="width:100%;">登录</button>
+	</div>
 
-	<foot class="base-footer">
+
+
+	<foot class="login-footer">
 		<div style="width:100%;text-align:center">@copyright 2017 --stagebo</div>
 	</foot>
 </body>
