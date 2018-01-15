@@ -64,7 +64,6 @@ class JiebaHandler(pyrestful.rest.RestHandler):
                     "cont":item['f_content'],
                     "ip":item["f_ip"]
                 })
-            print(data)
             return {
                 "ret": "1",
                 "msg": "",
