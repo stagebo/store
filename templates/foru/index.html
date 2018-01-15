@@ -1,1 +1,52 @@
-<h1>this is for you page.</h1>
+<script src="../static/plugins/jquery/jquery-1.12.2.js"></script>
+<div id="foru_life_container" >
+
+</div>
+<style>
+    .span-item{
+        width:12px;
+        height:12px;
+        margin-left:2px;
+        margin-top:2px;
+        float:left;
+    }
+    .span-item1{
+       background-color:#222;
+    }
+    .span-item2{
+        background-color:yellow;
+    }
+    .span-item3{
+         background-color:green;
+    }
+</style>
+<script>
+    $(function(){
+        initGrid(40,200);
+    });
+    function initGrid(n1,n2){
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+        sum = 30*30;
+        var item = ['<div class="span-item span-item1"></div>','<div class="span-item span-item2"></div>','<div class="span-item span-item3"></div>'];
+        html = "";
+        var idx = 0;
+        for(var i=0;i<30;i++){
+            for(var j=0;j<30;j++){
+                aim=0;
+                if(idx<n1){
+                    aim = 0;
+                }else if(idx < n2){
+                    aim = 1;
+                }else{
+                    aim = 2;
+                }
+                it = item[aim];
+                html+=it;
+            }
+            html+='<br>';
+            idx += 1;
+        }
+        $("#foru_life_container").html(html);
+    }
+</script>

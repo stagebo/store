@@ -39,6 +39,8 @@
 		});
 		//进站先浏览主页
 		$("a.active").click();
+		//初始化base_foru按钮
+		initBaseForu();
 		//登录TODO
 		$("#signin_button").click(function() {
 			/* $("#personal_bar").show();
@@ -51,6 +53,11 @@
 			$("#sign_bar").show();
 		});
 	});
+	function initBaseForu(){
+		$.get("/foru/lineforu","",function(jsonData){
+			$("#base_foru").html(jsonData["days"]);
+		});
+	}
 </script>
 <style>
 .main-container {
@@ -104,7 +111,7 @@ body{
 					<li class="nav-item"><a class="nav-link" itype="item-link"
 						href="javascript:void('');" target="/about">关于</a></li>
 					<li class="nav-item"><a class="nav-link" itype="item-link"
-						href="javascript:void('');" target="/foru">222</a></li>
+						href="javascript:void('');" target="/foru" id="base_foru">222</a></li>
 				</ul>
 
 				<div style="float:right;display:none;" class="padding-top-5" id="sign_bar">

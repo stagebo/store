@@ -30,7 +30,7 @@ class ForuHandler(pyrestful.rest.RestHandler):
         result = {
             "days":timedel.days,
             "seconds":timedel.seconds,
-            "allseconds":timedel*24*60*60+timedel.seconds
+            "allseconds":timedel.days*24*60*60+timedel.seconds
         }
         return result;
 
