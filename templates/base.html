@@ -65,18 +65,29 @@
 .base-footer {
 	position: fixed;
 	bottom: 0px;
-	background-color: #888;
 	width: 100%;
 	height: 20px;
 }
 body{
-    background-image:url("static/image/bgimg.jpg");
+	font-familly:'微软雅黑';
+}
+.base-bg-img{
+	 background-image:url("static/image/bgimg.jpg");
+	 position:fixed;
+	 top:0;
+	 left:0;
+	 height:100%;
+	 width:100%;
+	 background-position:center 0;
+	 background-repeat:no-repeat;
+	 z-index:-10;
 }
 
 </style>
 </head>
 
 <body>
+	<div class="base-bg-img"></div>
 	<div>
 		<div class="container">
 			<div class="navbar navbar-inverse navbar-fixed-top">
@@ -121,7 +132,7 @@ body{
 	</div>
 
 	<foot class="base-footer">
-		<div style="width:100%;text-align:center">@copyright 2017</div>
+		<div style="width:100%;text-align:center">@copyright 2017 --stagebo</div>
 	</foot>
 </body>
 </html>
