@@ -2,14 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>后台登陆</title>
+    <title>用户登陆</title>
+    <link rel="stylesheet" href="../static/plugins/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/plugins/Bootstrap/css/bootstrap-theme.css">
+
+
+    <script src="../static/plugins/jquery/jquery-1.12.2.js"></script>
+    <script src="../static/plugins/Bootstrap/js/bootstrap.js"></script>
+    <style>
+        .login-bg-img{
+             background-image:url("../static/image/bgimg.jpg");
+             position:fixed;
+             top:0;
+             left:0;
+             height:100%;
+             width:100%;
+             background-position:center 0;
+             background-repeat:no-repeat;
+             z-index:-10;
+        }
+        .login-form{
+            width:500px;
+            height:300px;
+            border:1px solid;
+            margin-left:50%;;
+            margin-top:10%;
+
+        }
+    </style>
 </head>
 <body>
-    <h1>this is login page. </h1>
-    <form action="" method="post">
-        <input type="input" name="user" value="admin"/>
-        <input type="input" name="pwd" value="admin"/>
-        <input type="submit" value="tijiao"/>
-    </form>
+    	<div class="login-bg-img"></div>
+        <div id="login_form" class="login-form">
+
+        </div>
 </body>
 </html>
