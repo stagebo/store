@@ -22,5 +22,16 @@ class ForuHandler(pyrestful.rest.RestHandler):
     def get_index(self):
         self.render("foru/index.html")
 
+    @get(_path="/foru/lineforu",_produces=mediatypes.APPLICATION_JSON)
+    def get_days(self):
+        tar = datetime.datetime(2017,6,6,21,0,0)
+        now = datetime.datetime.now()
+        timedel = now - tar
+        result = {
+            "days":timedel.days,
+            "seconds":timedel.seconds,
+            "allseconds":timedel*24*60*60+timedel.seconds
+        }
+        return result;
 
 
