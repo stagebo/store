@@ -1,1 +1,1 @@
-nohup python3 webrest.py &
+nohup python3 web.py &
