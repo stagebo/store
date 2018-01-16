@@ -15,5 +15,5 @@ def kill_pyweb():
         elif "tale" in proc and "java" in proc:
             print(proc, pid)
 if __name__ == "__main__":
-    kill_pyweb
-    #os.system("bash start.sh")
+    kill_pyweb()
+    os.system("bash start.sh")
