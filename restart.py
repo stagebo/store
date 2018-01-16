@@ -10,6 +10,7 @@ def kill_pyweb():
         pid = vars[1]  # get pid
         proc = ' '.join(vars[7:])  # get proc description
         if "web.py" in proc and "python" in proc:
+            print("kill %s is starting"%pid)
             os.system("kill %s"%pid)
         elif "tale" in proc and "java" in proc:
             print(proc, pid)
