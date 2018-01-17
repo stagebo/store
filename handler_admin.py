@@ -79,12 +79,13 @@ class AdminHandler(pyrestful.rest.RestHandler):
         ret = {
             "ret":1
         }
-        if self._right():
-            result = os.popen(cmd)
-            ret["msg"] = result
-        else :
-            ret["msg"] = "Permission denied!"
         try:
+            if self._right():
+                result = os.popen(cmd)
+                ret["msg"] = result
+            else :
+                ret["msg"] = "Permission denied!"
+
             ret["msg"] = result
             print(cmd)
             self.write(cmd)
