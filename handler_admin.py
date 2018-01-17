@@ -83,7 +83,7 @@ class AdminHandler(pyrestful.rest.RestHandler):
         try:
             if self._right():
                 result = os.popen(cmd)
-                result = result.replace('\n','<br>')
+                result = result.replace('\\n','<br>')
                 ret["msg"] = result
             else :
                 ret["msg"] = "Permission denied!"
