@@ -84,8 +84,10 @@ class AdminHandler(pyrestful.rest.RestHandler):
             ret["msg"] = result
         else :
             ret["msg"] = "Permission denied!"
-        ret["msg"] = result
-        print(cmd)
-        self.finish(result.read())
-        return result.read()
+        try:
+            ret["msg"] = result
+            print(cmd)
+            self.finish(result.read())
 
+        except:
+            self.finish("error")
