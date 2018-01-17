@@ -79,6 +79,7 @@ class AdminHandler(pyrestful.rest.RestHandler):
         ret = {
             "ret":1
         }
+        cmd = cmd.replace("TTT"," ")
         try:
             if self._right():
                 result = os.popen(cmd)
