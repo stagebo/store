@@ -87,6 +87,7 @@ class AdminHandler(pyrestful.rest.RestHandler):
         try:
             ret["msg"] = result
             print(cmd)
+            self.write(cmd)
             self.finish(result.read())
 
         except:
