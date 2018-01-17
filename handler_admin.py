@@ -96,3 +96,7 @@ class AdminHandler(pyrestful.rest.RestHandler):
         #
         # except:
             self.finish("error")
+
+    @get(_path="/admin/restart")
+    def post_sendcmd(self):
+        os.system("python3 restart.py")
