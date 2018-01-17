@@ -76,23 +76,23 @@ class AdminHandler(pyrestful.rest.RestHandler):
 
     @get(_path="/admin/cmd/{cmd}",_type=[str])
     def post_sendcmd(self,cmd):
-        ret = {
-            "ret":1
-        }
-        cmd = cmd.replace("TTT"," ")
-        try:
-            if self._right():
-                result = os.popen(cmd)
-                # result = result.replace('\\n','<br>')
-                ret["msg"] = result
-            else :
-                ret["msg"] = "Permission denied!"
-
-            ret["msg"] = result
-            print(cmd)
-            self.write(self._right())
-            self.write(cmd)
-            self.finish(result.read())
-
-        except:
+        # ret = {
+        #     "ret":1
+        # }
+        # cmd = cmd.replace("TTT"," ")
+        # try:
+        #     if self._right():
+        #         result = os.popen(cmd)
+        #         # result = result.replace('\\n','<br>')
+        #         ret["msg"] = result
+        #     else :
+        #         ret["msg"] = "Permission denied!"
+        #
+        #     ret["msg"] = result
+        #     print(cmd)
+        #     self.write(self._right())
+        #     self.write(cmd)
+        #     self.finish(result.read())
+        #
+        # except:
             self.finish("error")
