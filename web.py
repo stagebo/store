@@ -138,6 +138,7 @@ def copy_log():
                         filemode='w')
 
 if __name__ == '__main__':
+
     copy_log()
     try:
         print("Start the service")
