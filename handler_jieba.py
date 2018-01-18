@@ -88,7 +88,8 @@ class JiebaHandler(pyrestful.rest.RestHandler):
                 json_data.append({
                     "time":str(item["f_time"]),
                     "cont":item['f_content'],
-                    "ip":item["f_city"]
+                    "ip":item["f_ip"],
+                    "city":item["f_city"]
                 })
             return {
                 "ret": "1",
