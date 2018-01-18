@@ -136,15 +136,16 @@ def copy_log():
                         datefmt='%a, %d %b %Y %H:%M:%S',
                         filename=logfile,
                         filemode='w')
-
-if __name__ == '__main__':
-
+def main():
     copy_log()
     try:
         print("Start the service")
         app = Application()
         app.listen(app.web_port)
-        print("access port %s"%app.web_port)
+        print("access port %s" % app.web_port)
         tornado.ioloop.IOLoop.instance().start()
     except KeyboardInterrupt:
         print("\nStop the service")
+
+if __name__ == '__main__':
+    main()
