@@ -81,9 +81,14 @@ class MainHadler(pyrestful.rest.RestHandler):
     @get(_path="/")
     def index(self):
         self.render("base.html")
+
     @get(_path="/main")
     def main_page(self):
         self.render("main.html")
+
+    @get(_path="/doc")
+    def main_doc(self):
+        self.render("doc/html/index.html")
 
     @get(_path="/about")
     def about_page(self):
