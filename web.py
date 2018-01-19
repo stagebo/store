@@ -33,7 +33,7 @@ class Application(pyrestful.rest.RestService):
             static_path=os.path.join(os.path.dirname(__file__), "static"),
             xsrf_cookies=False,
             debug = False,
-            #login_url = "/login",
+            login_url = "admin/login",
             log_function = self.mylog
         )
         handlers=[

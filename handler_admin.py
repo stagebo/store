@@ -49,13 +49,9 @@ class AdminHandler(pyrestful.rest.RestHandler):
     @post(_path="/admin/login",_produces=mediatypes.APPLICATION_JSON)
     def post_login(self):
 
-        pstr = str(self.request.body, encoding="utf-8")
-        params = json.loads(pstr)
-        user = params['user']  # 接收用户输入的登录账号
-        pwd = params['pwd']  # 接收用户输入的登录密码
-
+        user = self.get_body_argument("user",None)
+        pwd = self.get_body_argument("pwd",None)
         if user == 'admin' and pwd == 'admin':  # 判断用户的密码和账号
-
             obj = hashlib.md5()  # 创建md5加密对象
             obj.update(bytes(str(time.time()), encoding="utf-8"))  # 获取系统当前时间，传入到md5加密对象里加密
             key = obj.hexdigest()  # 获取加密后的密串
