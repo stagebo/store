@@ -5,6 +5,27 @@ import traceback
 database = None
 
 class DbHelper():
+    """ 数据库工具函数.
+
+            构造函数::
+
+                    - dbhost: host name
+                    - param dbuid: database user name
+                    - param dbpwd: database password
+                    - param dbport: database port
+                    - param dbname: database name
+
+        """
+    """
+    数据库工具函数.
+    arguments:
+    :param dbhost: host name
+    :param dbuid: database user name
+    :param dbpwd: database password
+    :param dbport: database port
+    :param dbname: database name
+
+       """
     def __init__(self,dbhost,dbuid,dbpwd,dbport,dbname):
         dbconfig = {
             'host': dbhost,
@@ -25,6 +46,15 @@ class DbHelper():
 
 
     def execute_sql(self,sql):
+        """
+             - 功能:    执行sql
+             - 参数:    sql       string
+             - 返回值:
+                        * 正确,True.
+                        * 错误:False
+             - 异常: mysql Error
+
+        """
         if not sql and sql=="":
             return False
         try:
@@ -37,6 +67,15 @@ class DbHelper():
             return False
 
     def fetch_one(self,sql):
+        """
+             - 功能:    查询一条结果
+             - 参数:    sql       string
+             - 返回值:
+                        * 正确,(data set).
+                        * 错误:None
+             - 异常: mysql Error
+
+        """
         if not sql and sql=="":
             return None
         try:
@@ -49,6 +88,15 @@ class DbHelper():
             return None
 
     def fetch_all(self, sql):
+        """
+             - 功能:    查询所有结果
+             - 参数:    sql       string
+             - 返回值:
+                        * 正确,[data set list].
+                        * 错误:None
+             - 异常: mysql Error
+
+        """
         if not sql and sql == "":
             return None
         try:

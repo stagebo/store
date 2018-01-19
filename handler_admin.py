@@ -18,7 +18,14 @@ import time  # 导入时间模块
 import sys
 
 class AdminHandler(pyrestful.rest.RestHandler):
+    """
+        this is admin handler api.
 
+        this object provides some method to query and controll system
+
+        :param None:
+
+        """
     def _right(self):
         # return True
         hq_cookie = self.get_cookie('xr_cookie')  # 获取浏览器cookie
@@ -47,8 +54,17 @@ class AdminHandler(pyrestful.rest.RestHandler):
         self.render("admin/login.html")
 
     @post(_path="/admin/login",_produces=mediatypes.APPLICATION_JSON)
-    def post_login(self):
 
+    def post_login(self):
+        """
+             - 功能:    登陆后台.
+             - URL:     /admin/login
+             - HTTP:    POST
+             - 参数:    无
+             - 返回值:
+                        * 正确,{"rel": 1,"msg": "" }
+                        * 错误:{ "rel":0,"msg":"用户名或密码错误！" }
+        """
         user = self.get_body_argument("user",None)
         pwd = self.get_body_argument("pwd",None)
         if user == 'admin' and pwd == 'admin':  # 判断用户的密码和账号
@@ -72,6 +88,15 @@ class AdminHandler(pyrestful.rest.RestHandler):
 
     @get(_path="/admin/cmd/{cmd}",_type=[str])
     def post_sendcmd(self,cmd):
+        """
+        - 功能:    执行CMD命令.
+        - URL:     /admin/cmd/{cmd}
+        - HTTP:    POST
+        - 参数:    无
+        - 返回值:
+                   * 正确,{"rel": 1,"msg": "" }
+                   * 错误:{ "rel":0,"msg":"err！" }
+        """
         # ret = {
         #     "ret":1
         # }
@@ -91,8 +116,17 @@ class AdminHandler(pyrestful.rest.RestHandler):
         #     self.finish(result.read())
         #
         # except:
-            self.finish("error")
+        self.finish("error")
 
     @get(_path="/admin/restart")
     def post_sendcmd(self):
+        """
+        - 功能:    重启系统.
+        - URL:     /admin/restart
+        - HTTP:    GET
+        - 参数:    无
+        - 返回值:
+                   * 正确,{"rel": 1,"msg": "" }
+                   * 错误:{ "rel":0,"msg":"err！" }
+        """
         os.system("python3 restart.py")
