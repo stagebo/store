@@ -11,6 +11,7 @@ from database import dbHelper
 import logging
 from pyrestful.rest import get, post, put, delete
 from pyrestful import mediatypes
+from database import redisdb
 import traceback
 import gl
 import hashlib  # 导入md5加密模块
@@ -71,6 +72,8 @@ class AdminHandler(pyrestful.rest.RestHandler):
             obj = hashlib.md5()  # 创建md5加密对象
             obj.update(bytes(str(time.time()), encoding="utf-8"))  # 获取系统当前时间，传入到md5加密对象里加密
             key = obj.hexdigest()  # 获取加密后的密串
+            rd = self.application.redis
+
             gl.gl_session[key] = {}  # 将密串作为下标到container字典里，创建一个新空字典
             gl.gl_session[key]['username'] = user  # 字典里的键为yhm，值为用户名
             gl.gl_session[key]['password'] = pwd  # 字典里的键为mim，值为用户密码
