@@ -2,6 +2,7 @@
 from chatterbot import ChatBot
 
 gl_session={}
+gl_rd = None
 gl_chatbot = ChatBot(
     'Ron Obvious',
     trainer='chatterbot.trainers.ChatterBotCorpusTrainer'

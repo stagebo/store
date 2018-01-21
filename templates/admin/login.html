@@ -31,7 +31,7 @@
 			var password = $("#password").val();
 			console.log(username);
 
-			$.post("/admin/login",JSON.stringify({"user":username,"pwd":password}),function(jsonData){
+			$.post("/admin/login",{"user":username,"pwd":password},function(jsonData){
 				if(jsonData["rel"] == "0"){
 					alert(jsonData["msg"]);
 					return;

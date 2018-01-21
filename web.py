@@ -19,13 +19,16 @@ from handler_foru import ForuHandler
 from tornado.log import access_log, app_log, gen_log
 from tornado.options import define,options
 sys.path.append("..")
-from database import dbHelper
-
+from database import dbHelper,redisdb
+import gl
 
 class Application(pyrestful.rest.RestService):
     def __init__(self):
         self.cf = configparser.ConfigParser()
         self.read_config()
+        # 内存数据库
+        self.redis = redisdb.RedisDb()
+
         logging.info("tornado is tring to init...")
         settings= dict(
             #cookie_secret="SBwKSjz3SCWo04t68f/FOY7fPKZI20JYje1IYPBrxaM=",
@@ -33,7 +36,7 @@ class Application(pyrestful.rest.RestService):
             static_path=os.path.join(os.path.dirname(__file__), "static"),
             xsrf_cookies=False,
             debug = False,
-            #login_url = "/login",
+            login_url = "admin/login",
             log_function = self.mylog
         )
         handlers=[
@@ -81,9 +84,14 @@ class MainHadler(pyrestful.rest.RestHandler):
     @get(_path="/")
     def index(self):
         self.render("base.html")
+
     @get(_path="/main")
     def main_page(self):
         self.render("main.html")
+
+    @get(_path="/doc")
+    def main_doc(self):
+        self.render("doc/html/index.html")
 
     @get(_path="/about")
     def about_page(self):
@@ -106,6 +114,15 @@ class MainHadler(pyrestful.rest.RestHandler):
             "seconds": d.seconds
         }
 
+    @get(_path="/admin/redis", _produces=mediatypes.APPLICATION_JSON)
+    def redis_test(self):
+        rd = self.application.redis
+        rd.set("time",'time is close.')
+        d = rd.get("time")
+
+        return {
+            'time':d
+        }
 
 
 def copy_log():
