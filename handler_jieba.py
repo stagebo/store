@@ -69,33 +69,7 @@ class JiebaHandler(pyrestful.rest.RestHandler):
             # data = dbHelper.database.fetch_all("select * from t_jieba order by f_time desc")
             sql = "select * from t_jieba order by f_time desc"
             data = dbHelper.database.execute(sql)
-            # print(data)
-            json_data = []
             ret = json.dumps(data)
-            # print(ret)
-            # dbFile = 'ip2region/data/ip2region.db'
-            # searcher = ip2region.ip2Region.Ip2Region(dbFile)
-            # for item in data:
-                # if not item["f_city"]:
-                #     ip = item["f_ip"]
-                #     if ip == "::1":
-                #         data = {'city': 127, "region": u"本地"}
-                #         city = data["region"]
-                #     else:
-                #         data = searcher.btreeSearch(ip)
-                #         city = data["region"].decode('utf-8')
-                #     print(city)
-                #     sql = "update t_jieba set f_city = '%s' where f_ip = '%s'"%(city,ip)
-                #     print(sql)
-                #     dbHelper.database.execute_sql(sql)
-
-                # json_data.append({
-                #     "time":str(item["f_time"]),
-                #     "cont":item['f_content'],
-                #     "ip":item["f_ip"],
-                #     "city":item["f_city"]
-                # })
-
             return {
                 "ret": "1",
                 "msg": "",
