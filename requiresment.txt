@@ -1,0 +1,6 @@
+tornado
+tornado-mysql
+jieba
+chatterbot
+pymysql
+pyrestful
