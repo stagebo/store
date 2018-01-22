@@ -74,7 +74,7 @@ class JiebaHandler(pyrestful.rest.RestHandler):
             sdb = self.application.db
             # data = yield tornado.gen.Task(sdb.execute, sql)
             data = yield sdb.execute(sql)
-            print(data)
+
             # data = dbHelper.database.fetch_all("select * from t_jieba order by f_time desc")
             # data = dbHelper.database.execute(sql)
             ret = json.dumps(data)
