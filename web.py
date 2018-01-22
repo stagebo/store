@@ -57,7 +57,7 @@ class Application(pyrestful.rest.RestService):
         ]
         super(Application, self).__init__(handlers, **settings)
         # TODO 取消原始数据库连接工具
-        dbHelper.database=dbHelper.DbHelper(self.mysql_host,self.mysql_uid,self.mysql_pwd,self.mysql_port,self.mysql_db)
+        # dbHelper.database=dbHelper.DbHelper(self.mysql_host,self.mysql_uid,self.mysql_pwd,self.mysql_port,self.mysql_db)
 
         self.db = syncdb.SyncDb(self.mysql_host, self.mysql_port, self.mysql_uid, self.mysql_pwd, self.mysql_db)
         logging.info("tornado is inited.")
@@ -155,9 +155,7 @@ def copy_log():
     elif "Linux" in platform.platform():
         cmd = "cp %s %s" % (logfile,logbak)
     if cmd != "":
-        print(cmd)
         p = os.popen(cmd)
-        print(p.read())
     logging.basicConfig(level=logging.DEBUG,
                         format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
                         datefmt='%a, %d %b %Y %H:%M:%S',

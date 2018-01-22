@@ -21,11 +21,10 @@ class ChatbotHandler(pyrestful.rest.RestHandler):
     @get(_path="/chatbot")
     def get_index(self):
         self.render("chatbot/index.html")
+
     @get(_path="/chatbot/getresponse",_produces=mediatypes.APPLICATION_JSON)
     def get_response(self,question):
-        print(question)
         rel = str(gl.gl_chatbot.get_response(question))
-        print(str(rel))
         return {"data":rel}
 
 

@@ -18,7 +18,9 @@
   $(function(){
     $("#chatbot_send").click(function(){
       $("#chatbot_big_cont").scrollTop(100000);
+
       var question = $("#chatbot_question").val()
+       $("#chatbot_question").val("");
       if(question === ''){
         alert("please type some word!");
         return;
