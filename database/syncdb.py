@@ -11,7 +11,8 @@ class SyncDb():
 
         self.db = pools.Pool(
             dict(host=mysql_host, port=mysql_port, user=mysql_uid, passwd=mysql_pwd,db=mysql_db, charset='utf8mb4'),
-            max_idle_connections=1,
+            max_idle_connections=3,
+            max_open_connections=20,
             max_recycle_sec=3)
 
     @gen.coroutine
