@@ -42,7 +42,7 @@ class JiebaHandler(pyrestful.rest.RestHandler):
         else:
             data = searcher.btreeSearch(ip)
             city = data["region"].decode('utf-8')
-        print(cont)
+
         sql = "insert into t_jieba values('%s','%s','%s','%s')"%(
                     datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                     cont,
@@ -58,7 +58,7 @@ class JiebaHandler(pyrestful.rest.RestHandler):
         seg_list = jieba.cut(cont, cut_all=False)
         data = "/".join(seg_list)
 
-        self.write(json.dumps({
+        self.finish(json.dumps({
             "ret": "1",
             "msg": "",
             "data": data
