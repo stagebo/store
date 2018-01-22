@@ -1,1 +1,1 @@
-__all__ = ["dbHelper","redisdb"]
+__all__ = ["dbHelper","redisdb","syncdb"]
