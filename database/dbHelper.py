@@ -1,6 +1,7 @@
 import pymysql
 import sys
 import traceback
+import logging
 
 database = None
 
@@ -44,6 +45,22 @@ class DbHelper():
             print("connect error")
             traceback.print_exc()
 
+    def execute(self, sql):
+        refdata = []
+        try:
+            self.cursor.execute(sql)
+            for row in self.cursor.fetchall():
+                row_json = {}
+                for i,value in enumerate(row):
+                    row_json[value] = str(row[value])
+                refdata.append(row_json)
+        except pymysql.Error as e:
+            # 打印错误，会打印到日志中。
+            print(e)
+            # 抛出异常，系统管理员可得到通知
+            logging.error(e)
+            refdata = []
+        return refdata
 
     def execute_sql(self,sql):
         """

@@ -66,12 +66,16 @@ class JiebaHandler(pyrestful.rest.RestHandler):
     @get(_path="/jieba/gethistory",_produces=mediatypes.APPLICATION_JSON)
     def get_history(self):
         try:
-            data = dbHelper.database.fetch_all("select * from t_jieba order by f_time desc")
+            # data = dbHelper.database.fetch_all("select * from t_jieba order by f_time desc")
+            sql = "select * from t_jieba order by f_time desc"
+            data = dbHelper.database.execute(sql)
+            # print(data)
             json_data = []
-
+            ret = json.dumps(data)
+            # print(ret)
             # dbFile = 'ip2region/data/ip2region.db'
             # searcher = ip2region.ip2Region.Ip2Region(dbFile)
-            for item in data:
+            # for item in data:
                 # if not item["f_city"]:
                 #     ip = item["f_ip"]
                 #     if ip == "::1":
@@ -85,17 +89,17 @@ class JiebaHandler(pyrestful.rest.RestHandler):
                 #     print(sql)
                 #     dbHelper.database.execute_sql(sql)
 
-                json_data.append({
-                    "time":str(item["f_time"]),
-                    "cont":item['f_content'],
-                    "ip":item["f_ip"],
-                    "city":item["f_city"]
-                })
+                # json_data.append({
+                #     "time":str(item["f_time"]),
+                #     "cont":item['f_content'],
+                #     "ip":item["f_ip"],
+                #     "city":item["f_city"]
+                # })
 
             return {
                 "ret": "1",
                 "msg": "",
-                "data": json.dumps(json_data)
+                "data": ret
                 }
         except Exception as e:
             traceback.print_exc()
