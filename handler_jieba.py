@@ -12,13 +12,14 @@ from pyrestful.rest import get, post, put, delete
 from pyrestful import mediatypes
 import traceback
 import ip2region.ip2Region
-
+from tornado import gen
 class JiebaHandler(pyrestful.rest.RestHandler):
     @get(_path="/jieba")
     def getpage(self):
         self.render("jieba/index.html")
 
-
+    @tornado.web.asynchronous
+    @tornado.gen.engine
     @get(_path="/jieba/split")
     def post_data(self):
         # self.write("123")
@@ -29,7 +30,6 @@ class JiebaHandler(pyrestful.rest.RestHandler):
         cont = self.get_query_argument("cont")
         ip = self.request.remote_ip
         if not cont or cont == "":
-            self.render("jieba/index.html")
             self.write(err)
 
         # 定位IP
@@ -42,15 +42,16 @@ class JiebaHandler(pyrestful.rest.RestHandler):
         else:
             data = searcher.btreeSearch(ip)
             city = data["region"].decode('utf-8')
-
+        print(cont)
         sql = "insert into t_jieba values('%s','%s','%s','%s')"%(
                     datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                     cont,
                     ip,
                     city
                 )
-
-        if not dbHelper.database.execute_sql(sql):
+        rel = self.application.db.execute_sql(sql)
+        if not rel:
+        # if not dbHelper.database.execute_sql(sql):
             print("err")
             logging.warning("insert failed,sql:%s"%sql)
 
@@ -63,18 +64,26 @@ class JiebaHandler(pyrestful.rest.RestHandler):
             "data": data
             }))
 
-    @get(_path="/jieba/gethistory",_produces=mediatypes.APPLICATION_JSON)
+    @tornado.web.asynchronous
+    @tornado.gen.engine
+    # @gen.coroutine
+    @get(_path="/jieba/gethistory")
     def get_history(self):
         try:
-            # data = dbHelper.database.fetch_all("select * from t_jieba order by f_time desc")
             sql = "select * from t_jieba order by f_time desc"
-            data = dbHelper.database.execute(sql)
+            sdb = self.application.db
+            # data = yield tornado.gen.Task(sdb.execute, sql)
+            data = yield sdb.execute(sql)
+            print(data)
+            # data = dbHelper.database.fetch_all("select * from t_jieba order by f_time desc")
+            # data = dbHelper.database.execute(sql)
             ret = json.dumps(data)
-            return {
+            result =  {
                 "ret": "1",
                 "msg": "",
                 "data": ret
                 }
+            self.finish(result)
         except Exception as e:
             traceback.print_exc()
             logging.error("some err occur in search jiebahistory.")

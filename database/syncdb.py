@@ -10,13 +10,17 @@ class SyncDb():
     def __init__(self,mysql_host, mysql_port, mysql_uid, mysql_pwd,mysql_db):
 
         self.db = pools.Pool(
-            dict(host=mysql_host, port=mysql_port, user=mysql_uid, passwd=mysql_pwd,db=mysql_db),
+            dict(host=mysql_host, port=mysql_port, user=mysql_uid, passwd=mysql_pwd,db=mysql_db, charset='utf8mb4'),
             max_idle_connections=1,
             max_recycle_sec=3)
 
     @gen.coroutine
     def execute(self,sql):
         cur = yield self.db.execute(sql)
+        # for row in cur.fetchall():
+        #     print(row)
+        #     for i,v in enumerate(row):
+        #         print(i,v)
         reldata = [dict((cur.description[i][0],str(v)) for i, v in enumerate(row)) for row in cur.fetchall()]
         return reldata
 

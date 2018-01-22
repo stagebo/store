@@ -12,7 +12,7 @@ from pyrestful.rest import get, post, put, delete
 from pyrestful import mediatypes
 import traceback
 import ip2region.ip2Region
-from tornado import gen
+
 class JiebaHandler(pyrestful.rest.RestHandler):
     @get(_path="/jieba")
     def getpage(self):
@@ -63,25 +63,18 @@ class JiebaHandler(pyrestful.rest.RestHandler):
             "data": data
             }))
 
-    @tornado.web.asynchronous
-    @tornado.gen.engine
-    # @gen.coroutine
-    @get(_path="/jieba/gethistory")
+    @get(_path="/jieba/gethistory",_produces=mediatypes.APPLICATION_JSON)
     def get_history(self):
         try:
-            sql = "select * from t_jieba order by f_time desc"
-            sdb = self.application.db
-            # data = yield tornado.gen.Task(sdb.execute, sql)
-            data = yield sdb.execute(sql)
             # data = dbHelper.database.fetch_all("select * from t_jieba order by f_time desc")
-            # data = dbHelper.database.execute(sql)
+            sql = "select * from t_jieba order by f_time desc"
+            data = dbHelper.database.execute(sql)
             ret = json.dumps(data)
-            result =  {
+            return {
                 "ret": "1",
                 "msg": "",
                 "data": ret
                 }
-            self.finish(result)
         except Exception as e:
             traceback.print_exc()
             logging.error("some err occur in search jiebahistory.")

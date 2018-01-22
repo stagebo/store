@@ -11,7 +11,7 @@ import platform
 import traceback
 from pyrestful import mediatypes
 from pyrestful.rest import get, post, put, delete
-from handler_jieba1 import JiebaHandler
+from handler_jieba import JiebaHandler
 from handler_ybs import DoctorHandler
 from handler_admin import AdminHandler
 from handler_chatbot import ChatbotHandler
@@ -19,15 +19,8 @@ from handler_foru import ForuHandler
 from tornado.log import access_log, app_log, gen_log
 from tornado.options import define,options
 sys.path.append("..")
-from database import dbHelper,redisdb,syncdb
+from database import dbHelper,redisdb
 import gl
-
-from tornado import ioloop, gen
-from tornado_mysql import pools
-
-
-
-
 
 class Application(pyrestful.rest.RestService):
     def __init__(self):
@@ -56,10 +49,7 @@ class Application(pyrestful.rest.RestService):
            # ,StaticHandler
         ]
         super(Application, self).__init__(handlers, **settings)
-        # TODO 取消原始数据库连接工具
         dbHelper.database=dbHelper.DbHelper(self.mysql_host,self.mysql_uid,self.mysql_pwd,self.mysql_port,self.mysql_db)
-
-        self.db = syncdb.SyncDb(self.mysql_host, self.mysql_port, self.mysql_uid, self.mysql_pwd, self.mysql_db)
         logging.info("tornado is inited.")
 
     def read_config(self):
