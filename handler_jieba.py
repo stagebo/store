@@ -91,14 +91,16 @@ class JiebaHandler(pyrestful.rest.RestHandler):
                     "ip":item["f_ip"],
                     "city":item["f_city"]
                 })
+
             return {
                 "ret": "1",
                 "msg": "",
                 "data": json.dumps(json_data)
                 }
-        except :
+        except Exception as e:
             traceback.print_exc()
             logging.error("some err occur in search jiebahistory.")
+            logging.error(e)
             return {
                 "ret":0,
                 "msg":"some error occur in search jieba history."
