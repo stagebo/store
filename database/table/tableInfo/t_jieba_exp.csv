@@ -1,0 +1,5 @@
+f_name,f_cname,f_type,f_length,f_dec,f_showtype,f_unit,f_beneed,f_pkey,f_groupindex,f_groupname,f_order,f_note,f_readonly,f_null
+f_time,f_time,T,32,0,string,,1,0,1,common,1,,1,0
+f_content,f_content,C,1024,0,string,,1,0,1,common,2,,1,0
+f_ip,f_ip,C,32,0,string,,1,0,1,common,3,,0,0
+f_city,f_city,C,128,0,string,,1,0,1,common,-1,,1,1
