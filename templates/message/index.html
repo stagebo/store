@@ -1,17 +1,18 @@
 <script src="../static/plugins/jquery/jquery-1.12.2.js"></script>
-<div class="page-header">
+<div>
     <h1>留言板
-        <small></small>
+        <small>留下你的痕迹，少年~</small>
     </h1>
 
     <form role="form">
         <div class="form-group">
             <textarea class="form-control" rows="5" id="message_textarea" placeholder="万水千山总是情，留下一句行不行！"></textarea>
             <br>
-            <button type="button" class="btn btn-primary" id="message_submit">提交</button>
+            <button type="button" class="btn btn-primary " id="message_submit">提交</button>
+
         </div>
     </form>
-
+    <hr>
     <div class="alert alert-success" role="alert">
         <strong>Heads up!</strong> This alert needs your attention,
         but it's not super important.
@@ -39,7 +40,11 @@
 <script>
     $(function(){
         $("#message_submit").click(function(){
-            alert("还没想好怎么排版呢！敬请期待吧");
+            var message = $("#message_textarea").val();
+            if("" === message){
+                return;
+            }
+            alert("还没想好怎么排版呢！敬请期待吧"+message);
         });
     });
 </script>
