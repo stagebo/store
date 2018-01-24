@@ -16,6 +16,7 @@ from handler_ybs import DoctorHandler
 from handler_admin import AdminHandler
 from handler_chatbot import ChatbotHandler
 from handler_foru import ForuHandler
+from handler_message import  MessageHandler
 from tornado.log import access_log, app_log, gen_log
 from tornado.options import define,options
 sys.path.append("..")
@@ -47,13 +48,13 @@ class Application(pyrestful.rest.RestService):
             log_function = self.mylog
         )
         handlers=[
-            MainHadler
-           ,JiebaHandler
-           ,DoctorHandler
-           ,AdminHandler
-           ,ChatbotHandler
-           ,ForuHandler
-           # ,StaticHandler
+            MainHadler,
+            JiebaHandler,
+            DoctorHandler,
+            AdminHandler,
+            ChatbotHandler,
+            ForuHandler,
+            MessageHandler,
         ]
         super(Application, self).__init__(handlers, **settings)
         # TODO 取消原始数据库连接工具
@@ -87,7 +88,6 @@ class Application(pyrestful.rest.RestService):
         request_time = 1000.0 * handler.request.request_time()
         log_method("%d %s %.2fms", handler.get_status(),
                    handler._request_summary(), request_time)
-
 
 #
 class MainHadler(pyrestful.rest.RestHandler):
@@ -161,6 +161,7 @@ def copy_log():
                         datefmt='%a, %d %b %Y %H:%M:%S',
                         filename=logfile,
                         filemode='w')
+
 def main():
     copy_log()
     try:
