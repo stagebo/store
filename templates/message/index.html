@@ -42,6 +42,7 @@
         $("#message_submit").click(function(){
             var message = $("#message_textarea").val();
             if("" === message){
+                alert("请输入！");
                 return;
             }
             alert("还没想好怎么排版呢！敬请期待吧"+message);
