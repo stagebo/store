@@ -41,6 +41,12 @@
                     time = v["f_time"];
                     content = decode(v["f_content"]);
                     city = v["f_city"];
+                    try{
+                        city = city.split("|")[3];
+                    }catch(err){
+                        console.error("city is not correct format.");
+                        console.error(err);
+                    }
 
                     var html = '<div class="alert alert-success" role="alert"><strong>'+time+'---'+city+'</addr><br></strong> <addr>'+content+'</div>'
                     //("#jieba_history").append("<div><b>时间-"+time+":</b>---<addr>"+ip+"</addr></div>");
