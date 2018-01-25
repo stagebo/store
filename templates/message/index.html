@@ -7,10 +7,32 @@
     <form role="form">
         <div class="form-group">
             <textarea class="form-control" rows="5" id="message_textarea" placeholder="万水千山总是情，留下一句行不行！"></textarea>
-            <br>
-            <button type="button" class="btn btn-primary " id="message_submit">提交</button>
+            <!--<br>-->
+            <!--<button type="button" class="btn btn-primary " id="message_submit">提交</button>-->
 
         </div>
+    </form>
+
+    <form class="form-inline">
+      <label class="sr-only" for="message_input_nickname">Name</label>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <div class="input-group-addon">昵称</div>
+        <input type="text" class="form-control" id="message_input_nickname" placeholder="匿名游客">
+      </div>
+
+        <label class="sr-only" for="messager_contact">联系方式</label>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <div class="input-group-addon">邮箱</div>
+        <input type="text" class="form-control " id="messager_contact" placeholder="保密">
+      </div>
+
+      <label class="sr-only" for="message_input_city">Username</label>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <div class="input-group-addon">地点</div>
+        <input type="text" class="form-control " disabled id="message_input_city" placeholder="天津市">
+      </div>
+
+      <button type="button" id="message_submit" class="btn btn-primary">提&nbsp;&nbsp;交</button>
     </form>
     <hr>
     <div class="alert alert-success" role="alert">
@@ -23,29 +45,36 @@
         but it's not super important.
     </div>
 
-    <div class="alert alert-success" role="alert">
-        <strong>Heads up!</strong> This alert needs your attention,
-        but it's not super important.
-    </div>
-
-    <div class="alert alert-success" role="alert">
-        <strong>天津市</strong> 这里的山路十八弯
-        <br>
-        <div class="alert alert-success" role="alert">
-            <strong>北京市</strong> 这里的山路十八弯123
-        </div>
-    </div>
 </div>
 
 <script>
     $(function(){
         $("#message_submit").click(function(){
             var message = $("#message_textarea").val();
+            var nickname = $("#message_input_nickname").val();
+
             if("" === message){
                 alert("请输入！");
                 return;
             }
-            alert("还没想好怎么排版呢！敬请期待吧"+message);
+            data = {
+                "nickname":nickname,
+                "message":message,
+            };
+            $.ajax({
+                type:'post',
+                url:'/message/submit_message',
+                data:data,
+                dataType:'json',
+                success:function(jsonData){
+                    alert(JSON.stringify(jsonData));
+
+                    $("#message_textarea").val('');
+                },
+                error:function(err){
+                    alert("留言失败！");
+                }
+            });
         });
     });
 </script>
