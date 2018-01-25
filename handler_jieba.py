@@ -12,6 +12,7 @@ from pyrestful.rest import get, post, put, delete
 from pyrestful import mediatypes
 import traceback
 import ip2region.ip2Region
+import gl
 from tornado import gen
 class JiebaHandler(pyrestful.rest.RestHandler):
     @get(_path="/jieba")
@@ -33,8 +34,8 @@ class JiebaHandler(pyrestful.rest.RestHandler):
             self.write(err)
 
         # 定位IP
-        dbFile = 'ip2region/data/ip2region.db'
-        searcher = ip2region.ip2Region.Ip2Region(dbFile)
+        # dbFile = 'ip2region/data/ip2region.db'
+        searcher = gl.gl_ip_searcher #ip2region.ip2Region.Ip2Region(dbFile)
         method = 1
         if ip == "::1":
             data = {'city':127,"region":u"本地"}
@@ -49,7 +50,7 @@ class JiebaHandler(pyrestful.rest.RestHandler):
                     ip,
                     city
                 )
-        rel = self.application.db.execute_sql(sql)
+        rel = yield self.application.db.execute_sql(sql)
         if not rel:
         # if not dbHelper.database.execute_sql(sql):
             print("err")

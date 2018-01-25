@@ -20,10 +20,10 @@
         <input type="text" class="form-control" id="message_input_nickname" placeholder="匿名游客">
       </div>
 
-        <label class="sr-only" for="messager_contact">联系方式</label>
+        <label class="sr-only" for="messager_email">联系方式</label>
       <div class="input-group mb-2 mr-sm-2 mb-sm-0">
         <div class="input-group-addon">邮箱</div>
-        <input type="text" class="form-control " id="messager_contact" placeholder="保密">
+        <input type="text" class="form-control " id="messager_email" placeholder="保密">
       </div>
 
       <label class="sr-only" for="message_input_city">Username</label>
@@ -35,31 +35,66 @@
       <button type="button" id="message_submit" class="btn btn-primary">提&nbsp;&nbsp;交</button>
     </form>
     <hr>
-    <div class="alert alert-success" role="alert">
-        <strong>Heads up!</strong> This alert needs your attention,
-        but it's not super important.
-    </div>
+    <div id="msg_history">
 
-    <div class="alert alert-success" role="alert">
-        <strong>Heads up!</strong> This alert needs your attention,
-        but it's not super important.
     </div>
+    <!--<div class="alert alert-success" role="alert">-->
+        <!--<strong>Heads up!</strong> This alert needs your attention,-->
+        <!--but it's not super important.-->
+    <!--</div>-->
+
 
 </div>
 
 <script>
+    function formatMessage(msg){
+
+        var city = msg["f_city"];
+        var content = msg['f_content'];
+        var id = msg['f_id'];
+        var nickname = msg['f_nickname'];
+        var time = msg['f_time'];
+
+        html = ' <div class="alert alert-success" role="alert"><strong>'
+        +nickname+':</strong>'
+        +content+'</div>'
+        return html;
+    }
+    function searchMessageList(){
+        $.get("/message/search_message",{},function(jsonData){
+            if(jsonData['ret'] == "0"){
+                alert(jsonData["msg"]);
+                return;
+            }
+            data = jsonData["data"];
+            console.log(data);
+            for(var i=0;i<data.length;i++){
+                var html = formatMessage(data[i]);
+                $("#msg_history").append(html);
+            }
+
+        })
+    }
     $(function(){
+        searchMessageList();
         $("#message_submit").click(function(){
             var message = $("#message_textarea").val();
             var nickname = $("#message_input_nickname").val();
-
+            var email = $("#messager_email").val();
             if("" === message){
                 alert("请输入！");
                 return;
             }
+            if(nickname === ""){
+                nickname = "匿名游客";
+            }
+            if(email === ""){
+                email = 'example@qq.com';
+            }
             data = {
                 "nickname":nickname,
                 "message":message,
+                "email":email
             };
             $.ajax({
                 type:'post',
