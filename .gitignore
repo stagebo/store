@@ -2,3 +2,5 @@
 __pycache__
 web.conf
 web.cf
+*.cf
+*.conf

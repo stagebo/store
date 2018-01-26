@@ -19,3 +19,5 @@ cmdqos=2
 
 [test]
 test=1
+test2=2
+
