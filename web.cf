@@ -17,3 +17,5 @@ port=1883
 rdqos=0
 cmdqos=2
 
+[test]
+test=1
