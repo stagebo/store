@@ -8,6 +8,7 @@ import sys
 import datetime
 import json
 import platform
+import re
 import traceback
 from pyrestful import mediatypes
 from pyrestful.rest import get, post, put, delete
@@ -134,7 +135,41 @@ class MainHadler(pyrestful.rest.RestHandler):
             'time':d
         }
 
+    @get(_path="/admin/statistics_number")
+    def redis_test(self):
 
+        try:
+            data = self.get_argument("data")
+            data_list = data.split("|")
+
+            num_list = [re.sub(r'\D',"",item) for item in data_list ]
+            if len(num_list) != 5:
+                print(123)
+                raise Exception("格式不对")
+            ip = num_list[1]
+            pv = num_list[2]
+
+            lip = num_list[3]
+            lpv = num_list[4]
+
+
+
+            try:
+                sql = "insert into t_statistics values ('%s','%s','%s','%s','%s')" \
+                     % (datetime.datetime.now().strftime("%Y-%m-%d"), ip, pv, lip, lpv)
+                print(sql)
+                ret = self.application.db.execute_sql(sql)
+            except:
+                pass
+            sql = "update t_statistics set f_time = '%s',f_ip='%s',f_pv='%s',f_lip='%s',f_lpv='%s'"\
+                    %(datetime.datetime.now().strftime("%Y-%m-%d"), ip, pv, lip, lpv)
+            try:
+                ret = self.application.db.execute_sql(sql)
+            except:
+                pass
+        except Exception as e:
+            logging.warning("浏览统计存在问题！")
+            logging.warning(e)
 def copy_log():
     logpath = os.path.join("..", "log")
     logfile =os.path.join(logpath,"pyweb.log") # "..\log\pyweb.log"

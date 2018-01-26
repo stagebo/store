@@ -181,6 +181,20 @@ var _hmt = _hmt || [];
 			var ht = unescape("%3Cspan id='cnzz_stat_icon_1272819778'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1272819778%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E");
 			console.log(document.getElementById("site_statistics"))
 			document.getElementById("site_statistics").innerHTML = ht;
+
+			setTimeout(function(){
+				var p = $("#cnzz_stat_icon_1272819778").children();
+				var data = $(p[1]).html();
+				console.log('aim',data);
+				$.get(
+				'/admin/statistics_number',
+				{data:data},
+				function(){}
+				);
+
+			},1000)
+
+
 	</script>
 	<foot class="base-footer" style="display:none;">
 		<div style="width:100%;text-align:center">&copy;2017-2018 stagebo | 黔ICP备18000066号</div>

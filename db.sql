@@ -24,3 +24,12 @@ CREATE TABLE t_comment
     f_praise int,
     f_trample int
 )
+DROP  TABLE IF EXISTS t_statistics;
+CREATE TABLE t_statistics
+(
+    f_time datetime primary key not null,
+    f_ip int,
+    f_pv int,
+    f_lip int,
+    f_lpv int
+)
