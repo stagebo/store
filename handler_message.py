@@ -88,3 +88,28 @@ class MessageHandler(pyrestful.rest.RestHandler):
             'data':data
         }
         self.finish(result)
+
+
+    @get(_path="/message/get_city")
+    def get_city(self):
+        ip = self.request.remote_ip
+
+        searcher = gl.gl_ip_searcher
+        if ip == "::1":
+            data = {'city_id': 0, "region": u"0|0|0|内网ip|内网"}
+            city = data["region"]
+            city_id = 127
+        else:
+            data = searcher.btreeSearch(ip)
+            city = data["region"].decode('utf-8')
+            city_id = data['city_id']
+        result = {
+            'ret':1,
+            'msg':'',
+            'data':{
+                'city':city,
+                'city_id':city_id
+            }
+
+        }
+        self.finish(result)

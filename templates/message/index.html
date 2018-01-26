@@ -32,11 +32,19 @@
         <input type="text" class="form-control " disabled id="message_input_city" placeholder="天津市">
       </div>
 
-      <button type="button" id="message_submit" class="btn btn-primary">提&nbsp;&nbsp;交</button>
+      <button type="button" id="message_submit" class="btn btn-primary pull-right">提&nbsp;&nbsp;交</button>
     </form>
     <hr>
     <div id="msg_history">
-
+        <!--<div class="alert alert-success">-->
+            <!--<div >-->
+                <!--<span class="label label-success">匿名用户</span>-->
+                <!--<span class="label label-info ">天津市</span>-->
+                <!--<span class="label label-default pull-right">2018-1-26 9:50:50</span>-->
+            <!--</div>-->
+            <!--<br>-->
+            <!--<p class="text-info">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
+        <!--</div>-->
     </div>
     <!--<div class="alert alert-success" role="alert">-->
         <!--<strong>Heads up!</strong> This alert needs your attention,-->
@@ -55,9 +63,27 @@
         var nickname = msg['f_nickname'];
         var time = msg['f_time'];
 
-        html = ' <div class="alert alert-success" role="alert"><strong>'
-        +nickname+':</strong>'
-        +content+'</div>'
+        cityInfo = city.split("|");
+        if(cityInfo.length == 5){
+            city = cityInfo[3];
+        }
+
+
+        <!--html = ' <div class="alert alert-success" role="alert"><strong>'-->
+        <!--+nickname+':</strong>'-->
+        <!--+content+'</div>'-->
+
+        var html =
+      '  <div class="alert alert-success">'+
+      '      <div >'+
+      '          <span class="label label-success">'+nickname+'</span>'+
+      '          <span class="label label-info ">'+city+'</span>'+
+      '          <span class="label label-default pull-right">'+time+'</span>'+
+      '      </div>'+
+      '      <br>'+
+      '      <p class="text-info">'+content+'</p>'+
+      '  </div>';
+      console.log(html);
         return html;
     }
     function searchMessageList(){
@@ -67,7 +93,6 @@
                 return;
             }
             data = jsonData["data"];
-            console.log(data);
             for(var i=0;i<data.length;i++){
                 var html = formatMessage(data[i]);
                 $("#msg_history").append(html);
@@ -75,8 +100,26 @@
 
         })
     }
+
+    function getCityInfo(){
+        $.get('/message/get_city',"",function(jsonData){
+            if(jsonData && jsonData['ret'] == '1'){
+                city = jsonData['data']['city'];
+                cityInfo = city.split("|");
+                if(cityInfo.length == 5){
+                    city = cityInfo[3];
+                }
+
+                $("#message_input_city").val(city);
+            }
+        })
+    }
+
     $(function(){
         searchMessageList();
+        getCityInfo();
+
+
         $("#message_submit").click(function(){
             var message = $("#message_textarea").val();
             var nickname = $("#message_input_nickname").val();
