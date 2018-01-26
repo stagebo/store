@@ -145,8 +145,8 @@
                 data:data,
                 dataType:'json',
                 success:function(jsonData){
-                    alert(JSON.stringify(jsonData));
-
+                    //alert(JSON.stringify(jsonData));
+                    searchMessageList();
                     $("#message_textarea").val('');
                 },
                 error:function(err){
