@@ -93,6 +93,7 @@
                 return;
             }
             data = jsonData["data"];
+            $("#msg_history").html("");
             for(var i=0;i<data.length;i++){
                 var html = formatMessage(data[i]);
                 $("#msg_history").append(html);
