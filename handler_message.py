@@ -59,9 +59,9 @@ class MessageHandler(pyrestful.rest.RestHandler):
 
         sql = """
         insert into t_comment
-        (f_id,f_root_id,f_pid,f_time,f_user_id,f_user_type,f_nickname,f_content,f_ip,f_city,f_email) 
+        (f_id,f_root_id,f_pid,f_time,f_user_id,f_user_type,f_nickname,f_content,f_ip,f_city,f_email,f_praise,f_trample) 
         values
-        ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')
+        ('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s',0,0)
         
         """%(id,rootid,pid,time,userid,usertype,nickname,message,ip,city,email)
         print(sql)
