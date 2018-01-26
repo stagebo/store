@@ -143,8 +143,9 @@ class MainHadler(pyrestful.rest.RestHandler):
             data_list = data.split("|")
 
             num_list = [re.sub(r'\D',"",item) for item in data_list ]
-            if len(num_list) != 5:
-                print(123)
+
+            if len(num_list) != 6:
+
                 raise Exception("格式不对")
             ip = num_list[1]
             pv = num_list[2]
@@ -153,20 +154,31 @@ class MainHadler(pyrestful.rest.RestHandler):
             lpv = num_list[4]
 
 
-
+            time = datetime.datetime.now().strftime("%Y-%m-%d")
+            timel = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
             try:
                 sql = "insert into t_statistics values ('%s','%s','%s','%s','%s')" \
-                     % (datetime.datetime.now().strftime("%Y-%m-%d"), ip, pv, lip, lpv)
+                     % (time, ip, pv, lip, lpv)
                 print(sql)
                 ret = self.application.db.execute_sql(sql)
             except:
+                print("sql establish fail.")
                 pass
-            sql = "update t_statistics set f_time = '%s',f_ip='%s',f_pv='%s',f_lip='%s',f_lpv='%s'"\
-                    %(datetime.datetime.now().strftime("%Y-%m-%d"), ip, pv, lip, lpv)
+
+            sql = "update t_statistics set f_ip='%s',f_pv='%s',f_lip='%s',f_lpv='%s' where f_time = '%s'" \
+                  % (ip, pv, lip, lpv, time)
             try:
                 ret = self.application.db.execute_sql(sql)
             except:
                 pass
+            sql = "update t_statistics set f_ip='%s',f_pv='%s' where f_time = '%s'" \
+                  % (lip, lpv, timel)
+            try:
+                ret = self.application.db.execute_sql(sql)
+            except:
+                pass
+
+
         except Exception as e:
             logging.warning("浏览统计存在问题！")
             logging.warning(e)
