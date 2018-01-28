@@ -137,7 +137,6 @@ class MainHadler(pyrestful.rest.RestHandler):
 
     @get(_path="/admin/statistics_number")
     def redis_test(self):
-
         try:
             data = self.get_argument("data")
             data_list = data.split("|")
@@ -153,30 +152,28 @@ class MainHadler(pyrestful.rest.RestHandler):
             lip = num_list[3]
             lpv = num_list[4]
 
+            if not ip.isdigit() or not pv.isdigit() or not lip.isdigit() or not lpv.isdigit():
+                raise
 
             time = datetime.datetime.now().strftime("%Y-%m-%d")
             timel = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
-            try:
-                sql = "insert into t_statistics values ('%s','%s','%s','%s','%s')" \
-                     % (time, ip, pv, lip, lpv)
-                print(sql)
-                ret = self.application.db.execute_sql(sql)
-            except:
-                print("sql establish fail.")
-                pass
+
+            sql = "insert into t_statistics values ('%s','%s','%s','%s','%s')" \
+                 % (time, ip, pv, lip, lpv)
+            print(sql)
+            ret = self.application.db.execute_sql(sql)
+
 
             sql = "update t_statistics set f_ip='%s',f_pv='%s',f_lip='%s',f_lpv='%s' where f_time = '%s'" \
                   % (ip, pv, lip, lpv, time)
-            try:
-                ret = self.application.db.execute_sql(sql)
-            except:
-                pass
+            print(sql)
+            ret = self.application.db.execute_sql(sql)
+
             sql = "update t_statistics set f_ip='%s',f_pv='%s' where f_time = '%s'" \
                   % (lip, lpv, timel)
-            try:
-                ret = self.application.db.execute_sql(sql)
-            except:
-                pass
+            print(sql)
+            ret = self.application.db.execute_sql(sql)
+
 
 
         except Exception as e:
