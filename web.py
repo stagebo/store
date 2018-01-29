@@ -153,7 +153,7 @@ class MainHadler(pyrestful.rest.RestHandler):
             lpv = num_list[4]
 
             if not ip.isdigit() or not pv.isdigit() or not lip.isdigit() or not lpv.isdigit():
-                raise
+                return
 
             time = datetime.datetime.now().strftime("%Y-%m-%d")
             timel = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
@@ -169,10 +169,10 @@ class MainHadler(pyrestful.rest.RestHandler):
             print(sql)
             ret = self.application.db.execute_sql(sql)
 
-            sql = "update t_statistics set f_ip='%s',f_pv='%s' where f_time = '%s'" \
-                  % (lip, lpv, timel)
-            print(sql)
-            ret = self.application.db.execute_sql(sql)
+            # sql = "update t_statistics set f_ip='%s',f_pv='%s' where f_time = '%s'" \
+            #       % (lip, lpv, timel)
+            # print(sql)
+            # ret = self.application.db.execute_sql(sql)
 
 
 
