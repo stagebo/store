@@ -161,12 +161,21 @@ var _hmt = _hmt || [];
 				<div class="panel-body" style="position:relative;" id="cont">
 
 				</div>
-					<center>
-						<div id="site_statistics" >
-						</div>
-						<div style="width:100%;text-align:center">&copy;2017-2018 stagebo | 黔ICP备18000066号</div>
-					</center>
-				</div>
+				<center>
+					<div id="site_statistics" >
+						<script type="text/javascript">
+							var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+							document.write(unescape("%3Cspan id='cnzz_stat_icon_1272819778'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1272819778%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+							var ht = unescape("%3Cspan id='cnzz_stat_icon_1272819778'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1272819778%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E");
+							document.getElementById("site_statistics").innerHTML = ht;
+							setTimeout(function(){
+								var p = $("#cnzz_stat_icon_1272819778").children();
+								$.get('/admin/statistics_number',{data:$(p[1]).html()},function(){});},1000)
+					</script>
+					</div>
+					<div style="width:100%;text-align:center">&copy;2017-2018 stagebo | 黔ICP备18000066号</div>
+				</center>
+			  </div>
 		</div>
 		<div style="width:20%;height:100%;position:fixed;top:0px;right:0px;z-index:99;padding-top:50px;">
 			<div style="display:none;">
@@ -190,24 +199,7 @@ var _hmt = _hmt || [];
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-			document.write(unescape("%3Cspan id='cnzz_stat_icon_1272819778'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1272819778%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
-			var ht = unescape("%3Cspan id='cnzz_stat_icon_1272819778'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1272819778%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E");
-			document.getElementById("site_statistics").innerHTML = ht;
-			setTimeout(function(){
-				var p = $("#cnzz_stat_icon_1272819778").children();
-				var data = $(p[1]).html();
-				$.get(
-				'/admin/statistics_number',
-				{data:data},
-				function(){}
-				);
 
-			},1000)
-
-
-	</script>
 	<foot class="base-footer" style="display:none;">
 		<div style="width:100%;text-align:center">&copy;2017-2018 stagebo | 黔ICP备18000066号</div>
 	</foot>
