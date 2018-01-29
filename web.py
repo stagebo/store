@@ -127,16 +127,19 @@ class MainHadler(pyrestful.rest.RestHandler):
 
     @get(_path="/admin/redis", _produces=mediatypes.APPLICATION_JSON)
     def redis_test(self):
-        rd = self.application.redis
-        rd.set("time",'time is close.')
-        d = rd.get("time")
+        try:
+            rd = self.application.redis
+            rd.set("time",datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+            d = rd.get("time")
 
-        return {
-            'time':d
-        }
+            return {
+                'time':d
+            }
+        except:
+            traceback.print_exc()
 
     @get(_path="/admin/statistics_number")
-    def redis_test(self):
+    def statistics_visitor(self):
         try:
             data = self.get_argument("data")
             data_list = data.split("|")
@@ -144,7 +147,6 @@ class MainHadler(pyrestful.rest.RestHandler):
             num_list = [re.sub(r'\D',"",item) for item in data_list ]
 
             if len(num_list) != 6:
-
                 raise Exception("格式不对")
             ip = num_list[1]
             pv = num_list[2]
@@ -156,37 +158,17 @@ class MainHadler(pyrestful.rest.RestHandler):
                 return
 
             time = datetime.datetime.now().strftime("%Y-%m-%d")
-            timel = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
-
-            # sql = "insert into t_statistics values ('%s','%s','%s','%s','%s')" \
-            #      % (time, ip, pv, lip, lpv)
-            # print(sql)
-            # ret = self.application.db.execute_sql(sql)
-            #
-            #
-            # sql = "update t_statistics set f_ip='%s',f_pv='%s',f_lip='%s',f_lpv='%s' where f_time = '%s'" \
-            #       % (ip, pv, lip, lpv, time)
-            # print(sql)
-            # ret = self.application.db.execute_sql(sql)
-
             sql = '''
             insert into t_statistics  values('%s','%s','%s','%s','%s')
             on DUPLICATE key update 
             f_time=values(f_time),f_ip=values(f_ip),f_pv=values(f_pv),f_lip=values(f_lip),f_lpv=values(f_lpv);
             '''% (time, ip, pv, lip, lpv)
-            print(sql)
-            ret = self.application.db.execute_sql(sql)
-            print(ret)
-            # sql = "update t_statistics set f_ip='%s',f_pv='%s' where f_time = '%s'" \
-            #       % (lip, lpv, timel)
             # print(sql)
-            # ret = self.application.db.execute_sql(sql)
-
-
-
+            ret = self.application.db.execute_sql(sql)
         except Exception as e:
             logging.warning("浏览统计存在问题！")
             logging.warning(e)
+
 def copy_log():
     logpath = os.path.join("..", "log")
     logfile =os.path.join(logpath,"pyweb.log") # "..\log\pyweb.log"
