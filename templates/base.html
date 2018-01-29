@@ -172,20 +172,32 @@ var _hmt = _hmt || [];
 			<div style="display:none;">
 				飞蛾扑火，是对梦想的追逐？还是对自由的向往，亦或是对生命的最后挣扎？
 			</div>
+			<div style="width:80%;height:400px;margin-top:20px;margin-left:10%;">
+				<div class="alert alert-info" role="alert">
+					您是本站第<strong ><span id="visitor_numbers"></span></strong> 位访客
+					<script>
+						$(function(){
+							$.get('/admin/statistics_numbers',{},function(jsonData){
 
+								if(jsonData['ret'] === "1"){
+									nums = jsonData['data'][0]["ipnums"];
+									$('#visitor_numbers').html(nums);
+								}
+							});
+						});
+					</script>
+				</div>
+			</div>
 		</div>
 	</div>
 	<script type="text/javascript">
 			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-			document.write(unescape("%3Cspan id='cnzz_stat_icon_1272819778'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1272819778%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
+			//document.write(unescape("%3Cspan id='cnzz_stat_icon_1272819778'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1272819778%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
 			var ht = unescape("%3Cspan id='cnzz_stat_icon_1272819778'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1272819778%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E");
-			console.log(document.getElementById("site_statistics"))
 			document.getElementById("site_statistics").innerHTML = ht;
-
 			setTimeout(function(){
 				var p = $("#cnzz_stat_icon_1272819778").children();
 				var data = $(p[1]).html();
-				console.log('aim',data);
 				$.get(
 				'/admin/statistics_number',
 				{data:data},

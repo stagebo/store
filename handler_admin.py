@@ -17,6 +17,7 @@ import gl
 import hashlib  # 导入md5加密模块
 import time  # 导入时间模块
 import sys
+import re
 
 class AdminHandler(pyrestful.rest.RestHandler):
     """
@@ -54,8 +55,59 @@ class AdminHandler(pyrestful.rest.RestHandler):
     def get_login(self):
         self.render("admin/login.html")
 
-    @post(_path="/admin/login",_produces=mediatypes.APPLICATION_JSON)
+    @get(_path="/admin/statistics_number")
+    def statistics_visitor(self):
+        try:
+            data = self.get_argument("data")
+            data_list = data.split("|")
 
+            num_list = [re.sub(r'\D', "", item) for item in data_list]
+
+            if len(num_list) != 6:
+                raise Exception("格式不对")
+            ip = num_list[1]
+            pv = num_list[2]
+
+            lip = num_list[3]
+            lpv = num_list[4]
+
+            if not ip.isdigit() or not pv.isdigit() or not lip.isdigit() or not lpv.isdigit():
+                return
+
+            time = datetime.datetime.now().strftime("%Y-%m-%d")
+            sql = '''
+                insert into t_statistics  values('%s','%s','%s','%s','%s')
+                on DUPLICATE key update 
+                f_time=values(f_time),f_ip=values(f_ip),f_pv=values(f_pv),f_lip=values(f_lip),f_lpv=values(f_lpv);
+                ''' % (time, ip, pv, lip, lpv)
+            # print(sql)
+            ret = self.application.db.execute_sql(sql)
+        except Exception as e:
+            logging.warning("浏览统计存在问题！")
+            logging.warning(e)
+
+    @tornado.web.asynchronous
+    @tornado.gen.engine
+    @get(_path="/admin/statistics_numbers")
+    def get_statistics_numbers(self):
+        sql = """
+        select 
+        sum(f_ip)  as ipnums
+        from t_statistics as st
+        """
+        sdb = self.application.db
+        # data = yield tornado.gen.Task(sdb.execute, sql)
+        data = yield sdb.execute(sql)
+        ret = data
+        result = {
+            "ret": "1",
+            "msg": "",
+            "data": ret
+        }
+        self.finish(result)
+
+
+    @post(_path="/admin/login",_produces=mediatypes.APPLICATION_JSON)
     def post_login(self):
         """
              - 功能:    登陆后台.

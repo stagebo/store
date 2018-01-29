@@ -138,36 +138,7 @@ class MainHadler(pyrestful.rest.RestHandler):
         except:
             traceback.print_exc()
 
-    @get(_path="/admin/statistics_number")
-    def statistics_visitor(self):
-        try:
-            data = self.get_argument("data")
-            data_list = data.split("|")
 
-            num_list = [re.sub(r'\D',"",item) for item in data_list ]
-
-            if len(num_list) != 6:
-                raise Exception("格式不对")
-            ip = num_list[1]
-            pv = num_list[2]
-
-            lip = num_list[3]
-            lpv = num_list[4]
-
-            if not ip.isdigit() or not pv.isdigit() or not lip.isdigit() or not lpv.isdigit():
-                return
-
-            time = datetime.datetime.now().strftime("%Y-%m-%d")
-            sql = '''
-            insert into t_statistics  values('%s','%s','%s','%s','%s')
-            on DUPLICATE key update 
-            f_time=values(f_time),f_ip=values(f_ip),f_pv=values(f_pv),f_lip=values(f_lip),f_lpv=values(f_lpv);
-            '''% (time, ip, pv, lip, lpv)
-            # print(sql)
-            ret = self.application.db.execute_sql(sql)
-        except Exception as e:
-            logging.warning("浏览统计存在问题！")
-            logging.warning(e)
 
 def copy_log():
     logpath = os.path.join("..", "log")
