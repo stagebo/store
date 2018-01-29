@@ -158,17 +158,25 @@ class MainHadler(pyrestful.rest.RestHandler):
             time = datetime.datetime.now().strftime("%Y-%m-%d")
             timel = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
 
-            sql = "insert into t_statistics values ('%s','%s','%s','%s','%s')" \
-                 % (time, ip, pv, lip, lpv)
+            # sql = "insert into t_statistics values ('%s','%s','%s','%s','%s')" \
+            #      % (time, ip, pv, lip, lpv)
+            # print(sql)
+            # ret = self.application.db.execute_sql(sql)
+            #
+            #
+            # sql = "update t_statistics set f_ip='%s',f_pv='%s',f_lip='%s',f_lpv='%s' where f_time = '%s'" \
+            #       % (ip, pv, lip, lpv, time)
+            # print(sql)
+            # ret = self.application.db.execute_sql(sql)
+
+            sql = '''
+            insert into t_statistics  values('%s','%s','%s','%s','%s')
+            on DUPLICATE key update 
+            f_time=values(f_time),f_ip=values(f_ip),f_pv=values(f_pv),f_lip=values(f_lip),f_lpv=values(f_lpv);
+            '''% (time, ip, pv, lip, lpv)
             print(sql)
             ret = self.application.db.execute_sql(sql)
-
-
-            sql = "update t_statistics set f_ip='%s',f_pv='%s',f_lip='%s',f_lpv='%s' where f_time = '%s'" \
-                  % (ip, pv, lip, lpv, time)
-            print(sql)
-            ret = self.application.db.execute_sql(sql)
-
+            print(ret)
             # sql = "update t_statistics set f_ip='%s',f_pv='%s' where f_time = '%s'" \
             #       % (lip, lpv, timel)
             # print(sql)
