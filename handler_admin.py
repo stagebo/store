@@ -91,9 +91,11 @@ class AdminHandler(pyrestful.rest.RestHandler):
     @get(_path="/admin/statistics_numbers")
     def get_statistics_numbers(self):
         sql = """
-        select 
-        sum(f_ip)  as ipnums
-        from t_statistics as st
+            select sum(ipn) as ipnums from (
+                (select sum(f_lip)  as ipn from t_statistics as st)
+                union
+                (select  f_ip as ipn from t_statistics order by f_time desc LIMIT 1,1)
+            ) as ips
         """
         sdb = self.application.db
         # data = yield tornado.gen.Task(sdb.execute, sql)
