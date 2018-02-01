@@ -161,6 +161,8 @@ def copy_log():
         cmd = "cp %s %s" % (logfile,logbak)
     if cmd != "":
         p = os.popen(cmd)
+        print(cmd)
+        print(p)
     logging.basicConfig(level=logging.DEBUG,
                         format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
                         datefmt='%a, %d %b %Y %H:%M:%S',
