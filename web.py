@@ -18,6 +18,7 @@ from handler_admin import AdminHandler
 from handler_chatbot import ChatbotHandler
 from handler_foru import ForuHandler
 from handler_message import  MessageHandler
+from handler_game import PuzzleHandler
 from tornado.log import access_log, app_log, gen_log
 from tornado.options import define,options
 sys.path.append("..")
@@ -56,6 +57,7 @@ class Application(pyrestful.rest.RestService):
             ChatbotHandler,
             ForuHandler,
             MessageHandler,
+            PuzzleHandler,
         ]
         super(Application, self).__init__(handlers, **settings)
         # TODO 取消原始数据库连接工具
@@ -161,6 +163,8 @@ def copy_log():
         cmd = "cp %s %s" % (logfile,logbak)
     if cmd != "":
         p = os.popen(cmd)
+        print(cmd)
+        print(p)
     logging.basicConfig(level=logging.DEBUG,
                         format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
                         datefmt='%a, %d %b %Y %H:%M:%S',

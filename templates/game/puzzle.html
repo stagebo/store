@@ -1,0 +1,74 @@
+<style>
+    .split-img-item{
+        width:120px;height:120px;float:left;border:solid 1px;margin-left:1px;margin-top:1px;
+    }
+
+</style>
+<h1>其实呢，这是一个拼图游戏，就是以前老式手机上那种打乱了图形碎片顺序然后镂空一块点击移动拼图的小游戏！TODO了</h1>
+<div>
+    <div id="puzzle_container" class="col-md-6 col-md-offset-3" style="height:400px;width:400px;">
+        <div class="split-img-item" idx="1"><h1>7</h1></div>
+        <div class="split-img-item" idx="2"><h1>5</h1></div>
+        <div class="split-img-item" idx="3"><h1>3</h1></div>
+        <div class="split-img-item" idx="4"><h1>4</h1></div>
+        <div class="split-img-item" idx="5"><h1>8</h1></div>
+        <div class="split-img-item" idx="6"><h1>2</h1></div>
+        <div class="split-img-item" idx="7"><h1>1</h1></div>
+        <div class="split-img-item" idx="8"><h1>6</h1></div>
+        <div class="split-img-item" idx="9"><div style="background-color:#222;width:120px;height:120px;"></div></div>
+    </div>
+
+
+</div>
+
+<script>
+    $(function(){
+
+        initGrid();
+
+        $(".split-img-item").click(function(){
+            var idx = $(this).attr("idx")
+            itemClick(idx);
+        });
+
+    });
+
+
+    function initGrid(){
+        item = '<div style="width:132px;height:132px;float:left;border:solid 1px;"></div>'
+       // $('#puzzle_container').append(item);
+    }
+
+    var item_null_idx = 9;
+    function itemClick(idx){
+        idx = parseInt(idx);
+        inidx = parseInt(item_null_idx);
+        if(idx == inidx){
+            return;
+        }
+        if(idx+1==inidx || idx-1==inidx || idx+3==inidx || idx-3==inidx){
+            var item = $("[idx="+idx+"]").html();
+            var aim = $("[idx="+inidx+"]").html();
+            $("[idx="+idx+"]").html(aim);
+            $("[idx="+inidx+"]").html(item);
+            item_null_idx = idx;
+        }
+        var check = checkSuccess();
+        if(check){
+            alert("拼图成功！");
+        }
+    }
+
+    function checkSuccess(){
+        var suc = true;
+        for(var i=1;i<9;i++){
+            var item = $("[idx="+i+"]");
+            if(i!=$(item.html()).html()){
+                suc = false;
+            }
+
+        }
+        console.log("result:",suc);
+        return suc;
+    }
+</script>
