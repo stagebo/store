@@ -19,6 +19,7 @@ from handler_chatbot import ChatbotHandler
 from handler_foru import ForuHandler
 from handler_message import  MessageHandler
 from handler_game import PuzzleHandler
+from handler_jsonp import JsonpHandler
 from tornado.log import access_log, app_log, gen_log
 from tornado.options import define,options
 sys.path.append("..")
@@ -58,6 +59,7 @@ class Application(pyrestful.rest.RestService):
             ForuHandler,
             MessageHandler,
             PuzzleHandler,
+            JsonpHandler,
         ]
         super(Application, self).__init__(handlers, **settings)
         # TODO 取消原始数据库连接工具
