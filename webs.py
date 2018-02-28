@@ -121,15 +121,7 @@ class MainHadler(pyrestful.rest.RestHandler):
         d = tar - now
         return {"days":d.days,"seconds":d.seconds}
 
-    @get(_path="/love/hastime" ,_produces=mediatypes.APPLICATION_JSON)
-    def get_sum_time(self):
-        now = datetime.datetime.now()
-        tar = datetime.datetime(2017,6,6,21,0,0)
-        d = now - tar
-        return {
-            "days": d.days,
-            "seconds": d.seconds
-        }
+    
 
     @get(_path="/admin/redis", _produces=mediatypes.APPLICATION_JSON)
     def redis_test(self):
