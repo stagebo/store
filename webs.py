@@ -173,7 +173,7 @@ def main():
         print("Start the service")
         app = Application()
         server =  tornado.httpserver.HTTPServer(app, ssl_options={
-           "certfile": os.path.join('keys', "server.csr"),
+           "certfile": os.path.join('keys', "server.pem"),
            "keyfile": os.path.join('keys', "server.key"),
         })
         server.listen(app.webs_port)
