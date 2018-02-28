@@ -121,7 +121,7 @@ class MainHadler(pyrestful.rest.RestHandler):
         d = tar - now
         return {"days":d.days,"seconds":d.seconds}
 
-    
+
 
     @get(_path="/admin/redis", _produces=mediatypes.APPLICATION_JSON)
     def redis_test(self):
@@ -173,7 +173,7 @@ def main():
         print("Start the service")
         app = Application()
         server =  tornado.httpserver.HTTPServer(app, ssl_options={
-           "certfile": os.path.join('keys', "server.pem"),
+           "certfile": os.path.join('keys', "server.csr"),
            "keyfile": os.path.join('keys', "server.key"),
         })
         server.listen(app.webs_port)
