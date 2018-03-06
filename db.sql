@@ -5,7 +5,7 @@ CREATE TABLE t_jieba
     f_content text NOT NULL,
     f_ip nvarchar(64),
     f_city nvarchar(256)
-)
+);
 
 DROP TABLE IF EXISTS t_comment;
 CREATE TABLE t_comment
@@ -23,7 +23,7 @@ CREATE TABLE t_comment
     f_email nvarchar(32),
     f_praise int,
     f_trample int
-)
+);
 DROP  TABLE IF EXISTS t_statistics;
 CREATE TABLE t_statistics
 (
@@ -32,4 +32,4 @@ CREATE TABLE t_statistics
     f_pv int,
     f_lip int,
     f_lpv int
-)
+);
