@@ -40,7 +40,8 @@ class MessageHandler(pyrestful.rest.RestHandler):
         time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         userid = "None"
         usertype="-1"
-
+        print(message)
+        print(nickname)
 
         if not nickname or nickname == "":
             nickname = "匿名游客"
