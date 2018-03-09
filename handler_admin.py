@@ -202,13 +202,18 @@ class AdminHandler(pyrestful.rest.RestHandler):
                         * 错误:{"result":"-1","msg":"错误消息内容"}
 
         """
-        city_id = self.get_argument('city_id', None)
+
+        try:
+            city_id = self.get_argument('city_id',None)
+        except:
+            traceback.print_exc()
 
         if not city_id or city_id == '':
-            return {
+            self.finish({
                 "rel": 0,
                 "msg": "city_id不能为空！"
-            }
+            })
+            return
 
         # 国家气象局接口
         # 接口参见：https://www.cnblogs.com/wangjingblogs/p/3192953.html
@@ -222,10 +227,11 @@ class AdminHandler(pyrestful.rest.RestHandler):
             url2 = 'http://www.weather.com.cn/data/cityinfo/%s.html' % city_id
             rel2 = requests.get(url2, timeout=1)
         except:
-            return {
+            self.finish({
                 "rel": 0,
                 "msg": "连接接口失败！"
-            }
+            })
+            return
 
         try:
             data = json.loads(rel.content.decode('utf-8'))["weatherinfo"]
@@ -241,9 +247,9 @@ class AdminHandler(pyrestful.rest.RestHandler):
                 "FL": data["WS"]
             }
         except:
-            return {
+            self.finish({
                 "rel": 0,
                 "msg": "city_id编码不正确！"
-            }
+            })
 
-        return {"result": "0", "msg": "", "payload": ret}, True
+        self.finish({"result": "0", "msg": "", "payload": ret})
