@@ -18,7 +18,7 @@ import hashlib  # 导入md5加密模块
 import time  # 导入时间模块
 import sys
 import re
-
+import requests
 class AdminHandler(pyrestful.rest.RestHandler):
     """
         this is admin handler api.
@@ -187,3 +187,63 @@ class AdminHandler(pyrestful.rest.RestHandler):
                    * 错误:{ "rel":0,"msg":"err！" }
         """
         os.system("python3 restart.py")
+
+    @get(_path="/admin/get_weather")
+    def Query_weather_info(self):
+        """
+             - 功能:    #8 查询天气情况
+             - URL:     /admin/get_weather
+             - HTTP:    GET
+             - 参数:
+                        * 字段名          类型            内容         举例
+                        * city_id      int                城市ID       101100201 （山西大同）
+             - 返回值:
+                        * 正确返回:{"result":"0","msg":"","payload":{'city': '城市', 'cityid': '城市ID', 'weather': '天气情况', 'SD': '湿度', 'temp': '温度', 'FX': '风向', 'FL': '风力'}}
+                        * 错误:{"result":"-1","msg":"错误消息内容"}
+
+        """
+        city_id = self.get_argument('city_id', None)
+
+        if not city_id or city_id == '':
+            return {
+                "rel": 0,
+                "msg": "city_id不能为空！"
+            }
+
+        # 国家气象局接口
+        # 接口参见：https://www.cnblogs.com/wangjingblogs/p/3192953.html
+        # 转发接口地址
+        # 1 http://www.weather.com.cn/data/cityinfo/101010100.html  北京
+        # 2 http://www.weather.com.cn/data/sk/101010100.html
+
+        try:
+            url = 'http://www.weather.com.cn/data/sk/%s.html' % city_id
+            rel = requests.get(url, timeout=1)
+            url2 = 'http://www.weather.com.cn/data/cityinfo/%s.html' % city_id
+            rel2 = requests.get(url2, timeout=1)
+        except:
+            return {
+                "rel": 0,
+                "msg": "连接接口失败！"
+            }
+
+        try:
+            data = json.loads(rel.content.decode('utf-8'))["weatherinfo"]
+            data2 = json.loads(rel2.content.decode('utf-8'))["weatherinfo"]
+
+            ret = {
+                "city": data["city"],
+                "cityid": data["cityid"],
+                "weather": data2["weather"],
+                "SD": data["SD"],
+                "temp": data["temp"],
+                "FX": data["WD"],
+                "FL": data["WS"]
+            }
+        except:
+            return {
+                "rel": 0,
+                "msg": "city_id编码不正确！"
+            }
+
+        return {"result": "0", "msg": "", "payload": ret}, True
