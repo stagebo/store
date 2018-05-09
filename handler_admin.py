@@ -188,6 +188,22 @@ class AdminHandler(pyrestful.rest.RestHandler):
         """
         os.system("python3 restart.py")
 
+    @get(_path="/admin/get_day_word")
+    def get_day_word(self):
+        """
+        - 功能:    获取金山每日一句
+        - URL:     /admin/get_day_word
+        - HTTP:    GET
+        - 参数:    无
+        - 返回值:
+                   * 正确,{"rel": 1,"msg": "" }
+                   * 错误:{ "rel":0,"msg":"err！" }
+        """
+
+
+        url = "http://open.iciba.com/dsapi/"
+        r = requests.get(url)
+        self.write(r.json())
     @get(_path="/admin/get_weather")
     def Query_weather_info(self):
         """

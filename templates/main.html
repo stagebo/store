@@ -40,4 +40,18 @@
     </blockquote>
   </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
+<center><img id="img_main"/></center>
+<script>
+						$(function(){
+							$.get('/admin/get_day_word',{},function(jsonData){
+									console.log(jsonData);
+									//$('#day_word_en').html(jsonData["content"]);
+									//$('#day_word_ch').html(jsonData["note"]);
+									$("#img_main").attr('src',jsonData["fenxiang_img"]);
+									//$("#img").append('<img src="'+jsonData["picture"]+'"/>');
+									//$("#img").append('<img src="'+jsonData["picture2"]+'"/>');
+							});
+						});
+					</script>
+<br><br><br><br><br><br><br><br><br>

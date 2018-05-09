@@ -162,6 +162,42 @@ var _hmt = _hmt || [];
 		<div style="width:20%;height:100%;position:fixed;top:0px;left:0px;z-index:99;padding-top:50px;">
 
 		</div>
+		<div style="width:20%;height:100%;position:fixed;top:0px;left:0px;z-index:99;padding-top:50px;">
+			<div style="display:none;">
+				飞蛾扑火，是对梦想的追逐？还是对自由的向往，亦或是对生命的最后挣扎？
+			</div>
+			<div style="width:80%;height:400px;margin-top:20px;margin-left:10%;">
+
+
+				<div class="alert alert-info" role="alert" id="day_word_source" style="height:300px;display:none;">
+
+                    <script type="text/javascript" src="http://open.iciba.com/ds_open.php?id=58382&name=%E7%9C%BC%E8%8B%A5%E7%A7%8B%E6%B3%A2&auth=34BA3FFC03B573BEB1AD5174A215652E" charset="utf-8"></script>
+				</div>
+				<div class="alert alert-info" role="alert" id="day_word_en">
+
+
+				</div>
+
+				<div class="alert alert-info" role="alert" id="day_word_ch">
+
+
+				</div>
+
+
+				<script>
+						$(function(){
+							$.get('/admin/get_day_word',{},function(jsonData){
+									console.log(jsonData);
+									$('#day_word_en').html(jsonData["content"]);
+									$('#day_word_ch').html(jsonData["note"]);
+								//	$("#img").append('<img src="'+jsonData["fenxiang_img"]+'"/>');
+									//$("#img").append('<img src="'+jsonData["picture"]+'"/>');
+									//$("#img").append('<img src="'+jsonData["picture2"]+'"/>');
+							});
+						});
+					</script>
+			</div>
+		</div>
 		<div class="main-container" style="float:left;">
 			<div class="panel panel-default">
 				<div class="panel-body" style="position:relative;" id="cont">
