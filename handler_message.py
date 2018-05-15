@@ -28,6 +28,7 @@ class MessageHandler(pyrestful.rest.RestHandler):
     def get_index(self):
         self.render("message/index.html")
 
+
     @post(_path="/message/submit_message",_produces=mediatypes.APPLICATION_JSON)
     def add_message(self):
         message = self.get_body_argument("message", None)

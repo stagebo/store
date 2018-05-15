@@ -269,3 +269,8 @@ class AdminHandler(pyrestful.rest.RestHandler):
             })
 
         self.finish({"result": "0", "msg": "", "payload": ret})
+
+    @get(_path="/admin/ip_test", _produces=mediatypes.APPLICATION_JSON)
+    def ip_test(self):
+        ip = self.request.remote_ip
+        self.finish({"ip":ip})
