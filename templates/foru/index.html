@@ -8,7 +8,12 @@
 <p class="text-info">那黄色呢？</p>
 <p class="text-info">对不起，我的人生从那一刻开始就不会变灰了，我永生~哼哼</p>
 <br>
+
 <div  class="foru-container">
+     <div class="input-group" style="width:420px;">
+        <input type="text" class="form-control"  placeholder="1994-3-23" id="refresh_bri">
+        <span class="input-group-addon" id="refresh_btn">更新</span>
+    </div>
     <center id="foru_life_container">
 
     </center>
@@ -18,6 +23,7 @@
     .foru-container{
         top:50px;
         height:80%;
+        width:60%;
         margin-left:20%;
     }
     .span-item{
@@ -40,15 +46,25 @@
 <script>
     $(function(){
         refreshGrid();
+        $("#refresh_btn").click(function(){
+            var bri = $("#refresh_bri").val();
+            refreshGrid();
+        });
     });
     function refreshGrid(){
-        $.get("/foru/lifemonths","",function(jsonData){
+        var bri = $("#refresh_bri").val();
+        var url = "/foru/lifemonths?bri="+bri;
+        if(!bri){
+            url =  "/foru/lifemonths";
+        }
+        $.get(url,"",function(jsonData){
             var n1 = jsonData["n1"];
             var n2 = jsonData["n2"];
             buildGrid(n1,n2);
         });
     }
     function buildGrid(n1,n2){
+        $("#foru_life_container").html("");
         var n1 = parseInt(n1);
         var n2 = parseInt(n2);
         var sum = 30*30;

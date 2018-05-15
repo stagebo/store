@@ -37,16 +37,25 @@ class ForuHandler(pyrestful.rest.RestHandler):
 
     @get(_path="/foru/lifemonths", _produces=mediatypes.APPLICATION_JSON)
     def get_months(self):
-        bir = datetime.datetime(1994,3,23,0,0,0)
+        brithday = self.get_argument("bri",None)
+        bri = datetime.datetime(1994,3,23,0,0,0)
+        if  bri:
+            try:
+                bri = datetime.datetime.strptime(brithday,"%Y-%m-%d")
+            except:
+                pass
         tar = datetime.datetime(2017,6,6,21,0,0)
         now = datetime.datetime.now()
 
-        m1 = self.month_differ(tar,bir)
+        m1 = self.month_differ(tar,bri)
         m2 = self.month_differ(now,tar)
 
         return {
             "n1":m1,
-            "n2":m1+m2
+            "n2":m1+m2,
+            "start":str(bri),
+            "tar":str(tar),
+            "now":str(now)
         }
     def month_differ(self,x, y):
         """暂不考虑day, 只根据month和year计算相差月份
