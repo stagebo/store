@@ -29,7 +29,7 @@
   <!--<img src="static/image/bishedaizuo.jpg" style="width:80%;margin-left:10%;margin-top:20px;margin-bottom:50px;"/>-->
 <!--</div>-->
 
-<img src="static/image/man.svg" style="width:30%;margin-left:35%;margin-top:20px;margin-bottom:50px;"/>
+<img src="static/image/man.svg" id="toyqy" style="width:30%;margin-left:35%;margin-top:20px;margin-bottom:50px;"/>
 
 
 <div class="card card-inverse card-success text-center">
@@ -44,6 +44,9 @@
 <center><img id="img_main"/></center>
 <script>
 						$(function(){
+						    $("#toyqy").click(function(){
+						      window.location.href="/foru/loveyqy";
+						    });
 							$.get('/admin/get_day_word',{},function(jsonData){
 									console.log(jsonData);
 									//$('#day_word_en').html(jsonData["content"]);

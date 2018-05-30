@@ -22,6 +22,10 @@ class ForuHandler(pyrestful.rest.RestHandler):
     def get_index(self):
         self.render("foru/index.html")
 
+    @get(_path="/foru/loveyqy")
+    def get_time_page(self):
+        self.render("foru/love_time.html")
+
     @get(_path="/foru/lineforu",_produces=mediatypes.APPLICATION_JSON)
     def get_days(self):
         tar = datetime.datetime(2017,6,6,21,0,0)
