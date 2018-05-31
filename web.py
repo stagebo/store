@@ -81,6 +81,7 @@ class Application(pyrestful.rest.RestService):
         self.mysql_db = self.cf.get("mysql", "db")
         self.mysql_port = self.cf.getint("mysql", "port")
         self.web_port = self.cf.getint("web", "port")
+        print(self.mysql_host,self.mysql_uid,self.mysql_port,self.mysql_pwd,self.mysql_db)
 
     def mylog(self,handler):
         if handler.get_status() < 400:
@@ -91,8 +92,8 @@ class Application(pyrestful.rest.RestService):
             log_method = access_log.error
 
         request_time = 1000.0 * handler.request.request_time()
-        log_method("%d %s %.2fms", handler.get_status(),
-                   handler._request_summary(), request_time)
+        print("%d %s %.2fms"%(handler.get_status(), handler._request_summary(), request_time))
+        log_method("%d %s %.2fms", handler.get_status(),handler._request_summary(), request_time)
 
 #
 class MainHadler(pyrestful.rest.RestHandler):
