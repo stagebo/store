@@ -3,7 +3,6 @@ import pyrestful.rest
 import json,uuid,random
 from PIL import Image
 import jieba
-import matplotlib.image as mpimg
 import sys
 import datetime
 from database import dbHelper
