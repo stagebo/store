@@ -170,6 +170,10 @@ def copy_log():
                         filemode='w')
 
 def main():
+    '''
+
+    :return:
+    '''
     copy_log()
     try:
         print("Start the service")
