@@ -25,7 +25,8 @@ from tornado.options import define,options
 sys.path.append("..")
 from database import dbHelper,redisdb,syncdb
 import gl
-
+import uimodule,uimethod
+from tornado.web import UIModule
 from tornado import ioloop, gen
 from tornado_mysql import pools
 
@@ -47,6 +48,8 @@ class Application(pyrestful.rest.RestService):
             static_path=os.path.join(os.path.dirname(__file__), "static"),
             xsrf_cookies=False,
             debug = False,
+            ui_methods=uimethod, #'
+            ui_modules=uimodule,
             login_url = "admin/login",
             log_function = self.mylog
         )
@@ -89,6 +92,7 @@ class Application(pyrestful.rest.RestService):
         elif handler.get_status() < 500:
             log_method = access_log.warning
         else:
+            print('服务器异常！')
             log_method = access_log.error
 
         request_time = 1000.0 * handler.request.request_time()
@@ -100,6 +104,10 @@ class MainHadler(pyrestful.rest.RestHandler):
     @get(_path="/")
     def index(self):
         self.render("base.html")
+
+    @get(_path="/test")
+    def test(self):
+        self.render("test.html")
 
     @get(_path="/main")
     def main_page(self):
