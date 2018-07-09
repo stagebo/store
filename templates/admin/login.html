@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台登陆</title>
+    <link rel="stylesheet" href="static/plugins/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="static/plugins/Bootstrap/css/bootstrap-theme.css">
+
+
+    <script src="static/plugins/jquery/jquery-1.12.2.js"></script>
+    <script src="static/plugins/Bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+    {% if err %}
+        {{ err }}
+    {% end %}
+  <form action="/admin/login" method="post">
+        <input type="text" name="username"/>
+        <input type="password" name="password"/>
+        <input type="submit" id="login" value="login"/>
+  </form>
+</body>
+</html>
