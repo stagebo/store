@@ -27,11 +27,15 @@ import json
 class UserService():
 
     def get_user_list(self):
-        users = [
+        users = {
+            'result':0,
+            'msg':'',
+            'payload': [
             {"id": '1', 'name': 'aaa'},
             {"id": '2', 'name': 'bbb'},
             {"id": '3', 'name': 'ccc'}
         ]
+        }
         return json.dumps(users)
 if __name__ == "__main__":
     print('main')
