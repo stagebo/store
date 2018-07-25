@@ -32,6 +32,7 @@ class UserHandler(pyrestful.rest.RestHandler):
         users = us.get_user_list()
         self.finish(json.dumps(users))
 
+    @get(_path="/user/get/{id}")
     def get_user_by_id(self,id):
         user = user_service.UserService().get_user_by_id(id)
         self.finish(json.dumps(user))
