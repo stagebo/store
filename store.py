@@ -49,7 +49,7 @@ class Application(pyrestful.rest.RestService):
         try:
             self.cf.read("store.conf")
         except:
-            logging.error("not find a config file named webrest.conf")
+            logging.error("not find a config file named store.conf")
             sys.exit(1)
         self.mysql_host = self.cf.get("mysql", "host")
         self.mysql_uid = self.cf.get("mysql", "uid")
