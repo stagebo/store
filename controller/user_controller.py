@@ -25,7 +25,7 @@ class UserHandler(pyrestful.rest.RestHandler):
     def get_index(self):
         self.finish(' test')
 
-    @get(_path="/user/get_user_list")
+    @get(_path="/user/list")
     def get_user_list(self):
         users = [
             {"id":'1','name':'aaa'},
