@@ -16,7 +16,8 @@ def kill_store():
             print(proc, pid)
 if __name__ == "__main__":
     kill_store()
-    os.system("git checkout .")
-    os.system("git pull")
-    os.system("nohup python3 store.py &")
+    os.system("bash start.sh")
+    # os.system("git checkout .")
+    # os.system("git pull")
+    # os.system("nohup python3 store.py &")
 
