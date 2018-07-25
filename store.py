@@ -82,6 +82,9 @@ class MainHadler(pyrestful.rest.RestHandler):
     def test(self):
         self.finish('main test')
 
+    @get(_path="/main/restart")
+    def restart(self):
+        os.system("python3 restart.py")
 
 
 
