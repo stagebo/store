@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-    File Name:     user_service
+    File Name:     user_dao
     Author:        Administrator
     Date:          2018/7/25
     Description:   
@@ -21,30 +21,23 @@
                   ┗┻┛  ┗┻┛
 """
 __author__ = 'Administrator'
-import json
-from dao import user_dao
-from base import r
-class UserService():
+
+class UserDAO():
 
     def get_user_list(self):
-        ud = user_dao.UserDAO()
-        users = ud.get_user_list()
-        ret = {
-            'result': 0,
-            'msg': '',
-            'payload': users
-        }
-        return ret
+        return  [
+            {"id": '1', 'name': 'aaa'},
+            {"id": '2', 'name': 'bbb'},
+            {"id": '3', 'name': 'ccc'}
+        ]
     def get_user_by_id(self,id):
-        user = user_dao.UserDAO().get_user_by_id(id)
-
-        if not user:
-            return r.err_result('用户不存在！')
-        ret = {
-            'result': 0,
-            'msg': '',
-            'payload':user
-        }
-        return ret
+        for u in  [
+            {"id": '1', 'name': 'aaa'},
+            {"id": '2', 'name': 'bbb'},
+            {"id": '3', 'name': 'ccc'}
+        ]:
+            if str(id) == str(u['id']):
+                return u
+        return {}
 if __name__ == "__main__":
     print('main')
