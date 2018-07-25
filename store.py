@@ -47,7 +47,7 @@ class Application(pyrestful.rest.RestService):
     def read_config(self):
 
         try:
-            self.cf.read("web.conf")
+            self.cf.read("store.conf")
         except:
             logging.error("not find a config file named webrest.conf")
             sys.exit(1)
