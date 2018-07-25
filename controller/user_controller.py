@@ -19,6 +19,7 @@ import time  # 导入时间模块
 import sys
 import re
 import requests
+import service
 class UserHandler(pyrestful.rest.RestHandler):
 
     @get(_path="/test")
@@ -27,10 +28,7 @@ class UserHandler(pyrestful.rest.RestHandler):
 
     @get(_path="/user/list")
     def get_user_list(self):
-        users = [
-            {"id":'1','name':'aaa'},
-            {"id": '2', 'name': 'bbb'},
-            {"id": '3', 'name': 'ccc'}
-        ]
-        self.finish(json.dumps(users))
+        user_service = service.user_service.UserService()
+        users = user_service.get_user_list()
+        self.finish(users)
 
