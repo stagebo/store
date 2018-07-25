@@ -19,7 +19,7 @@ import time  # 导入时间模块
 import sys
 import re
 import requests
-import service
+from service import user_service
 class UserHandler(pyrestful.rest.RestHandler):
 
     @get(_path="/test")
@@ -28,7 +28,7 @@ class UserHandler(pyrestful.rest.RestHandler):
 
     @get(_path="/user/list")
     def get_user_list(self):
-        user_service = service.user_service.UserService()
-        users = user_service.get_user_list()
+        us = user_service.UserService()
+        users = us.get_user_list()
         self.finish(users)
 
