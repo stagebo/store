@@ -2,35 +2,18 @@ import os
 import tornado.ioloop
 import pyrestful.rest
 import logging
-import pymysql
 import configparser
 import sys
 import datetime
-import json
 import platform
-import re
 import traceback
 from pyrestful import mediatypes
-from pyrestful.rest import get, post, put, delete
-from handler_jieba import JiebaHandler
-from handler_ybs import DoctorHandler
-from handler_admin import AdminHandler
-from handler_chatbot import ChatbotHandler
-from handler_foru import ForuHandler
-from handler_message import  MessageHandler
-from handler_game import PuzzleHandler
-from handler_jsonp import JsonpHandler
-from tornado.log import access_log, app_log, gen_log
-from tornado.options import define,options
+from pyrestful.rest import get
+from controller.user_controller import AdminHandler
+from tornado.log import access_log
+
 sys.path.append("..")
-from database import dbHelper,redisdb,syncdb
-import gl
-import uimodule,uimethod
-from tornado.web import UIModule
-from tornado import ioloop, gen
-from tornado_mysql import pools
-
-
+from database import redisdb,syncdb
 
 
 
@@ -48,26 +31,16 @@ class Application(pyrestful.rest.RestService):
             static_path=os.path.join(os.path.dirname(__file__), "static"),
             xsrf_cookies=False,
             debug = False,
-            ui_methods=uimethod, #'
-            ui_modules=uimodule,
+            # ui_methods=uimethod, #'
+            # ui_modules=uimodule,
             login_url = "admin/login",
             log_function = self.mylog
         )
         handlers=[
             MainHadler,
-            JiebaHandler,
-            DoctorHandler,
             AdminHandler,
-            ChatbotHandler,
-            ForuHandler,
-            MessageHandler,
-            PuzzleHandler,
-            JsonpHandler,
         ]
         super(Application, self).__init__(handlers, **settings)
-        # TODO 取消原始数据库连接工具
-        # dbHelper.database=dbHelper.DbHelper(self.mysql_host,self.mysql_uid,self.mysql_pwd,self.mysql_port,self.mysql_db)
-
         self.db = syncdb.SyncDb(self.mysql_host, self.mysql_port, self.mysql_uid, self.mysql_pwd, self.mysql_db)
         logging.info("tornado is inited.")
 
@@ -91,7 +64,7 @@ class Application(pyrestful.rest.RestService):
             log_method = access_log.info
         elif handler.get_status() < 500:
             log_method = access_log.warning
-        else:
+        else :
             print('服务器异常！')
             log_method = access_log.error
 
@@ -105,46 +78,10 @@ class MainHadler(pyrestful.rest.RestHandler):
     def index(self):
         self.render("base.html")
 
-    @get(_path="/test")
+    @get(_path="/main/test")
     def test(self):
-        self.render("test.html")
+        self.finish('main test')
 
-    @get(_path="/main")
-    def main_page(self):
-        self.render("main.html")
-
-    @get(_path="/doc")
-    def main_doc(self):
-        self.render("doc/html/index.html")
-
-    @get(_path="/about")
-    def about_page(self):
-        self.render("about.html")
-
-
-
-    @get(_path="/love/hastime" ,_produces=mediatypes.APPLICATION_JSON)
-    def get_sum_time(self):
-        now = datetime.datetime.now()
-        tar = datetime.datetime(2017,6,6,21,0,0)
-        d = now - tar
-        return {
-            "days": d.days,
-            "seconds": d.seconds
-        }
-
-    @get(_path="/admin/redis", _produces=mediatypes.APPLICATION_JSON)
-    def redis_test(self):
-        try:
-            rd = self.application.redis
-            rd.set("time",datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-            d = rd.get("time")
-
-            return {
-                'time':d
-            }
-        except:
-            traceback.print_exc()
 
 
 
@@ -182,7 +119,7 @@ def main():
 
     :return:
     '''
-    copy_log()
+    # copy_log()
     try:
         print("Start the service")
         app = Application()
