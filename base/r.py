@@ -22,11 +22,21 @@
 """
 __author__ = 'Administrator'
 
-def err_result(msg):
+def ERR(msg=''):
     return {
         'result':-1,
         'msg':msg
     }
-
+def OK(msg=''):
+    return {
+        'result':0,
+        'msg':msg
+    }
+def POST_ARGS(handler,keys):
+    ret = {}
+    for k in keys:
+        v = handler.get_body_arguments(k,[None])[0]
+        ret[k] = v
+    return ret
 if __name__ == "__main__":
     print('main')

@@ -22,7 +22,8 @@
 """
 __author__ = 'Administrator'
 __all__ = [
-    'r'
+    'r',
+    'cnf'
 ]
 if __name__ == "__main__":
     print('main')

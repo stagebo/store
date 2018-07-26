@@ -10,6 +10,7 @@ import traceback
 from pyrestful import mediatypes
 from pyrestful.rest import get
 from controller.user_controller import UserHandler
+from controller.test_controller import TestHandler
 from tornado.log import access_log
 
 sys.path.append("..")
@@ -39,6 +40,7 @@ class Application(pyrestful.rest.RestService):
         handlers=[
             MainHadler,
             UserHandler,
+            TestHandler,
         ]
         super(Application, self).__init__(handlers, **settings)
         self.db = syncdb.SyncDb(self.mysql_host, self.mysql_port, self.mysql_uid, self.mysql_pwd, self.mysql_db)

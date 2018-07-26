@@ -3,7 +3,7 @@
 """
     File Name:     __init__.py
     Author:        Administrator
-    Date:          2018/7/25
+    Date:          2018/7/26
     Description:   
 # code is far away from bugs with the god animal protecting
     I love animals. They taste delicious.
@@ -20,11 +20,9 @@
                   ┃┫┫  ┃┫┫
                   ┗┻┛  ┗┻┛
 """
+__author__ = 'Administrator'
 __all__ = [
-    'user_controller',
-    'test_controller'
 
 ]
-
 if __name__ == "__main__":
     print('main')

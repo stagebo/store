@@ -22,7 +22,9 @@
 """
 __author__ = 'Administrator'
 __all__ = [
-    'user_dao'
+    'base_dao',
+    'user_dao',
+    'test_dao',
 ]
 if __name__ == "__main__":
     print('main')
